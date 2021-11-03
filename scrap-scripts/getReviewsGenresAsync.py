@@ -15,7 +15,7 @@ CLEANR = re.compile('<.*?>')
 
 queue = Queue()
 
-f = open("genres700k-800k.csv", "a")
+f = open("genres700k-800k.csv", "w")
 
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
@@ -27,7 +27,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 def consume():
-    #f.write('Id, Reviews' + '\n')
+    f.write('Id, Reviews' + '\n')
     while True:
         if not queue.empty():
             bookId, rows = queue.get()
@@ -45,9 +45,10 @@ def parseGenres(bookId, data):
     genres_final = []
     for genre in genres:
         gg = re.findall('(?<=<span class="Button__labelItem">).+?(?=<\/span>)',str(genre))
-        if gg[0] != '...more':
+        if not re.search('[0-9-.]', gg[0]):
             genres_final.append(gg[0])
-    
+    if not genres_final:
+        return bookId, []
     return bookId, [str(bookId) + ',' + '\"' + ','.join(genres_final) + '\"' + '\n']
 
 
@@ -86,14 +87,13 @@ def fetch(session, bookId):
         #queue.put(parseReviews(bookId,data))
         queue.put(parseGenres(bookId,data))
 
-        return bookId, data
-    return bookId, ''
+        return
 
 
 async def get_data_asynchronous(bookIds_to_fetch):
     print("{0:<30} {1:>20}".format("Book", "Completed at"))
 
-    with ThreadPoolExecutor(max_workers=30) as executor:
+    with ThreadPoolExecutor(max_workers=35) as executor:
         with requests.Session() as session:
             
             # Set any session parameters here before calling `fetch`
@@ -119,8 +119,7 @@ async def get_data_asynchronous(bookIds_to_fetch):
             ]
 
             # Initializes the tasks to run and awaits their results
-            for bookId, data in await asyncio.gather(*tasks):
-                pass
+            
 
 consumer = Thread(target=consume)
 consumer.setDaemon(True)
@@ -130,7 +129,7 @@ def main():
     col_list = ["Id"]
 
     #input file to get ids
-    bookIds_to_fetch = pd.read_csv("book700k-800k.csv", index_col=0, usecols=col_list)
+    bookIds_to_fetch = pd.read_csv("../datasets/book700k-800k.csv", index_col=0, usecols=col_list)
     
     loop = asyncio.get_event_loop()
     future = asyncio.ensure_future(get_data_asynchronous(bookIds_to_fetch))
