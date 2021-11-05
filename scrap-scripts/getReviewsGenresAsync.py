@@ -15,7 +15,7 @@ CLEANR = re.compile('<.*?>')
 
 queue = Queue()
 
-f = open("genres700k-800k.csv", "w")
+f = open("genres600k-700k.csv", "w")
 
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
@@ -45,7 +45,7 @@ def parseGenres(bookId, data):
     genres_final = []
     for genre in genres:
         gg = re.findall('(?<=<span class="Button__labelItem">).+?(?=<\/span>)',str(genre))
-        if not re.search('[0-9-.]', gg[0]):
+        if gg and not re.search('[0-9-.]', gg[0]) and re.search('(?=.*[A-Z])', gg[0]): #match genres without numbers chars and with uppercase letters
             genres_final.append(gg[0])
     if not genres_final:
         return bookId, []
@@ -62,9 +62,9 @@ def parseReviews(bookId, data):
 
     for review in reviews:
         rr = re.findall('(?<=<span class="Formatted">).+?(?=<\/span>)',str(review))
-        if rr:
+        if rr and re.match('.[a-zA-Z0-9-()]', rr[0]):
             r = CLEANR.sub('', rr[0])
-            csv_reviews.append(str(bookId) + ',' + str(r) + '\n')
+            csv_reviews.append(str(bookId) + ',' + '\"' + str(r) + '\"' + '\n')
     return bookId, csv_reviews
 
 
@@ -77,15 +77,15 @@ def fetch(session, bookId):
         data = response.text
         if response.status_code != 200:
             print("FAILURE::" + base_url + str(bookId))
-        
-        elapsed = default_timer() - START_TIME
-        time_completed_at = "{:5.2f}s".format(elapsed)
-        print("{0:<30} {1:>20}".format(bookId, time_completed_at))
 
         #select genres or reviews - comment/uncomment
 
         #queue.put(parseReviews(bookId,data))
         queue.put(parseGenres(bookId,data))
+
+        elapsed = default_timer() - START_TIME
+        time_completed_at = "{:5.2f}s".format(elapsed)
+        print("{0:<30} {1:>20}".format(bookId, time_completed_at))
 
         return
 
@@ -125,11 +125,11 @@ consumer = Thread(target=consume)
 consumer.setDaemon(True)
 consumer.start()
 
-def main():
+def main(): 
     col_list = ["Id"]
 
     #input file to get ids
-    bookIds_to_fetch = pd.read_csv("../datasets/book700k-800k.csv", index_col=0, usecols=col_list)
+    bookIds_to_fetch = pd.read_csv("../datasets/book600k-700k.csv", index_col=0, usecols=col_list)
     
     loop = asyncio.get_event_loop()
     future = asyncio.ensure_future(get_data_asynchronous(bookIds_to_fetch))

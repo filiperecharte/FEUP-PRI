@@ -27,8 +27,8 @@ for index, row in df.iterrows():
 
     for review in reviews:
         rr = re.findall('(?<=<span class="Formatted">).+?(?=<\/span>)',str(review))
-        if rr:
+        if rr and re.match('.[a-zA-Z0-9-()]', rr[0]):
             r = CLEANR.sub('', rr[0])
-            f.write(str(row.name) + ',' + str(r) + '\n')
+            f.write(str(row.name) + ',' + '\"' + str(r) + '\"' + '\n')
 
 f.close()
