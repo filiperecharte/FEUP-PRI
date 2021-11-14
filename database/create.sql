@@ -1,17 +1,13 @@
 DROP TABLE IF EXISTS WrittenBy;
 DROP TABLE IF EXISTS Author;
+DROP TABLE IF EXISTS LanguageWrittenIn;
+DROP TABLE IF EXISTS Language;
 DROP TABLE IF EXISTS IsGenre;
 DROP TABLE IF EXISTS Genre;
 DROP TABLE IF EXISTS Review;
 DROP TABLE IF EXISTS Book;
-DROP TABLE IF EXISTS Language;
 
 
-
-CREATE TABLE Language(
-	id SERIAL PRIMARY KEY,
-	name TEXT NOT NULL
-);
 
 CREATE TABLE Book (
 	id SERIAL PRIMARY KEY,
@@ -24,8 +20,7 @@ CREATE TABLE Book (
 	publishYear INT,
 	description TEXT NOT NULL,
 	rating FLOAT CHECK (rating >= 0 AND rating <=5),
-	isbn INT NOT NULL,
-	language_id INT REFERENCES Language(id)
+	isbn INT NOT NULL
 );
 
 CREATE TABLE Review(
@@ -48,6 +43,17 @@ CREATE TABLE IsGenre(
 CREATE TABLE Author (
 	id SERIAL PRIMARY KEY,
 	name TEXT NOT NULL
+);
+
+CREATE TABLE Language(
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL
+);
+
+CREATE TABLE LanguageWrittenIn (
+	book_id INT REFERENCES Book(id),
+	language_id INT REFERENCES Language(id),
+	PRIMARY KEY (book_id, language_id)
 );
 
 CREATE TABLE WrittenBy(
