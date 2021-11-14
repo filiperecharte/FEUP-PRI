@@ -9,13 +9,14 @@ from threading import Thread
 from queue import Empty, Queue
 import signal
 import sys
+import json
 
 START_TIME = default_timer()
 CLEANR = re.compile('<.*?>')
 
 queue = Queue()
 
-f = open("genres600k-700k.csv", "w")
+f = open("languages900k-1000k.csv", "w")
 
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
@@ -27,7 +28,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 def consume():
-    f.write('Id, Reviews' + '\n')
+    f.write('Id, Language' + '\n')
     while True:
         if not queue.empty():
             bookId, rows = queue.get()
@@ -35,6 +36,13 @@ def consume():
             for row in rows:
                 f.write(row)
 
+def parseLanguages(bookId, data):
+    soup = BeautifulSoup(data, "html.parser")
+    languageList = soup.find("script", type="application/ld+json")
+    ll = re.findall('(?<=<script type="application\/ld\+json">).+?(?=<\/script>)',str(languageList))
+    language = json.loads(ll[0])['inLanguage']
+
+    return bookId, [str(bookId) + ',' + language + '\n']
 
 def parseGenres(bookId, data):
     soup = BeautifulSoup(data, "html.parser")
@@ -81,7 +89,8 @@ def fetch(session, bookId):
         #select genres or reviews - comment/uncomment
 
         #queue.put(parseReviews(bookId,data))
-        queue.put(parseGenres(bookId,data))
+        #queue.put(parseGenres(bookId,data))
+        queue.put(parseLanguages(bookId,data))
 
         elapsed = default_timer() - START_TIME
         time_completed_at = "{:5.2f}s".format(elapsed)
@@ -129,7 +138,7 @@ def main():
     col_list = ["Id"]
 
     #input file to get ids
-    bookIds_to_fetch = pd.read_csv("../datasets/book600k-700k.csv", index_col=0, usecols=col_list)
+    bookIds_to_fetch = pd.read_csv("../datasets/genres900k-1000k.csv", index_col=0, usecols=col_list)
     
     loop = asyncio.get_event_loop()
     future = asyncio.ensure_future(get_data_asynchronous(bookIds_to_fetch))
