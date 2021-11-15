@@ -13,4 +13,12 @@ data:
     python getData.py genre
     python getData.py language
     python getData.py review
-    
+    refine
+
+refine:
+    python refineRows.py
+
+database:
+    python create.py
+    python populate.py
+
