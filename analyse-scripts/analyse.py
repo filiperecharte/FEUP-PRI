@@ -2,7 +2,7 @@ from numpy.core.numeric import NaN
 import pandas as pd
 import numpy as np
 from wordcloud import WordCloud
-from matplotlib.pyplot import pie, axis, show, figure, xticks, subplots, xlim, text, imshow, tight_layout
+from matplotlib.pyplot import *
 
 def analyseGenres():
     df = pd.read_csv('../datasets/genres.csv')
@@ -70,7 +70,7 @@ def analyseYears():
 def analyseRating():
     df = pd.read_csv ('../datasets/books.csv')
 
-    ser = df.groupby(pd.cut(df["Rating"], bins=[0.0,1,2,3,4,5], include_lowest=True).astype(str))["ISBN"].count()
+    ser = df.groupby(pd.cut(df["Rating"], bins=[0.0,1,2,3,4,5], include_lowest=True).astype(str))["Id"].count()
 
     fig, ax = subplots()
     ax.bar(ser.index, ser)
@@ -85,7 +85,7 @@ def analyseRating():
 def analyseDescriptionWords():
     df = pd.read_csv ('../datasets/books.csv', keep_default_na=False)
 
-    ser = df.groupby(pd.cut(df["Description"].apply(lambda x: len(x.split(' '))), bins=[0,100,200,300,float("inf")], include_lowest=True).astype(str))["ISBN"].count()
+    ser = df.groupby(pd.cut(df["Description"].apply(lambda x: len(x.split(' '))), bins=[0,100,200,300,float("inf")], include_lowest=True).astype(str))["Id"].count()
     fig, ax = subplots()
     ax.bar(ser.index, ser)
 
@@ -132,36 +132,64 @@ def analyseReviewsWords():
     
     show()
 
-# def analyseReviewsCommonWords():
-#     # Reads 'Youtube04-Eminem.csv' file
-#     df = pd.read_csv('../datasets/reviews.csv')
-    
-#     comment_words = ''
-#     # iterate through the csv file
-#     for val in df.Review:
-        
-#         # typecaste each val to string
-#         val = str(val)
-    
-#         # split the value
-#         tokens = val.split()
-        
-#         # Converts each token into lowercase
-#         for i in range(len(tokens)):
-#             tokens[i] = tokens[i].lower()
-        
-#         comment_words += " ".join(tokens)+" "
-    
-#     wordcloud = WordCloud(width = 800, height = 800,
-#                     background_color ='white',
-#                     min_font_size = 10).generate(comment_words)
-    
-#     # plot the WordCloud image                      
-#     figure(figsize = (8, 8), facecolor = None)
-#     imshow(wordcloud)
-#     axis("off")
-#     tight_layout(pad = 0)
-    
-#     show()
+def analyseAuthors():
+    df = pd.read_csv ('../datasets/authors.csv')
 
-analyseNumberReviews()
+    ser = df.groupby(df["Author"])["Id"].count()
+
+    rcParams["font.weight"] = "bold"
+    rcParams["axes.labelweight"] = "bold"  
+
+    fig = figure()
+
+    ### Combine categories
+    ser = ser.sort_values(ascending=False)
+    ser = ser.iloc[:24]
+    print(ser)
+
+    fig, ax = subplots()
+
+    ax.bar(ser.index, ser)
+
+    xticks(rotation='vertical')
+
+    ax.set_ylabel('Books')
+    ax.set_xlabel('Author')
+
+    for i, v in enumerate(ser):
+        text(i, v, str(v), ha='center')
+    show()
+
+def analyseReviewsCommonWords():
+    # Reads 'Youtube04-Eminem.csv' file
+    df = pd.read_csv('../datasets/books.csv')
+    
+    comment_words = ''
+    # iterate through the csv file
+    for val in df.Description:
+        
+        # typecaste each val to string
+        val = str(val)
+    
+        # split the value
+        tokens = val.split()
+        
+        # Converts each token into lowercase
+        for i in range(len(tokens)):
+            tokens[i] = tokens[i].lower()
+        
+        comment_words += " ".join(tokens)+" "
+    
+    wordcloud = WordCloud(width = 800, height = 800,
+                    background_color ='white',
+                    min_font_size = 10).generate(comment_words)
+    
+    # plot the WordCloud image                  
+    figure(figsize = (8, 8), facecolor = None)
+    imshow(wordcloud)
+    axis("off")
+    tight_layout(pad = 0)
+    
+    show()
+
+analyseAuthors()
