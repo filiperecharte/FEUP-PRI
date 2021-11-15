@@ -137,9 +137,6 @@ def analyseAuthors():
 
     ser = df.groupby(df["Author"])["Id"].count()
 
-    rcParams["font.weight"] = "bold"
-    rcParams["axes.labelweight"] = "bold"  
-
     fig = figure()
 
     ### Combine categories
