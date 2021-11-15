@@ -2,8 +2,6 @@ from tempfile import NamedTemporaryFile
 import shutil
 import pandas as pd
 import csv
-import re
-import html
 
 filename = "../datasets/book900k-1000k.csv"
 filename_to_remove = "../datasets/reviews900k-1000k.csv"
@@ -26,7 +24,6 @@ writer.writerow(header)
 for row in reader:
     if int(row[0]) not in df.Id.to_list():
         print(row[0])
-        del row
         continue
     
     writer.writerow(row)

@@ -16,7 +16,7 @@ CLEANR = re.compile('<.*?>')
 
 queue = Queue()
 
-f = open("languages900k-1000k.csv", "w")
+f = None
 
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
@@ -28,7 +28,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 def consume():
-    f.write('Id, Language' + '\n')
+    global f
     while True:
         if not queue.empty():
             bookId, rows = queue.get()
@@ -57,7 +57,13 @@ def parseGenres(bookId, data):
             genres_final.append(gg[0])
     if not genres_final:
         return bookId, []
-    return bookId, [str(bookId) + ',' + '\"' + ','.join(genres_final) + '\"' + '\n']
+
+    csv_genres = []
+
+    for genre in genres_final:
+        csv_genres.append(str(bookId) + ',' + genre + '\n')
+
+    return bookId, csv_genres
 
 
 def parseReviews(bookId, data):
@@ -77,7 +83,6 @@ def parseReviews(bookId, data):
 
 
 def fetch(session, bookId):
-    #if bookId > 763255: #remove comment if script breaks for some reason -> continue on specified id
 
     base_url = 'https://www.goodreads.com/book/show/'
 
@@ -86,11 +91,14 @@ def fetch(session, bookId):
         if response.status_code != 200:
             print("FAILURE::" + base_url + str(bookId))
 
-        #select genres or reviews - comment/uncomment
-
-        #queue.put(parseReviews(bookId,data))
-        #queue.put(parseGenres(bookId,data))
-        queue.put(parseLanguages(bookId,data))
+        if sys.argv[1] == 'genre':
+            queue.put(parseGenres(bookId,data))
+        elif sys.argv[1] == 'review':
+            queue.put(parseReviews(bookId,data))
+        elif sys.argv[1] == 'language':
+            queue.put(parseLanguages(bookId,data))
+        else:
+            return
 
         elapsed = default_timer() - START_TIME
         time_completed_at = "{:5.2f}s".format(elapsed)
@@ -134,11 +142,21 @@ consumer = Thread(target=consume)
 consumer.setDaemon(True)
 consumer.start()
 
-def main(): 
+def main():
+    global f
+    f = open(sys.argv[1] + '.csv', "w")
+    f.write('Id,' + sys.argv[1] + '\n')
+
+    if sys.argv[1] != 'genre' and sys.argv[1] != 'review' and sys.argv[1] != 'language':
+        print("invalid args")
+        return
+
     col_list = ["Id"]
 
     #input file to get ids
-    bookIds_to_fetch = pd.read_csv("../datasets/genres900k-1000k.csv", index_col=0, usecols=col_list)
+    bookIds_to_fetch = pd.read_csv("books1.csv", index_col=0, usecols=col_list)
+
+    print("Press CTRL-C when scrapping is finished")
     
     loop = asyncio.get_event_loop()
     future = asyncio.ensure_future(get_data_asynchronous(bookIds_to_fetch))
