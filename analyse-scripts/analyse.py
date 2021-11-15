@@ -112,8 +112,8 @@ def analyseNumberReviews():
     ax.set_ylabel('Books')
     ax.set_xlabel('Reviews')
 
-    for i, v in enumerate(ser):
-        text(i + 1, v, str(v), ha='center')
+    # for i, v in enumerate(ser):
+    #     text(i + 1, v, str(v), ha='center')
     
     show()
 
@@ -189,4 +189,4 @@ def analyseReviewsCommonWords():
     
     show()
 
-analyseAuthors()
+analyseLanguages()
