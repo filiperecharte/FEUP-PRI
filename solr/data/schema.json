@@ -1,0 +1,176 @@
+{
+	"add-field-type": [
+        {
+            "name":"title",
+            "class":"solr.TextField",
+            "analyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.EdgeNGramTokenizerFactory", "minGramSize":"2", "maxGramSize":"5"},
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            }
+        },
+
+        {
+            "name":"text",
+            "class":"solr.TextField",
+            "analyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.StopFilterFactory", "words":"stopwords.txt", "ignoreCase":"true"},    
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            }
+        },
+
+        {
+            "name":"separate_commas_only",
+            "class":"solr.TextField",
+            "analyzer":{
+                "tokenizer":{
+                    "class":"solr.PatternTokenizerFactory",
+                    "pattern":","
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            }
+        }
+    ],
+
+    "add-field": [
+        {
+            "name": "name",
+            "type": "title",
+            "indexed": true,
+            "stored": true
+        },
+
+        {
+            "name": "ISBN",
+            "type": "string",
+            "indexed": false,
+            "stored": false
+        },
+
+        {
+            "name": "rating",
+            "type": "pfloat",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "publishYear",
+            "type": "pint",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "publishMonth",
+            "type": "pint",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "publishDay",
+            "type": "pint",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "publisher",
+            "type": "title",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "countsOfReviews",
+            "type": "pint",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "pagesNumber",
+            "type": "pint",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "description",
+            "type": "text",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "author",
+            "type": "text",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "language",
+            "type": "title",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "domainType",
+            "type": "string",
+            "indexed": true,
+            "stored": false
+
+        },
+
+        {
+            "name": "review",
+            "type": "text",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "genre",
+            "type": "separate_commas_only",
+            "indexed": true,
+            "stored": true
+
+        },
+
+        {
+            "name": "domainId",
+            "type": "string",
+            "indexed": true,
+            "stored": true
+
+        }
+    ]
+}
