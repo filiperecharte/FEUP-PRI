@@ -1,0 +1,1226 @@
+{
+    "responseHeader":{
+      "status":0,
+      "QTime":3,
+      "params":{
+        "q":"{!parent which='-_nest_path_:* genres:\"Fantasy\" '}",
+        "indent":"true",
+        "fl":"*, [child]",
+        "q.op":"AND",
+        "fq":"rating: [4.3 TO *]",
+        "sort":"rating DESC",
+        "rows":"30"}},
+    "response":{"numFound":415,"start":0,"numFoundExact":true,"docs":[
+        {
+          "id":"857934",
+          "name":"The Rising Dark",
+          "rating":4.81,
+          "publishYear":2002,
+          "publishMonth":31,
+          "publishDay":10,
+          "publisher":"Solidus",
+          "countsOfReviews":1,
+          "pagesNumber":650,
+          "description":"For many years, the Seven Realms has been a peaceful land under one High King. A place untroubled by sorcery, in which the farmers of Heseldorn tend their fields, the warriors of Thaeonasta guard the pass to the Northern wastes, and the fellstalkers of Pendren continue their solitary wanderings on the wild fells. But it is also a land in which men touch iron ere they speak of elves, and the age-old alliance between the dwarves of the Grey Mountains and the men of Morieth has foundered in enmity and mistrust. Now King Praeledin is lost, a usurper sits on the throne of Arumet, and savage kralg overwhelm the land, murdering all in their path. If the Seven Realms is to be saved, a small company must battle dark magic, bloodthirsty pursuers, and their own age-old prejudices to find their lost King. This is a story of loyalty, friendship, sacrifice and love, for adult readers who enjoy Heroic Fantasy. The Rising Dark is the first book of The Charndras trilogy.",
+          "author":"Elorin Leighton Grey",
+          "language":"English",
+          "genres":["Fantasy"],
+          "ISBN":"0954337700",
+          "domainType":"book",
+          "_version_":1718686233673072641,
+          "reviews":
+          {
+            "id":"857934-r0",
+            "review":"All in all, this book is enjoyable. The pace is a little slow at first. The scenery description is mostly rich and beautiful but lengthy at times, making it too easy to skip a few pages if you're not a patient reader. But it got better along the way and got me hooked all the same. While the plot is well constructed and the mysteries are steadily built up, the characters are what has drawn me in. They're an allegiance of fascinating individuals: men, elves, dwarves and half-man-half-elf. They are flawed by all means, but at the same time, full of compassion and chivalry. Based on their different origins, their initial interaction often consists of conflicts but the tension is quickly dissolved and transformed through companionship. The dialogues, for the most part, are witty and fluid, if not information-driven sometimes. There are only a handful of battle scenes but they're all swift and engaging. Although I wish for more action, this doesn't affect the story in any major way.The book contains homosexual romance which is mostly hinted or disguised as friendship. I myself rather enjoy the subtlety since, for once, it makes the feeling more genuine and endearing without the characters being irritably needy or cheesy (which unfortunately happens a lot in gay fiction). Besides, it is safe to say they're all PG-13 materials. Nothing graphic or explicit.While the protagonists are strong and well-drawn, the antagonists seem less appealing, except for one of the villains, who turns out to be mostly misunderstood and misguided. The rest of them feel lacking in term of depth and complexity. Then again, this is just the first installment of the trilogy; not all of the bad guys have made their entrance yet. We readers can always expect for more in the later books.On a side note, I regret reading this book late at night and ended up not having enough sleep by the morning. So, don't start this book too close to bed time.",
+            "domainType":"review",
+            "_version_":1718686233673072641}},
+        {
+          "id":"793163",
+          "name":"Windfall (WindLegend Prequel #0)",
+          "rating":4.74,
+          "publishYear":2004,
+          "publishMonth":8,
+          "publishDay":1,
+          "publisher":"Twilight Times Books (TN)",
+          "countsOfReviews":0,
+          "pagesNumber":317,
+          "description":"An Unholy Marriage: Prince Kaelan Hesar made the mistake of falling in love with a girl of whom his Jarl did not approve and was thrown into prison because of that love. His heart broken, his spirit crushed, he was sold in marriage to the highest bidder and forbidden to ever see his love again. Lady Gillian Cree, fleeing the unwanted attentions of a man she'd been ordered to marry, stumbles upon a derelect manor house in the midst of a snow storm and discovers true love never dies. A tale of unrequited love, undying devotion, and lovers searching for happiness in a world set against them.",
+          "author":"Charlotte Boyett-Compo",
+          "language":"English",
+          "genres":["Fantasy"],
+          "ISBN":"193120151X",
+          "domainType":"book",
+          "_version_":1718686219348475906},
+        {
+          "id":"862041",
+          "name":"Harry Potter Series Box Set (Harry Potter, #1-7)",
+          "rating":4.74,
+          "publishYear":2007,
+          "publishMonth":1,
+          "publishDay":10,
+          "publisher":"Arthur A. Levine Books",
+          "countsOfReviews":6522,
+          "pagesNumber":4100,
+          "description":"Over 4000 pages of Harry Potter and his world, including all 7 books.All seven eBooks in the multi-award winning, internationally bestselling Harry Potter series, available as one download with stunning cover art by Olly Moss. Enjoy the stories that have captured the imagination of millions worldwide.",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Childrens"],
+          "ISBN":"0545044251",
+          "domainType":"book",
+          "_version_":1718686234392395776},
+        {
+          "id":"988373",
+          "name":"Complete Harry Potter Boxed Set",
+          "rating":4.74,
+          "publishYear":2007,
+          "publishMonth":1,
+          "publishDay":10,
+          "publisher":"Bloomsbury Publishing",
+          "countsOfReviews":12,
+          "pagesNumber":3421,
+          "description":"A fabulous opportunity to own all seven Harry Potter titles - Harry Potter and the Philosopher's Stone, Harry Potter and the Chamber of Secrets, Harry Potter and the Prisoner of Azkaban, Harry Potter and the Goblet of Fire, Harry Potter and the Order of the Phoenix, Harry Potter and the Half-Blood Prince and Harry Potter and the Deathly Hallows- in a fantastic boxed set.",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Childrens"],
+          "ISBN":"0747593698",
+          "domainType":"book",
+          "_version_":1718686257801854976},
+        {
+          "id":"700059",
+          "name":"Harry Potter Boxed Set (Harry Potter, #1-6)",
+          "rating":4.73,
+          "publishYear":2005,
+          "publishMonth":3,
+          "publishDay":10,
+          "publisher":"Bloomsbury Publishing, PLC",
+          "countsOfReviews":1,
+          "pagesNumber":3000,
+          "description":" Follow Harry from his first days at Hogwarts School for Witchcraft and Wizardry, through his many adventures with Hermione and Ron, to his confrontations with rival Draco Malfoy and the dreaded Professor Snape. From the thrilling search for the Sorcerer's Stone to the Triwizard Tournament to the return of He-Who-Must-Not-Be-Named, each adventure is more riveting and exhilarating than its predecessor, and now all six books are available together for the first time in an elegant hardcover boxed set. ",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Fiction,Young Adult,Magic"],
+          "ISBN":"0747581533",
+          "domainType":"book",
+          "_version_":1718686196971864065,
+          "reviews":[
+            {
+              "id":"700059-r0",
+              "review":"Re-reading Harry Potter for the first time this christmas, and I´m so excited!        ",
+              "domainType":"review",
+              "_version_":1718686196971864065},
+            
+            {
+              "id":"700059-r1",
+              "review":"Absolutely loved this story and these characters. My favorite was Goblet of Fire. ",
+              "domainType":"review",
+              "_version_":1718686196971864065},
+            
+            {
+              "id":"700059-r2",
+              "review":"Check out my reviews on the main page of each individual book!",
+              "domainType":"review",
+              "_version_":1718686196971864065},
+            
+            {
+              "id":"700059-r3",
+              "review":"Great books-(and number 7!) I would only say that the plot is very similar to The Lord of the Rings( the ring has to be destroyed, so do the horcruxes ), as are some of the characters:Gimli ----> hagridDumbledore ----> gandalfAnyway, they are excellent books, very inspirational. A new world has been created!",
+              "domainType":"review",
+              "_version_":1718686196971864065},
+            
+            {
+              "id":"700059-r4",
+              "review":"How good is this book? SO good I've read the whole series about 7 times! :) I love J.K. Rowling.",
+              "domainType":"review",
+              "_version_":1718686196971864065},
+            
+            {
+              "id":"700059-r5",
+              "review":"Harry Potter is regarderd as one of the best and most influential pieces of fiction ever to be written. I have no choice but to agree. This series sparked my love for reading and fantasy, which I am every grateful for. A review of content and themes is completely unnecessary, as virtually the entire population of the United States of America is knowledgeable of that content. However, I will say one thing: if you do not read Harry Potter in your lifetime, then you have failed as a reader. I recommend this series to everyone.",
+              "domainType":"review",
+              "_version_":1718686196971864065},
+            
+            {
+              "id":"700059-r6",
+              "review":"The book is the bomb",
+              "domainType":"review",
+              "_version_":1718686196971864065}]},
+        {
+          "id":"911042",
+          "name":"The Lord of the Rings Boxed Set",
+          "rating":4.72,
+          "publishYear":2005,
+          "publishMonth":17,
+          "publishDay":10,
+          "publisher":"HarperCollins",
+          "countsOfReviews":1,
+          "pagesNumber":1472,
+          "description":"Four-volume boxed-set edition of The Lord of the Rings in hardback, featuring Tolkien's original unused dust-jacket designs, together with fourth hardback volume, The Lord of the Rings: A Reader's Companion. Includes special features and definitive edition of the text. Since it was first published in 1954, The Lord of the Rings has been a book people have treasured. Steeped in unrivalled magic and otherworldliness, its sweeping fantasy has touched the hearts of young and old alike. One hundred and fifty million copies of its many editions have been sold around the world, and occasional collectors' editions become prized and valuable items of publishing. Now, to celebrate the 50th anniversary of its first publication, the text has been fully restored with almost 400 corrections - with the full co-operation of Christopher Tolkien - making it the definitive version, and as close as possible to the version that J.R.R. Tolkien intended. Also included are the original red and black maps as fold-out sheets, a fully revised and enlarged index, and - for the first time - a special plate section containing the pages from the Book of Mazarbul. These 50th anniversary hardback editions feature Tolkien's original unused dust-jacket designs which date from the 1950s, which have been reworked to celebrate this special anniversary. They are collected here in a four-volume boxed set which also includes The Lord of the Rings: A Reader's Companion, a unique annotated guide to the text, which will enhance the reader's enjoyment and understanding of the book of the 20th century.",
+          "author":"J.R.R. Tolkien",
+          "language":"English",
+          "genres":["Fantasy,Fiction,Classics,Literature"],
+          "ISBN":"0007203578",
+          "domainType":"book",
+          "_version_":1718686244232232960,
+          "reviews":[
+            {
+              "id":"911042-r0",
+              "review":"True story (sad when you have lived your life such that you have to add that):When I was a child we did our yearly camping trip to the West Coast and Mootie always gave us an allowance for books/comics to read on the trip. It made traveling in the camper a little more bearable (barely). Roger and I had read in Parade magazine (Roger can correct me if I am wrong because it was a long time ago...the summer after fourth grade for me) that the hippie community was madly in love with Lord of the Rings. Well, I loved anything hippie at the time, probably because Lowell hated them so much. So Roger and I decided to buy the series but we couldnt find The Fellowship of the Ring. He started first with the Two Towers and I waited for him to finish. Luckily, we didnt have to wade through those first hundred pages of the Fellowship. I remember after I finished the appendix (I so love the appendix) of just weeping and then I had an epiphany. I realized I would never read anything I would love again, as much as I loved the Lord of the Rings. I have loved many books and reread some books many times but nothing has moved me as much as this series.When I had my pre-mission interview the Bishop, he asked me how many times I had read the Book Of Mormon. I replied 12 times and he was shocked. Then the Mormon guilt crept in and I mentioned that I had read Lord of the Rings 27 times. Yes, I use to keep track. I think I have finally reversed the order of which one I have read the most but it has been an herculean effort.Just awhile ago I was mentioning to Kirsten that I wish that Tolkien had done more with women in the series. She had an interesting insight. She said, Given what is happening to men in our society",
+              "domainType":"review",
+              "_version_":1718686244232232960},
+            
+            {
+              "id":"911042-r1",
+              "review":"After 15 years I thought it was time to re-read the Lord of the Rings. Reading, or rather studying, the Readers' Companion alongside the actual fiction, gives an extra dimension to this massive work. Words do not suffice!",
+              "domainType":"review",
+              "_version_":1718686244232232960},
+            
+            {
+              "id":"911042-r2",
+              "review":"Check out my reviews on the main page of each individual book!",
+              "domainType":"review",
+              "_version_":1718686244232232960},
+            
+            {
+              "id":"911042-r3",
+              "review":"Puoi trovare questa recensione anche sul mio blog, La siepe di moreÈ stato un lungo viaggio, ma anche a questa ennesima rilettura The Lord of the Rings ha saputo dirmi cose nuove: un po’ perché era la prima volta che lo leggevo in inglese e insieme a un’ottima guida come A Reader’s Companion; un po’ perché la me stessa di oggi ha accumulato esperienze che hanno gettato nuova luce su alcune parti.Non vi sto a raccontare la bellezza di leggere proprio questa edizione (ci avevo già scritto un post un annetto fa e direi che è sufficiente come delirio da fan), ma aggiungerò che è un’edizione che vale l’acquisto se Tolkien vi piace proprio tanto. In particolare, A Reader’s Companion è pieno di informazioni che se non siete dellз patitз della Terra di Mezzo potrebbero narcotizzarvi e lanciare maledizione a quella blogger che vi ha fatto venire voglia di comprarla. Ecco, se Il Signore degli Anelli vi piace, ma non così tanto, ci sono altre edizioni che fanno la loro bella figura (e costano anche meno).Per quanto mi riguarda, sono stata contenta di farmi accompagnare durante la lettura da A Reader’s Companion per almeno due motivi. Il primo riguarda la lingua: infatti, nonostante The Lord of the Rings non abbia un inglese proibitivo, Tolkien era anche un linguista e ci sono via, via dei termini desueti, o parole usate con un’accezione particolare. A Reader’s Companion segnala tutti questi termini, dandone spiegazione, senza quindi costringerti a scavare nelle voci dell’OED il significato giusto. Molto comodo.L’altro motivo di apprezzamento per A Reader’s Companion è stata la fonte di informazioni su una miriade di questioni che riguardano The Lord of the Rings, dalla sua genesi alla sua interpretazione, dai modi in cui alcune parti sono state accolte dallз lettorз (e le successive reazioni di Tolkien) ai suoi legami con le altre opere ambientate su Arda. Molte informazioni erano già in mio possesso, di altre invece non avevo idea ed è stato molto interessante venirne a conoscenza.Per il resto, leggere Il Signore degli Anelli in lingua originale mi ha dato modo di apprezzare le varie voci dei personaggi, che in traduzione sono andate irrimediabilmente perse nelle loro particolarità linguistiche (e non per colpa di chi ha tradotto, ma per la natura della lingua italiana, non iniziatemi a litigare qua sotto tra pro-Alliata e pro-Fatica, per favore). In particolare, sono rimasta colpita da Tom Bombadil, che in italiano suona piuttosto alieno, mentre in inglese lo si percepisce molto più radicato nella sua terra, sebbene nessunǝ sappia davvero chi sia. La lettura è stata accompagnata dalla colonna sonora della trilogia cinematografica di Peter Jackson e, occasionalmente, da del buon metal sinfonico. Giusto per calarmi meglio nell’atmosfera: consigliato, se ascoltate musica durante la lettura.",
+              "domainType":"review",
+              "_version_":1718686244232232960},
+            
+            {
+              "id":"911042-r4",
+              "review":"There is nothing I could say that could somehow add to the, fully deserved, reputation of this book. Read it and be amazed by its depth and reach; you will find yourself reading it again and again over the years just like I have.",
+              "domainType":"review",
+              "_version_":1718686244232232960},
+            
+            {
+              "id":"911042-r5",
+              "review":" Davis 1Ben DavisMs. Peyman 19 March 2015English-B\t\t\t\t\tThe Lord of The Rings J.R.R Tolkien's impressive 4 book series known as The Lord of The Rings, was the highlight of the decade back in the 1950’s. Millions of people have read the series since its publication 60 years ago. A New York Times Book Review proclaimed the series to be, An extraordinary work-pure excitement. The Lord of The Rings varies from 400 to 500 pages for each book. The Fellowship of The Ring",
+              "domainType":"review",
+              "_version_":1718686244232232960},
+            
+            {
+              "id":"911042-r6",
+              "review":"Like descriptive writing? Love descriptive writing? Then are you in for a treat! The story is interesting and the characters are well written. My only complaint is the microscopic detail that Tolkien goes into with things that I don't really care to know about. You can only describe a tree so much before you end up just perusing the page to find where the action picks back up. Overall though, a great epic fantasy. ",
+              "domainType":"review",
+              "_version_":1718686244232232960}]},
+        {
+          "id":"662284",
+          "name":"Book of the Three Dragons",
+          "rating":4.65,
+          "publishYear":2004,
+          "publishMonth":5,
+          "publishDay":10,
+          "publisher":"Cold Spring Press",
+          "countsOfReviews":2,
+          "pagesNumber":312,
+          "description":"Originally published in 1930, Kenneth Morris's superb Book of the Three Dragons is an imaginative reworking of elements from the Mabinogion and other Welsh Celtic stories, telling the story of Manawyddan, who is given the choice between immortality with the gods or preventing a new evil from destroying the Island of the Mighty. Manawyddan chooses the latter, and the novel tells of his adventures. Swiftly moving and dramatic, this is a book that lovers of modern fantasy and old hero tales alike cannot afford to miss. Perhaps most importantly for modern readers, for the first time Morris's unpublished ending - amounting to one-third of the book's length - is included in this new edition, telling what became of the hero, his wife, and their son.NOTE ON NEW SERIES: This is the first in our new line of fantasy fiction, which will feature both masterpieces no longer in print in the US as well as new works. The series will be edited by noted Tolkien scholar Douglas A. Anderson, whose previous books include The Annotated Hobbit (HM) and Tales Before Tolkien (Ballantine). Mr. Anderson will also write introductions to each book, providing context and background to enrich the reader's experience. The cover look and interior design will appeal to all demographics (especially younger fans under 30 who play computer fantasy games and love writers like Tolkien, Pratchett, and Pullman) with top artists creating a dazzling fantasy look.Quotes:\"It is a singularly fine example of the recreation of a work magnificent in its own right (the 'Mabinogion') -- a literary event rather rare except in fantasy\" - Ursula Le Guin\"Kenneth Morris was an important, innovative fantasist, worthy to rank with MacDonald, Eddison, and Tolkien.\" - Ursula Le Guin\"Morris writes with all Lord Dunsany's richness, though his cadences are Celtic rather than biblical. This one should be read aloud.\" - review in the Feb. 2004 issue of Fantasy & Science Fiction magazine\"Book of the Three Dragons is perhaps the single best fantasy adaptation from a real-worldup0mythology (in this case, the Welsh Mabinogion), and the best of his tales¿\" - John Rateliff, review in the Sept. 2003 issue of Wizards of the Coast website (www.wizards.com), the #1 adventure gaming company in the world.",
+          "author":"Kenneth Vennor Morris",
+          "language":"English",
+          "genres":["Fantasy,Dragons"],
+          "ISBN":"1593600275",
+          "domainType":"book",
+          "_version_":1718686179743760384,
+          "reviews":[
+            {
+              "id":"662284-r0",
+              "review":"This is Kenneth Morris's masterpiece. THe musicality of his writing exemplifies Ursula K. LeGuin's assessment, linking him in her 1973 essay From Elfland to Poughkeepsie",
+              "domainType":"review",
+              "_version_":1718686179743760384},
+            
+            {
+              "id":"662284-r1",
+              "review":"Retelling of the Mabinogion. Interesting to read it with all the baggage I bring from familiarity with other versions (mostly notably Charlotte Guest's, Lloyd Alexander's, and Evelyn Walton's). Though I suspect the frequent repetition was intended to evoke the source material, I sometimes found it to be a bit of chore. ",
+              "domainType":"review",
+              "_version_":1718686179743760384},
+            
+            {
+              "id":"662284-r2",
+              "review":"My sweetie read this aloud to me, fortunately he's well practiced at reciting Welsh out loud. I feel very accomplished now, since this book is considered a must read by quite a few fantasy authors. In fact one can easily correlate these adventures into themes expounded on by more contemporary writers. It's a challenge even to listen to because of the names",
+              "domainType":"review",
+              "_version_":1718686179743760384}]},
+        {
+          "id":"818056",
+          "name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+          "rating":4.62,
+          "publishYear":2007,
+          "publishMonth":21,
+          "publishDay":7,
+          "publisher":"Bloomsbury Publishing Plc/Raincoast Books",
+          "countsOfReviews":952,
+          "pagesNumber":607,
+          "description":"Harry is waiting in Privet Drive. The Order of the Phoenix is coming to escort him safely away without Voldemort and his supporters knowing - if they can. But what will Harry do then? How can he fulfill the momentous and seemingly impossible task that Professor Dumbledore has left him?",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"1551929767",
+          "domainType":"book",
+          "_version_":1718686223523905536,
+          "reviews":[
+            {
+              "id":"818056-r0",
+              "review":"Ok, before I start a few warnings. This will contain spoilers (though since I'm writing this a year after the release I don't think it's too much of a tragedy), it will be long and it will be negative because I really didn't like this book.Reading books one to five I was very impressed with the storytelling from a novice novellist. There was magic, there were characters you could love, and sure there were some cliche'd storylines, but they were interspersed with really interesting sidestories (Peeves, SPEW, Weasley's Wizard Wheezes). I was enthralled as a teenager and I am enthralled now as an adult when I re-read them.But I have to say the the quality dropped markedly in books six and seven. The ramblings (that started out cute in GoF and OotP) have become pronounced and boring. The characters have lost much of what made them endearing, and the plot has gone to hell.Focusing on Deathly Hallows, I had a very strong feeling that six months before her deadline, JKR went on to the internet, discovered that everyone had guessed her 'twists' (honestly, who didn't know that Harry was an accidental Horcrux, RAB was Sirius's brother, the diadem was at Hogwarts, the locket was at Grimmauld Place, Dumbledore ordered Snape to kill him, Snape was in love with Lily and Ron would be a it and abandon Harry and Hermione?), and felt the need to come up with a new plot device. This would explain the incredible stupidity that is the deathly hallows and the plot holes and gaps in logic that involve them.Now, it has been a while since I read it so some of my names and such might be wrong, and if it does answer the questions in the book in such a round about way I apologise, but the Elder Wand does not make sense. I'm willing to accept that it follows it's own set of rules separate from those of other wands (where Haary can use Hermione's wand almost as well as his own and all of the disarming they did in book five didn't make their wands all change ownerships) but the course of events whereby Harry became the owner of the wand are just plain silly. If Grindelwald simply stole the wand from Gregorovich (sp?), how did that make him the wands owner? If the wand is unbeatable, how did Dumbledore defeat Grindelwald (I know Rita Skeeter theorised that Grindelwald surrended, but how does that pass the wand's ownership to Dumbledore. Surrender is not the same as defeat). And if the wand is unbeatable, why was Dumbledore unable to defeat Voldemort when they dueled on OotP? And also, is Harry really so conceited and stupid to think that no one would ever defeat or disarm him, making them the owner of the wand? Shouldn't he have broken it? If he does become an auror in later life someone is bound to disarm him eventually, and if they knew about the wand, they could easily steal it back from Dumbledore's tomb.The other major thing that ticked me off was the characterisation. Hermione, Harry and Ron have always been some of my favourite characters, but here they are acting completely different from previous books. Harry using Unforgivable curses without a hint of remorse, and not comforting Hermione when Ron takes off, instead staring at a 'Ginny-dot'. Can we say creepy and stalkerish? And Hermione, who for the most part was still loyal and brave and smart (loved the bottomless bag bit, and her being there for Harry at Godric's Hollow), was so pathetic when it came to Ron. I know love makes people do the wacky, but crying for days on end when they're supposed to be searching for Horcruxes, kissing him in the middle of the war because he finally showed a tiny inkling of care towards the house-elves. And Ron. Gah! I mean, I love Ron, but you would have thought he could have grown up a little, just a smidgen. But no, running away because of the locket (one ring to rule them all...). Those who defend him saying it affected him more than Harry or Hermione because he had more insecurities is just dumb. Harry and Hermione had just as much to be insecure about. Harry, with his saving-people-thing, could easily have gone nuts with the locket around his neck and ran away from the others because he was terrified that they'd get killed. And Hermione has always been insecure, about being Muggle-born, about proving herself, about Ron and Harry and their friendships. Sure, he wanted to come back the moment he left, but he still left. Which I could accept were it not for such a stupid reason. And then he got his 'super-moment' which was so lame. Honestly, 'Ron can remember and copy paseltongue', uhuh. Wouldn't it have made much more sense to say, have Ginny come along, who could possibly still say the word from when she opened it under Tom's control in CoS. And then Ron mentioned the house-elves, to make himself 'worthy' (JKR's words, not mine) of Hermione. For one thing, why does he need to make himself 'worthy' since she already loved him for all his insensitivity and insecurity, and why did that 'worthiness' have to be something that Harry already had in abounds?Yes, I am a H/Hr shipper, but that is by no means the reason I hated this book (as you can see from above). If H/Hr had been handled as badly as R/Hr or H/G, I would have hated it. But the fact remains that the most romantic scenes in this book were between Harry and Hermione. At Grimmauld Place when Harry showed Hermione the picture, at the wedding where Hermione beamed at Harry, at Godric's Hollow where they strolled arm in arm under the kissing gate in the snow. While in canon, Harry married Ginny and Ron married Hermione, that will never convince me that they are the better couples. Harry and Hermione had the friendship, the trust, the alchemy. They were the most developed relationship in the series, and the fact that they didn't end up together in the book doesn't change that.The final things I feel like picking on - the epilogue came across as being written by a teenage fangirl. No depth, no meaning, just stupid-named kids. I get that JKR wanted Harry to end the book with the normal family life he never had, it could have been handled so much better. And seriously, Albus Severus? That poor kid must have been teased horribly. And why Severus? Sure, he turned out to be not evil, but for Harry to chance his mind about the man after seven years of abuse and ill treatment just because he was scamming on Lily. It's just gross. And unrealistic. I was so hoping there was more to Snape's story than twenty years of unrequited love. Gah. It may have been a sweet way for him to become not evil, but Lily was very, very dead for a very long time, and no one holds on that hard to love. If caring for her wasn't enough for him to stray away from the dark arts while she was alive, why was it enough when she was dead?Also, the invisibility cloak was supposed to be infallible, and yet Moody saw through it in OotP and Dementor's could see through it in PoA, supposedly. And, my god did the death scene's suck in this book. Yes, its a war so plenty of people, including main characters were going to die, but when I felt worse about Dobby than I did about Remus (who is one of my favourite characters) you just know that the author hasn't put enough emotion into it. He was the last of the Marauders, for god's sake, he deserved an on-page death at the very least. Maybe defending Harry or Tonks. Something!Well, there ends the rant. There were a few good points in the novel (like Godric's Hollow, before the stupidity of Harry not realising that Bathilda was Nagini, and the awesomeness of Neville) but they were few and far between and do not at all make up for the rest of the drivel.Read it because it is the conclusion to a series that took seventeen years to write, but do not expect the fireworks that such a finale could have been. There's better fanfics out there.",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r1",
+              "review":"“I’m going to keep going until I succeed — or die. Don’t think I don’t know how this might end. I’ve known it for years.” — Harry PotterMost seventeen-year olds don’t view the possibility of an early death as being, well, possible. But then again, most seventeen-year olds haven’t come face-to-face with death almost half a dozen times before their first kiss either.In Harry Potter and the Deathly Hallows, the seventh and final installment of the ridiculously popular Harry Potter series, J.K. Rowling brilliantly ties up every loose end that she has planted over the last ten years since the very first outing of the series was published in 1997. Truly, Rowling has learned exactly what her fans want and subsequently delivers a book that answers every Potterhead’s questions — and then some. Not only does Deathly Hallows revisit key places and characters from all of the previous six books, but Rowling even manages to make clever references to previous bits of dialogue from her earlier books. Case in point: near the end of the first Potter book, after Hermione fails to see the magical solution to saving the trio from a nasty patch of Devil’s Snare, Harry’s best mate Ron bellows “HAVE YOU GONE MAD? ARE YOU A WITCH OR NOT?” Now, six years later, Hermione finally gets her revenge on her red-headed friend when Ron believes that all is lost until Hermione yells to him “Are you a wizard, or what?” thus reminding Ron to use his wand to solve their problem. Subtle references such as this are a large part of what makes Rowling’s books so enjoyable to re-read as there are always deeper meanings and additional allusions that are often only discovered via multiple read-throughs.Harry’s bold statement regarding his own potential death is also a prime example of how much Rowling truly wrote Harry’s last tale for her long-time fans. This line seems to read as a secret “shout-out” to the Potterites who have also known for years that the series might not end happily ever after. The prophecy in the fifth book revealed that “neither shall live while the other survives”, and therefore by the end of book seven either Harry or Voldemort had to die. Rowling cleverly fills her last installment with so many twists, turns and complications, however, that it becomes practically impossible to determine which way this book is going to end. More than any of the other Potter books, Deathly Hallows is a true quest narrative, with the trio spending the majority of the story hunting for horcruxes and hallows whilst evading capture by Voldemort’s Death Eaters. The multiple close-calls that all three main characters find themselves in throughout the book add to the tension that continues to build until the predictably bloody battle at the end of the tale. The book does, after all, chronicle a brutal war, so be prepared for a lot of killing and, consequently, a lot of tears. This is not to say that Deathly Hallows doesn’t offer up a great deal of laughs as well. The hilarious twins Fred and George Weasley make several appearances to ensure that the book isn’t all doom and gloom. By far, the funniest part of the story is the secret radio show Potterwatch, anonymously hosted by former Hogwarts Quidditch commentator Lee Jordan with special appearances from Fred, George, and ex-Defence Against the Dark Arts professor Remus Lupin. Rowling perfectly mixes this blend of humour, tragedy and adventure so that her epic-length novel never lags or drags.To write a 607 page book that millions of die-hard fans around the world are able to devour in less than 24 hours is no mean feat, but Rowling’s farewell to the Boy Who Lived is an incredibly gripping page-turner that will leave all Potter lovers immensely satisfied.",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r2",
+              "review":"It's hard for me to believe that I finished the Harry Potter series... I wish this series would go on forever!I don't know how I've gone through my life without these books. I regret not reading it when I was younger, but I am so happy that I finally did, better late than never, right?The world built in these books is so real and tangible, it is truly a masterpiece. The characters are engaging and brilliant, and I love how the plot is so interwoven and twisted within itself, especially in this last book.I was taken by surprise when I started the series, I didn't think it would pull me in as it did. As I kept reading through the books, the characters slyly stole my heart. Now, having finished the last line, I am flooded with emotion. This series is more than a story or words on a page, it is magic.",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r3",
+              "review":"(A) 86% | ExtraordinaryNotes: It ends too expository and convenient, but the story's compelling, and its new settings are a nice break from formula.",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r4",
+              "review":"(A) 86% | ExtraordinaryNotes: A bittersweet bewitchment: all stumble-back and rally, the touchy truth of bitter youth, and fevered feelings to finale.",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r5",
+              "review":"OI! There's a war going on here!Merlin's Pants!The six-year build-up is over. The final adventure",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r6",
+              "review":"“Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it. Use your words wisely and support trans lives.”- Definitely not JKRI love Harry Potter as much as anyone, which is why I urge everyone who spends money on these books to also support the trans community.To say it with the author's words: “If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals.” Well.Here’s a list of organisations that support trans lives (feel free to reach out and recommend more). Every penny counts:Mermaids UKThe Trevor ProjectBlack Visions Collective because Black trans lives matter.Find more of my books on Instagram",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r7",
+              "review":"Sigh... I just can't ",
+              "domainType":"review",
+              "_version_":1718686223523905536},
+            
+            {
+              "id":"818056-r8",
+              "review":"This is just a pithy review on the Harry Potter series as a whole. It is not an in-depth analysis of the work in general, nor is it a review on any one particular installment.Harry Potter is a work of art. I got made fun of once¹ when I was out to dinner with some friends, because while we were discussing these books I made the mistake of referring to them as “literature.” I felt like I had to defend that assertion because, although the definition of literature is pretty broad, it seems like it should really only apply to works with some definable qualitative value or literary merit. In this case, my friends were wrong—Rowling explores themes and concepts in this series that I think are valuable to children and young adults who look to her characters for qualities they seek to emulate, and I believe her works will have lasting impact on this and future generations.I’ve heard it said before that everything you need to know you’ve learned in kindergarten. Well, that might be somewhat of an oversimplification, but I do think children or young adults who grow into this series, seeing Harry and his friends mature as they themselves mature, can glean some pretty important life lessons from it. They are impressionable human beings who are learning about themselves and are starting to make the choices that reflect the kinds of people they want to be.So what does Harry Potter teach them? Well, here is a bullet list of what it has taught me. And if you’re good, I’ll think about turning this into a PowerPoint presentation. Or maybe not.• The quality of your character is not a reflection of where you come from or who your parents are; rather, it is a reflection of the choices you make, so make them wisely.• The way you treat other people, especially those less fortunate than you, reveals your true colors more quickly and more completely than almost anything else you do.• It is a good thing to have dreams and ambitions, but that alone is not enough. You cannot expect success without effort.• It is far less important what your abilities are than what you actually do with them. Your abilities alone do not define you.• Nobody likes to fail, but to refuse an attempt at success on the grounds that you’re afraid to fail is failure in itself.Growing up is about figuring out who you are and coming to terms with your strengths and weaknesses, and it is about deciding how to utilize the strengths and mitigate the weaknesses in order to become a better person. It’s a lifelong struggle, but it starts early, and I think Harry Potter offers the tools to help achieve that. It can help young people find their way, and maybe that’s an oversimplification for a seven-volume series of novels, but that’s what I got out of it, and that’s why I will recommend this to my kids as they start to become ready for some life lessons of their own.¹This is misleading; I’ve been made fun of countless, countless times.",
+              "domainType":"review",
+              "_version_":1718686223523905536}]},
+        {
+          "id":"912224",
+          "name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+          "rating":4.62,
+          "publishYear":2007,
+          "publishMonth":1,
+          "publishDay":8,
+          "publisher":"Arthur A. Levine Books",
+          "countsOfReviews":91,
+          "pagesNumber":759,
+          "description":"Readers beware. The brilliant, breathtaking conclusion to J.K. Rowling's spellbinding series is not for the faint of heart--such revelations, battles, and betrayals await in Harry Potter and the Deathly Hallows that no fan will make it to the end unscathed. Luckily, Rowling has prepped loyal readers for the end of her series by doling out increasingly dark and dangerous tales of magic and mystery, shot through with lessons about honor and contempt, love and loss, and right and wrong. Fear not, you will find no spoilers in our review--to tell the plot would ruin the journey, and Harry Potter and the Deathly Hallows is an odyssey the likes of which Rowling's fans have not yet seen, and are not likely to forget. But we would be remiss if we did not offer one small suggestion before you embark on your final adventure with Harry--bring plenty of tissues.The heart of Book 7 is a hero's mission--not just in Harry's quest for the Horcruxes, but in his journey from boy to man--and Harry faces more danger than that found in all six books combined, from the direct threat of the Death Eaters and you-know-who, to the subtle perils of losing faith in himself. Attentive readers would do well to remember Dumbledore's warning about making the choice between \"what is right and what is easy,\" and know that Rowling applies the same difficult principle to the conclusion of her series. While fans will find the answers to hotly speculated questions about Dumbledore, Snape, and you-know-who, it is a testament to Rowling's skill as a storyteller that even the most astute and careful reader will be taken by surprise.A spectacular finish to a phenomenal series, Harry Potter and the Deathly Hallows is a bittersweet read for fans. The journey is hard, filled with events both tragic and triumphant, the battlefield littered with the bodies of the dearest and despised, but the final chapter is as brilliant and blinding as a phoenix's flame, and fans and skeptics alike will emerge from the confines of the story with full but heavy hearts, giddy and grateful for the experience. --Daphne Durham ",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"0545029368",
+          "domainType":"book",
+          "_version_":1718686244416782337,
+          "reviews":[
+            {
+              "id":"912224-r0",
+              "review":"Ok, before I start a few warnings. This will contain spoilers (though since I'm writing this a year after the release I don't think it's too much of a tragedy), it will be long and it will be negative because I really didn't like this book.Reading books one to five I was very impressed with the storytelling from a novice novellist. There was magic, there were characters you could love, and sure there were some cliche'd storylines, but they were interspersed with really interesting sidestories (Peeves, SPEW, Weasley's Wizard Wheezes). I was enthralled as a teenager and I am enthralled now as an adult when I re-read them.But I have to say the the quality dropped markedly in books six and seven. The ramblings (that started out cute in GoF and OotP) have become pronounced and boring. The characters have lost much of what made them endearing, and the plot has gone to hell.Focusing on Deathly Hallows, I had a very strong feeling that six months before her deadline, JKR went on to the internet, discovered that everyone had guessed her 'twists' (honestly, who didn't know that Harry was an accidental Horcrux, RAB was Sirius's brother, the diadem was at Hogwarts, the locket was at Grimmauld Place, Dumbledore ordered Snape to kill him, Snape was in love with Lily and Ron would be a it and abandon Harry and Hermione?), and felt the need to come up with a new plot device. This would explain the incredible stupidity that is the deathly hallows and the plot holes and gaps in logic that involve them.Now, it has been a while since I read it so some of my names and such might be wrong, and if it does answer the questions in the book in such a round about way I apologise, but the Elder Wand does not make sense. I'm willing to accept that it follows it's own set of rules separate from those of other wands (where Haary can use Hermione's wand almost as well as his own and all of the disarming they did in book five didn't make their wands all change ownerships) but the course of events whereby Harry became the owner of the wand are just plain silly. If Grindelwald simply stole the wand from Gregorovich (sp?), how did that make him the wands owner? If the wand is unbeatable, how did Dumbledore defeat Grindelwald (I know Rita Skeeter theorised that Grindelwald surrended, but how does that pass the wand's ownership to Dumbledore. Surrender is not the same as defeat). And if the wand is unbeatable, why was Dumbledore unable to defeat Voldemort when they dueled on OotP? And also, is Harry really so conceited and stupid to think that no one would ever defeat or disarm him, making them the owner of the wand? Shouldn't he have broken it? If he does become an auror in later life someone is bound to disarm him eventually, and if they knew about the wand, they could easily steal it back from Dumbledore's tomb.The other major thing that ticked me off was the characterisation. Hermione, Harry and Ron have always been some of my favourite characters, but here they are acting completely different from previous books. Harry using Unforgivable curses without a hint of remorse, and not comforting Hermione when Ron takes off, instead staring at a 'Ginny-dot'. Can we say creepy and stalkerish? And Hermione, who for the most part was still loyal and brave and smart (loved the bottomless bag bit, and her being there for Harry at Godric's Hollow), was so pathetic when it came to Ron. I know love makes people do the wacky, but crying for days on end when they're supposed to be searching for Horcruxes, kissing him in the middle of the war because he finally showed a tiny inkling of care towards the house-elves. And Ron. Gah! I mean, I love Ron, but you would have thought he could have grown up a little, just a smidgen. But no, running away because of the locket (one ring to rule them all...). Those who defend him saying it affected him more than Harry or Hermione because he had more insecurities is just dumb. Harry and Hermione had just as much to be insecure about. Harry, with his saving-people-thing, could easily have gone nuts with the locket around his neck and ran away from the others because he was terrified that they'd get killed. And Hermione has always been insecure, about being Muggle-born, about proving herself, about Ron and Harry and their friendships. Sure, he wanted to come back the moment he left, but he still left. Which I could accept were it not for such a stupid reason. And then he got his 'super-moment' which was so lame. Honestly, 'Ron can remember and copy paseltongue', uhuh. Wouldn't it have made much more sense to say, have Ginny come along, who could possibly still say the word from when she opened it under Tom's control in CoS. And then Ron mentioned the house-elves, to make himself 'worthy' (JKR's words, not mine) of Hermione. For one thing, why does he need to make himself 'worthy' since she already loved him for all his insensitivity and insecurity, and why did that 'worthiness' have to be something that Harry already had in abounds?Yes, I am a H/Hr shipper, but that is by no means the reason I hated this book (as you can see from above). If H/Hr had been handled as badly as R/Hr or H/G, I would have hated it. But the fact remains that the most romantic scenes in this book were between Harry and Hermione. At Grimmauld Place when Harry showed Hermione the picture, at the wedding where Hermione beamed at Harry, at Godric's Hollow where they strolled arm in arm under the kissing gate in the snow. While in canon, Harry married Ginny and Ron married Hermione, that will never convince me that they are the better couples. Harry and Hermione had the friendship, the trust, the alchemy. They were the most developed relationship in the series, and the fact that they didn't end up together in the book doesn't change that.The final things I feel like picking on - the epilogue came across as being written by a teenage fangirl. No depth, no meaning, just stupid-named kids. I get that JKR wanted Harry to end the book with the normal family life he never had, it could have been handled so much better. And seriously, Albus Severus? That poor kid must have been teased horribly. And why Severus? Sure, he turned out to be not evil, but for Harry to chance his mind about the man after seven years of abuse and ill treatment just because he was scamming on Lily. It's just gross. And unrealistic. I was so hoping there was more to Snape's story than twenty years of unrequited love. Gah. It may have been a sweet way for him to become not evil, but Lily was very, very dead for a very long time, and no one holds on that hard to love. If caring for her wasn't enough for him to stray away from the dark arts while she was alive, why was it enough when she was dead?Also, the invisibility cloak was supposed to be infallible, and yet Moody saw through it in OotP and Dementor's could see through it in PoA, supposedly. And, my god did the death scene's suck in this book. Yes, its a war so plenty of people, including main characters were going to die, but when I felt worse about Dobby than I did about Remus (who is one of my favourite characters) you just know that the author hasn't put enough emotion into it. He was the last of the Marauders, for god's sake, he deserved an on-page death at the very least. Maybe defending Harry or Tonks. Something!Well, there ends the rant. There were a few good points in the novel (like Godric's Hollow, before the stupidity of Harry not realising that Bathilda was Nagini, and the awesomeness of Neville) but they were few and far between and do not at all make up for the rest of the drivel.Read it because it is the conclusion to a series that took seventeen years to write, but do not expect the fireworks that such a finale could have been. There's better fanfics out there.",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r1",
+              "review":"“I’m going to keep going until I succeed — or die. Don’t think I don’t know how this might end. I’ve known it for years.” — Harry PotterMost seventeen-year olds don’t view the possibility of an early death as being, well, possible. But then again, most seventeen-year olds haven’t come face-to-face with death almost half a dozen times before their first kiss either.In Harry Potter and the Deathly Hallows, the seventh and final installment of the ridiculously popular Harry Potter series, J.K. Rowling brilliantly ties up every loose end that she has planted over the last ten years since the very first outing of the series was published in 1997. Truly, Rowling has learned exactly what her fans want and subsequently delivers a book that answers every Potterhead’s questions — and then some. Not only does Deathly Hallows revisit key places and characters from all of the previous six books, but Rowling even manages to make clever references to previous bits of dialogue from her earlier books. Case in point: near the end of the first Potter book, after Hermione fails to see the magical solution to saving the trio from a nasty patch of Devil’s Snare, Harry’s best mate Ron bellows “HAVE YOU GONE MAD? ARE YOU A WITCH OR NOT?” Now, six years later, Hermione finally gets her revenge on her red-headed friend when Ron believes that all is lost until Hermione yells to him “Are you a wizard, or what?” thus reminding Ron to use his wand to solve their problem. Subtle references such as this are a large part of what makes Rowling’s books so enjoyable to re-read as there are always deeper meanings and additional allusions that are often only discovered via multiple read-throughs.Harry’s bold statement regarding his own potential death is also a prime example of how much Rowling truly wrote Harry’s last tale for her long-time fans. This line seems to read as a secret “shout-out” to the Potterites who have also known for years that the series might not end happily ever after. The prophecy in the fifth book revealed that “neither shall live while the other survives”, and therefore by the end of book seven either Harry or Voldemort had to die. Rowling cleverly fills her last installment with so many twists, turns and complications, however, that it becomes practically impossible to determine which way this book is going to end. More than any of the other Potter books, Deathly Hallows is a true quest narrative, with the trio spending the majority of the story hunting for horcruxes and hallows whilst evading capture by Voldemort’s Death Eaters. The multiple close-calls that all three main characters find themselves in throughout the book add to the tension that continues to build until the predictably bloody battle at the end of the tale. The book does, after all, chronicle a brutal war, so be prepared for a lot of killing and, consequently, a lot of tears. This is not to say that Deathly Hallows doesn’t offer up a great deal of laughs as well. The hilarious twins Fred and George Weasley make several appearances to ensure that the book isn’t all doom and gloom. By far, the funniest part of the story is the secret radio show Potterwatch, anonymously hosted by former Hogwarts Quidditch commentator Lee Jordan with special appearances from Fred, George, and ex-Defence Against the Dark Arts professor Remus Lupin. Rowling perfectly mixes this blend of humour, tragedy and adventure so that her epic-length novel never lags or drags.To write a 607 page book that millions of die-hard fans around the world are able to devour in less than 24 hours is no mean feat, but Rowling’s farewell to the Boy Who Lived is an incredibly gripping page-turner that will leave all Potter lovers immensely satisfied.",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r2",
+              "review":"It's hard for me to believe that I finished the Harry Potter series... I wish this series would go on forever!I don't know how I've gone through my life without these books. I regret not reading it when I was younger, but I am so happy that I finally did, better late than never, right?The world built in these books is so real and tangible, it is truly a masterpiece. The characters are engaging and brilliant, and I love how the plot is so interwoven and twisted within itself, especially in this last book.I was taken by surprise when I started the series, I didn't think it would pull me in as it did. As I kept reading through the books, the characters slyly stole my heart. Now, having finished the last line, I am flooded with emotion. This series is more than a story or words on a page, it is magic.",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r3",
+              "review":"(A) 86% | ExtraordinaryNotes: It ends too expository and convenient, but the story's compelling, and its new settings are a nice break from formula.",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r4",
+              "review":"(A) 86% | ExtraordinaryNotes: A bittersweet bewitchment: all stumble-back and rally, the touchy truth of bitter youth, and fevered feelings to finale.",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r5",
+              "review":"OI! There's a war going on here!Merlin's Pants!The six-year build-up is over. The final adventure",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r6",
+              "review":"“Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it. Use your words wisely and support trans lives.”- Definitely not JKRI love Harry Potter as much as anyone, which is why I urge everyone who spends money on these books to also support the trans community.To say it with the author's words: “If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals.” Well.Here’s a list of organisations that support trans lives (feel free to reach out and recommend more). Every penny counts:Mermaids UKThe Trevor ProjectBlack Visions Collective because Black trans lives matter.Find more of my books on Instagram",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r7",
+              "review":"Sigh... I just can't ",
+              "domainType":"review",
+              "_version_":1718686244416782337},
+            
+            {
+              "id":"912224-r8",
+              "review":"This is just a pithy review on the Harry Potter series as a whole. It is not an in-depth analysis of the work in general, nor is it a review on any one particular installment.Harry Potter is a work of art. I got made fun of once¹ when I was out to dinner with some friends, because while we were discussing these books I made the mistake of referring to them as “literature.” I felt like I had to defend that assertion because, although the definition of literature is pretty broad, it seems like it should really only apply to works with some definable qualitative value or literary merit. In this case, my friends were wrong—Rowling explores themes and concepts in this series that I think are valuable to children and young adults who look to her characters for qualities they seek to emulate, and I believe her works will have lasting impact on this and future generations.I’ve heard it said before that everything you need to know you’ve learned in kindergarten. Well, that might be somewhat of an oversimplification, but I do think children or young adults who grow into this series, seeing Harry and his friends mature as they themselves mature, can glean some pretty important life lessons from it. They are impressionable human beings who are learning about themselves and are starting to make the choices that reflect the kinds of people they want to be.So what does Harry Potter teach them? Well, here is a bullet list of what it has taught me. And if you’re good, I’ll think about turning this into a PowerPoint presentation. Or maybe not.• The quality of your character is not a reflection of where you come from or who your parents are; rather, it is a reflection of the choices you make, so make them wisely.• The way you treat other people, especially those less fortunate than you, reveals your true colors more quickly and more completely than almost anything else you do.• It is a good thing to have dreams and ambitions, but that alone is not enough. You cannot expect success without effort.• It is far less important what your abilities are than what you actually do with them. Your abilities alone do not define you.• Nobody likes to fail, but to refuse an attempt at success on the grounds that you’re afraid to fail is failure in itself.Growing up is about figuring out who you are and coming to terms with your strengths and weaknesses, and it is about deciding how to utilize the strengths and mitigate the weaknesses in order to become a better person. It’s a lifelong struggle, but it starts early, and I think Harry Potter offers the tools to help achieve that. It can help young people find their way, and maybe that’s an oversimplification for a seven-volume series of novels, but that’s what I got out of it, and that’s why I will recommend this to my kids as they start to become ready for some life lessons of their own.¹This is misleading; I’ve been made fun of countless, countless times.",
+              "domainType":"review",
+              "_version_":1718686244416782337}]},
+        {
+          "id":"823753",
+          "name":"The Hobbit & The Lord of the Rings (Slipcased Set)",
+          "rating":4.6,
+          "publishYear":2000,
+          "publishMonth":6,
+          "publishDay":11,
+          "publisher":"NaN",
+          "countsOfReviews":2,
+          "pagesNumber":1500,
+          "description":"This four-volume, boxed set contains J.R.R. Tolkien's epic masterworks The Hobbit and the three volumes of The Lord of the Rings (The Fellowship of the Ring, The Two Towers, and The Return of the King).In The Hobbit, Bilbo Baggins is whisked away from his comfortable, unambitious life in Hobbiton by the wizard Gandalf and a company of dwarves. He finds himself caught up in a plot to raid the treasure hoard of Smaug the Magnificent, a large and very dangerous dragon.The Lord of the Rings tells of the great quest undertaken by Frodo Baggins and the Fellowship of the Ring: Gandalf the wizard; the hobbits Merry, Pippin, and Sam; Gimli the dwarf; Legolas the elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. J.R.R. Tolkien's three volume masterpiece is at once a classic myth and a modern fairy tale—a story of high and heroic adventure set in the unforgettable landscape of Middle-earth",
+          "author":"J.R.R. Tolkien",
+          "language":"English",
+          "genres":["Fantasy,Fiction,Classics,Adventure"],
+          "ISBN":"0007105029",
+          "domainType":"book",
+          "_version_":1718686224946823169},
+        {
+          "id":"928897",
+          "name":"Rapunzel (Good Night Classic)",
+          "rating":4.6,
+          "publishYear":1995,
+          "publishMonth":1,
+          "publishDay":10,
+          "publisher":"Accord, a division of Andrews McMeel Publishing",
+          "countsOfReviews":0,
+          "pagesNumber":32,
+          "description":"The Three Little Pigs and Rapunzel-two favorite fairytale classics-are richly retold with illustrations by award-winning artist Jim Harris.",
+          "author":"Marian Harris",
+          "language":"English",
+          "genres":["Picture Books,Fantasy"],
+          "ISBN":"0939251930",
+          "domainType":"book",
+          "_version_":1718686248322727937,
+          "reviews":
+          {
+            "id":"928897-r0",
+            "review":"This edition has a darker atmosphere than is usual for this tale, due to the artwork that favours the spooky woods ambiance, which I liked.",
+            "domainType":"review",
+            "_version_":1718686248322727937}},
+        {
+          "id":"899771",
+          "name":"The Hobbit and The Lord of the Rings",
+          "rating":4.6,
+          "publishYear":2011,
+          "publishMonth":27,
+          "publishDay":10,
+          "publisher":"HarperCollins",
+          "countsOfReviews":6,
+          "pagesNumber":1178,
+          "description":"Immerse yourself in Middle-earth with Tolkien's classic masterpiece, telling the complete story of Bilbo Baggins and the Hobbits' epic encounters with Gandalf, Gollum, dragons and monsters, in the quest to destroy the One Ring. When they were first published, The Hobbit and The Lord of the Rings became instant classics. Treasured by readers young and old, these works of sweeping fantasy, steeped in unrivalled magic and otherworldliness have sold more than 150 million copies around the world. This new boxed set, published to mark the 75th anniversary of the publication of The Hobbit, offers readers a new opportunity to discover Tolkien's remarkable world of Middle-earth and to follow the complete story of Bilbo Baggins and the Hobbits' part in the epic quest for the Ring - beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom and Bilbo's departure to the Grey Havens.",
+          "author":"J.R.R. Tolkien",
+          "language":"English",
+          "genres":["Fantasy,Fiction,Classics,Adventure"],
+          "ISBN":"0261103563",
+          "domainType":"book",
+          "_version_":1718686241732427776},
+        {
+          "id":"825059",
+          "name":"The Kindly Ones (The Sandman, #9)",
+          "rating":4.59,
+          "publishYear":1996,
+          "publishMonth":19,
+          "publishDay":4,
+          "publisher":"Titan Books Ltd",
+          "countsOfReviews":24,
+          "pagesNumber":368,
+          "description":"The Penultimate volume to the phenomenal Sandman series: distraught by the kidnapping and presumed death of her son, and believing Morpheus to be responsible, Lyta Hall calls the ancient wrath of the Furies down upon him. A former superheroine blames Morpheus for the death of her child and summons an ancient curse of vengeance against the Lord of Dream. The \"kindly ones\" enter his realm and force a sacrifice that will change the Dreaming forever. collecting The Sandman #57–69 and Vertigo Jam #1",
+          "author":"Neil Gaiman",
+          "language":"English",
+          "genres":["Graphic Novels,Comics,Fantasy,Fiction"],
+          "ISBN":"1852866837",
+          "domainType":"book",
+          "_version_":1718686225288658945},
+        {
+          "id":"844345",
+          "name":"Nausicaä of the Valley of Wind, Vol. 2",
+          "rating":4.59,
+          "publishYear":1995,
+          "publishMonth":6,
+          "publishDay":10,
+          "publisher":"NaN",
+          "countsOfReviews":10,
+          "pagesNumber":288,
+          "description":"Hayao Miyazaki was a budding filmmaker in 1982 when he agreed to collaborate on a project with the popular Japanese anime magazine Animage. This was Nausicaa, which would make Miyazaki's reputation as much as his 11 films and TV shows. Set in the far future, Nausicaa visualizes an Earth radically changed by ecological disaster. Strange human kingdoms survive at the edge of the Sea of Corruption, a poisonous fungal forest. Nausicaa, a gentle young princess, has a telepathic bond with the giant mutated insects of this dystopia. Her task is to negotiate peace between kingdoms battling over the last of the world's precious natural resources. Nausicaa took Miyazaki 12 years to create, in part because he worked with few or no assistants, doing both the writing and drawing using a meticulously detailed style that critics have compared to the work of the French artist Moebius.P",
+          "author":"Hayao Miyazaki",
+          "language":"English",
+          "genres":["Manga,Graphic Novels,Comics,Fantasy"],
+          "ISBN":"1569310874",
+          "domainType":"book",
+          "_version_":1718686230560899072,
+          "reviews":[
+            {
+              "id":"844345-r0",
+              "review":"Manga + Ecology = GREAT!",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r1",
+              "review":"Hmmm. This is a great story. I am not about to go over plot points, that's what Wikipedia is for. Rather I am going to talk about a particular trope in youth literature. The one part that is sticking in my eye but I feel by the end of the series that it will resolve a bit better.There is a tendency to make an ordinary child find out what makes them extraordinary. Sometimes, it is that their parents aren't their real parents or that they are exceptional beyond ordinary standards. As a kid, of course, there are moments when you want to believe so badly that your world isn't going to just be all office jobs and boredom. I was lucky, in that, my future was going to be working in the bush or at the local grocery store. I rose up to work in an office building in a big city. Haha. Maybe it is this that makes me bristle at giving the idea of a life less ordinary. Isn't this the stuff of literature? Moving someone beyond their daily circumstances or at least to find a deeper meaning? Regardless, everything else that most say about this book are true. It would be deserving of all sorts of accolades. So much so, that I may search out the film. ",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r2",
+              "review":"This volume of Nausicaä started horribly. Very confusing drawn out battle scenes. Then it followed that up with totally confusing and political dialogue.There seems to be so many faction in this story, I have no idea what's going on. Nausicaä herself seems to have turned into a little Messiah and we now only get glimpses of the sweet character we were introduced to originally. The volume does finish off with a bit more focus and less confusion, but I'm still not sure I'll bother with reading the last two volumes.",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r3",
+              "review":"Again, I can't say enough good things about this. It's one of those books where I want to read it as fast as I can, and also want to savor every part. One of the best things about this story is how great all the characters are. Really, all of them. You start out hating some of them and then come to really like them, or you keep hating them but really like to hate them.It's hard to really comment on these individual volumes as stand-alone works, because they're juts a fairly random chunk of the larger story, but there's some great stuff in here. Great battles...",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r4",
+              "review":"This story is truly fantastic. Each volume gets sweeter and sweeter. The previous edition I have been reading was maybe the original English publication (I can't find a photo of the covers I have online). This Perfect Collection breaks up the story differently and has much more defined inking. I think I will finish the series with this collection if I can.",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r5",
+              "review":"My favorite story of all time. Perfect blend of mythology and sci-fi.",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r6",
+              "review":"The second book had a plot line that was completely unfamiliar to me and yet seemed perfectly natural and expected.",
+              "domainType":"review",
+              "_version_":1718686230560899072},
+            
+            {
+              "id":"844345-r7",
+              "review":"https://fantastiskfiktion.wordpress.c...",
+              "domainType":"review",
+              "_version_":1718686230560899072}]},
+        {
+          "id":"804237",
+          "name":"Fullmetal Alchemist, Volume 6",
+          "rating":4.58,
+          "publishYear":2006,
+          "publishMonth":1,
+          "publishDay":3,
+          "publisher":"Turtleback Books",
+          "countsOfReviews":0,
+          "pagesNumber":186,
+          "description":"In an alchemical ritual gone wrong, Edward Alric lost his arm and his leg. He was lucky...his brother Alphonse lost his entire body. With Alphonse's soul grafted into a suit of armor, and the other brother equipped with mechanical limbs, they become government alchemists, serving the state on deadly missions and fighting the evil alchemists called the Seven Deadly Sins.",
+          "author":"Hiromu Arakawa",
+          "language":"English",
+          "genres":["Manga,Fantasy,Graphic Novels,Comics"],
+          "ISBN":"1417752106",
+          "domainType":"book",
+          "_version_":1718686221124763648},
+        {
+          "id":"722314",
+          "name":"The Provensen Book of Fairy Tales",
+          "rating":4.58,
+          "publishYear":1971,
+          "publishMonth":12,
+          "publishDay":10,
+          "publisher":"Random House Books for Young Readers",
+          "countsOfReviews":1,
+          "pagesNumber":140,
+          "description":"The lost half-hour / by Henry Beston --The nightingale / by Hans Christian Andersen --Beauty and the beast / by Arthur Rackham --Feather o' my wing / by Seumas Macmanus --The seven Simons / by Ruth Manning-Sanders --The prince and the goose girl / by Elinor Mordaunt --The forest bride / by Parker Fillmore --Prince Rabbit / by A.A. Milne --The three wishes / by Barbara Leonie Picard --The Swan Maiden / by Howard Pyle --The dreamer / by Katharine Pyle --The Happy Prince / by Oscar Wilde",
+          "author":"Alice Provensen",
+          "language":"English",
+          "genres":["Fairy Tales,Fantasy,Picture Books,Childrens"],
+          "ISBN":"0394921216",
+          "domainType":"book",
+          "_version_":1718686204054994944,
+          "reviews":[
+            {
+              "id":"722314-r0",
+              "review":"Not as crazy about the illustrations as I usually am from this husband-wife team but the collection of fairy tales is wonderful.",
+              "domainType":"review",
+              "_version_":1718686204054994944},
+            
+            {
+              "id":"722314-r1",
+              "review":"Note: I accessed a digital review copy of this book through Edelweiss.",
+              "domainType":"review",
+              "_version_":1718686204054994944},
+            
+            {
+              "id":"722314-r2",
+              "review":"Delightfully kitschy illustrations and stories by both Howard Pyle and his sister Katherine, who never gets enough love.",
+              "domainType":"review",
+              "_version_":1718686204054994944},
+            
+            {
+              "id":"722314-r3",
+              "review":"Fairy tales never fail to touch my heart. They're definitely aren't only for children... ^^",
+              "domainType":"review",
+              "_version_":1718686204054994944},
+            
+            {
+              "id":"722314-r4",
+              "review":"My favorite storybook from childhood and where I first read The Happy Prince by Oscar Wilde. ",
+              "domainType":"review",
+              "_version_":1718686204054994944}]},
+        {
+          "id":"620121",
+          "name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+          "rating":4.57,
+          "publishYear":2000,
+          "publishMonth":1,
+          "publishDay":2,
+          "publisher":"Listening Library",
+          "countsOfReviews":233,
+          "pagesNumber":13,
+          "description":"For most children, summer vacation is something to look forward to. But not for our 13-year-old hero, who's forced to spend his summers with an aunt, uncle, and cousin who detest him. The third book in J.K. Rowling's Harry Potter series catapults into action when the young wizard \"accidentally\" causes the Dursleys' dreadful visitor Aunt Marge to inflate like a monstrous balloon and drift up to the ceiling. Fearing punishment from Aunt Petunia and Uncle Vernon (and from officials at Hogwarts School of Witchcraft and Wizardry who strictly forbid students to cast spells in the nonmagic world of Muggles), Harry lunges out into the darkness with his heavy trunk and his owl Hedwig.  As it turns out, Harry isn't punished at all for his errant wizardry. Instead he is mysteriously rescued from his Muggle neighborhood and whisked off in a triple-decker, violently purple bus to spend the remaining weeks of summer in a friendly inn called the Leaky Cauldron. What Harry has to face as he begins his third year at Hogwarts explains why the officials let him off easily. It seems that Sirius Black--an escaped convict from the prison of Azkaban--is on the loose. Not only that, but he's after Harry Potter. But why? And why do the Dementors, the guards hired to protect him, chill Harry's very heart when others are unaffected? Once again, Rowling has created a mystery that will have children and adults cheering, not to mention standing in line for her next book. Fortunately, there are four more in the works. (Ages 9 and older) --Karin Snelson",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"0807282324",
+          "domainType":"book",
+          "_version_":1718686154326278144,
+          "reviews":[
+            {
+              "id":"620121-r0",
+              "review":"This is a Weasley appreciation post.",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r1",
+              "review":"“Don't let the muggles get you down.” Yup yup yup I love this book.",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r2",
+              "review":"This one is definitely my favourite of the 3 i've read so far.. :)(Watch my review here): https://youtu.be/gFZ99uPXiIU",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r3",
+              "review":"(A) 85% | ExtraordinaryNotes: Separating itself from its forebears, it's a story of greater complexity, darker tones, and a vastly expanded mythology.",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r4",
+              "review":"(A) 85% | ExtraordinaryNotes: A flavorful foreboding, it plies expanded bandwidth, like ripened fruit, and more acute: a sweet and spicy sandwich.",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r5",
+              "review":"“If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals.”See the irony there?Trans lives matter. Donate now:Mermaids UKThe Trevor ProjectBlack Visions Collective",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r6",
+              "review":"“Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.”As it seems my Harry Potter reviews don’t always start with a Dumbledore quote but always end up being “My thoughts about this book” reviews as well. For a series like HP that’s been read by so many people this might be the best solution though. And because the books get longer and longer and because I don’t share my friend Jayson’s amazing and remarkable ability to describe a book in one significant sentence, I’m afraid you’ll have to bear with quite a lot of my thoughts. *lol*1.) ”It’s one of the basic rules of breeding,” she said. “You see it all the time with dogs. If there’s something wrong with the bitch, there’ll be something wrong with the pup-“Aunt Marge is such a horrible person!!! If you ask me she’s really lucky that Harry is such a precious cinnamon roll and only made her a big bubble gum. *lol* The audacity to talk about his dead parents like that! No wonder Harry got so angry!! Aunt Marge can float to hell! 2.) ”I’ve already had some,” said Harry. “Professor Lupin gave me some. He gave it to all of us.”“Did he, now?” said Madam Pomfrey approvingly. “So we’ve finally got a Defence Against the Dark Arts teacher who knows his remedies.”Lupin is the best DADA teacher they ever had and I love him so much! <333 His character is just great and I wish we would have seen even more of him. Unfortunately we weren’t blessed with all too many Lupin scenes. >_<3.) ”How extraordinarily like your father you are, Potter,” Snape said suddenly, his eyes glinting. “He, too, was exceedingly arrogant. A small amount of talent on the Quidditch pitch made him think he was a cut above the rest of us, too. Strutting around the place with his friends and admirers… the resemblance between you is uncanny.”And speaking of the best teacher we come directly to the worst! Snape is such a horrible teacher I can’t even! I said it once and I’ll say it again: He's cruel, he's a bully, he takes delight in instilling fear in his students. And he verbally and emotionally abuses them. His personal vendetta against Harry who never ever did anything to him except of looking like his dead father is just crazy! Movie Snape is way nicer than the one in the books and I'm sorry but if you ask me #SnapeCan'tBeRedeemed!!4.) ”They’ve got a new captain and Seeker",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r7",
+              "review":"Oy! Presents!I'm flabbergasted",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r8",
+              "review":"Still five stars. Love this so much. Can't review. Couldn't even take notes. Watched the movie immediately after finishing. Need next book. Wish I lived in this world. Damn you, Rowling. Blog | Facebook | Twitter | Instagram | Pinterest",
+              "domainType":"review",
+              "_version_":1718686154326278144},
+            
+            {
+              "id":"620121-r9",
+              "review":"Welcome back to my re-read of the superb series “Harry Potter”. 🤓⚡️My journey this time around is a hybrid of reading the books, listening to a fun (adult) podcast and watching the movies. ❤️📚🎧🎬 ⚠️Spoiler Warning: stop reading now, if you’re unfamiliar with the world of Hogwarts.⚠️Personal Opinion Note: I’m terribly sad for you, if you’ve never read the books (or at least watched the movies). 😉📚🎧🎬These books are only gonna get longer- so, rather than re-capping, I’m just going to note my favorite part of each chapter/podcast.📚Chapter 1: Owl PostI love that Harry has his new wizard family, who actually recognizes his birthday.📚Chapter 2: Aunt Marge’s Big MistakeObviously my favorite part is Marge blowing up like a balloon!📚Chapter 3: The Knight BusI always laugh out loud when the night bus shows up and asks Harry why he fell over. But I also love that Hedwig finds Harry.📚Chapter 4: The Leaky Cauldron After jumping on Ron’s head, Crookshanks gets a new home with Hermione.📚Chapter 5: The DementorsHagrid being named a teacher and getting teary-eyed when the trio congratulates him, warms my heart!🎧Podcast: Binge Mode: Chapters 1-5***Warning: podcast has adult content***I greatly enjoy the dive into the Knight Bus. How it appears for wizards in trouble. It’s also a very interesting point, Harry is quick to help his friends, but doesn’t offer any money. Interesting.📚Chapter 6: Talons and Tea LeavesMy favorites are tied in this chapter- between Hermione calling out Trelawney about “predictions” and Malfoy getting his ass handed to him by Buckbeak.📚Chapter 7: The Boggart in The Wardrobe Obviously my favorite part is Snape dressed as Neville’s gran.📚Chapter 8: Flight of the Fat LadySo much happening in this chapter- but my fav is simply Neville’s gran sending his Hogsmeade permission slip directly to the school, cause sure enough he misplaced his copy.📚Chapter 9: Grim DefeatAlas, the whomping willow got its revenge… on Harry’s broom.📚Chapter 10: The Marauders MapI love that the Weasley twins entrust Harry with the map.🎧Podcast: Binge Mode: Chapters 6-10***Warning: podcast has adult content***The points made regarding Snape, his history with Lupin (and his gang), makes for a better understanding of behavior. 📚Chapter 11: The FireboltRon offering to make tea, for an upset Hagrid, because that’s what his mom does.📚Chapter 12: The PatronusNeville, being Neville, wrote down the passwords and lost them.📚Chapter 13: Gryffindor versus RavenclawRon trying to convince everyone that he saw Sirius Black in his room.📚Chapter 14: Snape’s GrudgeHarry scaring the shit out of Malfoy, was the best!📚Chapter 15: The Quidditch FinalOf course the best part is Gryffindors win.🎧Podcast: Binge Mode: Chapters 11-15***Warning: podcast has adult content***Ron joking with Harry about loaning him money- he didn’t even offer to replace your spello tape wand… not happening my dude.📚Chapter 16: Professor Trelawney’s Prediction Hermione being freaked out by her Boggart final.📚Chapter 17: Cat Rat and DogSirius making himself known.📚Chapter 18: Moony Wormtail Padfoot and ProngsLupin explaining that the womping willow was planted at Hogwarts because of him.📚Chapter 19: The Servant of the Lord Voldemort Ron justifying a rat living for 12 years, by saying his family has taken such great care of him.📚Chapter 20: The Dementors KissHarry’s happy thoughts about leaving the Dursley’s to live with Sirius.📚Chapter 21: Hermione’s SecretOf course Hermione has a time turner.📚Chapter 22: Owl Post AgainHarry having a godfather in Sirius is so heartwarming.🎧Podcast: Binge Mode: Chapters 16-22***Warning: podcast has adult content***This one made me a bit tearful.🎬Movie #3This one is rough, cause so much of the story is missing- but I will simply say, I love how Hermione calls Ron “Ronald” throughout. That’s some great foreshadowing.🎧Podcast: Binge Mode: Movie***Warning: podcast has adult content***All good points made- Trelawney casting is so spot on!And that concludes my re-read of Prisoner of Azkaban. Thanks for riding along with me!",
+              "domainType":"review",
+              "_version_":1718686154326278144}]},
+        {
+          "id":"804233",
+          "name":"Fullmetal Alchemist, Volume 7",
+          "rating":4.57,
+          "publishYear":2006,
+          "publishMonth":1,
+          "publishDay":5,
+          "publisher":"Turtleback Books",
+          "countsOfReviews":0,
+          "pagesNumber":185,
+          "description":"In an alchemical ritual gone wrong, Edward Alric lost his arm and his leg. He was lucky...his brother Alphonse lost his entire body. With Alphonse's soul grafted into a suit of armor, and the other brother equipped with mechanical limbs, they become government alchemists, serving the state on deadly missions and fighting the evil alchemists called the Seven Deadly Sins.",
+          "author":"Hiromu Arakawa",
+          "language":"English",
+          "genres":["Manga,Fantasy,Comics,Graphic Novels"],
+          "ISBN":"1417752114",
+          "domainType":"book",
+          "_version_":1718686221118472192},
+        {
+          "id":"804239",
+          "name":"Fullmetal Alchemist, Volume 8",
+          "rating":4.57,
+          "publishYear":2006,
+          "publishMonth":1,
+          "publishDay":7,
+          "publisher":"Turtleback Books",
+          "countsOfReviews":0,
+          "pagesNumber":164,
+          "description":"In an alchemical ritual gone wrong, Edward Alric lost his arm and his leg. He was lucky...his brother Alphonse lost his entire body. With Alphonse's soul grafted into a suit of armor, and the other brother equipped with mechanical limbs, they become government alchemists, serving the state on deadly missions and fighting the evil alchemists called the Seven Deadly Sins.",
+          "author":"Hiromu Arakawa",
+          "language":"English",
+          "genres":["Manga,Fantasy,Comics,Graphic Novels"],
+          "ISBN":"1417752122",
+          "domainType":"book",
+          "_version_":1718686221124763650,
+          "reviews":[
+            {
+              "id":"804239-r0",
+              "review":"Por cada tomo que voy leyendo, más me está gustando este manga. Pronto llegaré a la parte donde lo abandoné en su momento por la traducción. Asimismo",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r1",
+              "review":"Every review I put up for each volume in this series is just gonna be me going I LOVE THIS SERIES.",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r2",
+              "review":"Another volume with an intriguing reveal for the homunculi's creator that adds more questions to the overarching plot regarding these evil creatures and their mission regarding the Philosopher's stone. The rest of it introduces us to two new and mysterious characters from the country of Xing who have a particular interest in the stone as well. While mostly a setup for things to come, it was an engaging story arc that promises a lot of great things to come.Yours truly,Lashaan | Blogger and Book ReviewerOfficial blog: https://bookidote.com/",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r3",
+              "review":"Hawkeye is amazing, and no one is ever going to be a scary as Izumi.",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r4",
+              "review":"MAN oh man I'm such trash for this series but I'm kind of running out of things to say about each volume because I'm reading them so quickly. The pacing is really excellent and I'm a big fan of the art style. The characters in general are awesome and I love that there is plot twist after plot twist. It's great!",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r5",
+              "review":"This was such a great volume and we have Bradley fighting Greed and saving the brothers and maybe finding their secrets and we come to know of his real nature. While Ed and Al return to Rush valley for repairs they are soon attacked by Ling Yao from the country of Xing and its a massive fight and some panels are gorgeous and it is this part we come to know of the country they live in aka AMESTRIA and its neighboring countries which will serve as antagonists in future maybe?And finally we have the big revelations, reunions and there's an epilogues that sets up a future arc maybe in New Hiessgast. That one was weird but okayish.This volume was a lot of fun with so many cool fight scenes, brotherly moments and finally getting to know more about this world and future threats and also seeing the Ouroboros/Sins and their secrets which just turns the series around for the better. I loved this one. And the art is gorgeous some funny scenes especially.",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r6",
+              "review":"Winry and Edward are the cutest thing ever 😭 **this gif is not actually from this volume, but it's just so darn cute, I can't",
+              "domainType":"review",
+              "_version_":1718686221124763650},
+            
+            {
+              "id":"804239-r7",
+              "review":"If this was a television show, this volume would be a good candidate for the start of the second season. We had a finale with an ominous fight (more a massacre, really), the first look at the main antagonist, a whole boatload of eerie foreshadowing and new unanswered questions, and the brothers learned a few good lessons and took a crucial step or two towards their ultimate goal. Then on to a new season with the introduction of a new major character and a couple quirky sidekicks, and a new direction for the heroes to explore and look forward to. Even Scar is making a return.It's also where the (first) anime makes its final and decisive deviation from the manga. I don't have too many good memories of the anime from this point on, which may have further enhanced my enjoyment of the manga as a contrast, a better alternative.",
+              "domainType":"review",
+              "_version_":1718686221124763650}]},
+        {
+          "id":"819073",
+          "name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+          "rating":4.57,
+          "publishYear":1999,
+          "publishMonth":8,
+          "publishDay":7,
+          "publisher":"Bloomsbury",
+          "countsOfReviews":176,
+          "pagesNumber":317,
+          "description":"Harry Potter's third year at Hogwarts is full of new dangers. A convicted murderer, Sirius Black, has broken out of Azkaban prison, and it seems he's after Harry. Now Hogwarts is being patrolled by the dementors, the Azkaban guards who are hunting Sirius. But Harry can't imagine that Sirius or, for that matter, the evil Lord Voldemort could be more frightening than the dementors themselves, who have the terrible power to fill anyone they come across with aching loneliness and despair. Meanwhile, life continues as usual at Hogwarts. A top-of-the-line broom takes Harry's success at Quidditch, the sport of the Wizarding world, to new heights. A cute fourth-year student catches his eye. And he becomes close with the new Defense of the Dark Arts teacher, who was a childhood friend of his father. Yet despite the relative safety of life at Hogwarts and the best efforts of the dementors, the threat of Sirius Black grows ever closer. But if Harry has learned anything from his education in wizardry, it is that things are often not what they seem. Tragic revelations, heartwarming surprises, and high-stakes magical adventures await the boy wizard in this funny and poignant third installment of the beloved series.--scholastic.com",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"0747542155",
+          "domainType":"book",
+          "_version_":1718686223826944000},
+        {
+          "id":"943082",
+          "name":"Harry Potter ja puoliverinen prinssi (Harry Potter, #6)",
+          "rating":4.57,
+          "publishYear":2006,
+          "publishMonth":16,
+          "publishDay":3,
+          "publisher":"Tammi",
+          "countsOfReviews":42,
+          "pagesNumber":698,
+          "description":"Lontoossa kolea, leppymätön sumu ei hellitä, vaikka on heinäkuu. Silta sortuu, ihmisiä murhataan, pyörremyrsky riehuu maan länsiosassa. Jästien pääministerillä riittää huolia, mutta taikaministerillä, Cornelius Toffeella, ei ole yhtään helpompaa: hän on saanut potkut. Harry Potterin kesäloma keskeytyy, kun itse Albus Dumbledore saapuu Likusteritielle tapaamaan Harry Potteria. Mitä on tapahtunut? Harry Potterin kuudes lukuvuosi käynnistyy muutosten merkeissä. Tylypahkaan tulee taas uusi opettaja joka ryhtyy opettamaan taikajuomia. Oppikirja Taikajuomien valmistus edistyneille tulee tutuksi kaikille taikajuomia opiskeleville, mutta varsinkin Harrylle, joka yllättää sen avulla sekä itsensä että muut. Harry on nyt kuusitoistavuotias. Kuluvan vuoden aikana hän ja hänen luokkatoverinsa täyttävät seitsemäntoista vuotta, tulevat täysi-ikäisiksi ja saavat aloittaa ilmiintymiskurssin. Rakkaushuolet piinaavat yhtä jos toista, myös Harrya, Ronia ja Hermionea. Mutta kaikkein järisyttävin muutos on se, että Dumbledore alkaa antaa Harrylle yksityistunteja! Miksiköhän?",
+          "author":"J.K. Rowling",
+          "language":"Finnish",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"9513135071",
+          "domainType":"book",
+          "_version_":1718686250497474560,
+          "reviews":[
+            {
+              "id":"943082-r0",
+              "review":"(A) 86% | ExtraordinaryNotes: It dwells on the delightfully mundane aspects of the magical world, and adds new dimensions to familiar characters.",
+              "domainType":"review",
+              "_version_":1718686250497474560},
+            
+            {
+              "id":"943082-r1",
+              "review":"(A) 86% | ExtraordinaryNotes: A relationshippy respite, it’s Sturm und Drang defogging: all lovesick woe, observing foes, and problematic snogging.",
+              "domainType":"review",
+              "_version_":1718686250497474560},
+            
+            {
+              "id":"943082-r2",
+              "review":"Holy shit, I'm in all sorts right now.Video Review: https://www.youtube.com/watch?v=sTfaG...",
+              "domainType":"review",
+              "_version_":1718686250497474560},
+            
+            {
+              "id":"943082-r3",
+              "review":"BEST BOOK EVER",
+              "domainType":"review",
+              "_version_":1718686250497474560},
+            
+            {
+              "id":"943082-r4",
+              "review":"This remains one of my top favorite HP books! The Voldemort origins, the Dumbledore/Harry business, Draco's mission, the Snape reveal, and the moment the trio decide to not return to Hogwarts so they can stop Voldemort once and for all. It's a book that manages to balance so much darkness with light, so evident too in the last line. #AdamRereadsHP ",
+              "domainType":"review",
+              "_version_":1718686250497474560},
+            
+            {
+              "id":"943082-r5",
+              "review":"“I am a wizard, not a baboon or a transphobe.”- Not JKRMermaids UKThe Trevor ProjectBlack Visions Collective because Black trans lives matter.",
+              "domainType":"review",
+              "_version_":1718686250497474560},
+            
+            {
+              "id":"943082-r6",
+              "review":"Harry Potter and the Half-Blood Prince (Harry Potter #6), J.K. Rowling Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J. K. Rowling and the sixth and penultimate novel in the Harry Potter series. Set during protagonist Harry Potter's sixth year at Hogwarts, the novel explores the past of Harry's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore. The book was published in the United Kingdom by Bloomsbury, and in the United States by Scholastic on 16 July 2005, as well as in several other countries.Lord Voldemort is tightening his grip on both the wizarding and Muggle worlds, with his Death Eaters kidnapping wand-maker Garrick Ollivander from Diagon Alley and destroying the Millennium Bridge. The Malfoy family is disgraced when Lucius is apprehended and sent to Azkaban for his involvement with the Death Eaters. Voldemort instead chooses Draco to carry out a secret mission at Hogwarts. Draco's mother Narcissa and aunt Bellatrix Lestrange seek help from Severus Snape, who claims to have been acting as a mole within the Order of the Phoenix all along. Snape makes an Unbreakable Vow with Narcissa to protect Draco and fulfill the assignment if he fails.Harry Potter, now 16 years old, accompanies Albus Dumbledore from Surbiton to the village of Budleigh Babberton to visit former Potions professor Horace Slughorn. Slughorn, who has been in hiding, agrees to return to teach at Hogwarts. Dumbledore then takes Harry to The Burrow, where Harry reunites with his best friends, Ron Weasley and Hermione Granger. The three visit Fred and George Weasley's new joke shop at Diagon Alley and see Draco entering Knockturn Alley with a group of Death Eaters including Fenrir Greyback. Harry believes Voldemort has made Draco a Death Eater, but Ron and Hermione are sceptical. On the Hogwarts Express, Harry hides in the Slytherin carriage using his Invisibility Cloak, but is spotted and petrified by Malfoy. عنوانهای چاپ شده در ایران: «هری پاتر و پرنس نیمه اصیل»؛ «هری پاتر و شاهزاده دورگه»؛ «هری پاتر و پرنس دو رگه»؛ «هری پاتر و شاهزاده نیمه اصیل»؛ نویسنده: جی.کی رولینگ؛ تاریخ نخستین خوانش: ماه نوامبر سال 2005میلادیعنوان: هری پاتر و پرنس نیمه اصیل - کتاب شش در دو جلد؛ نویسنده: جی.کی رولینگ؛ مترجم: سمیه گنجی؛ ساری، زهره، 1384؛ در دوجلد، در660ص؛ شابک 9645704766؛ موضوع داستانهای نویسندگان بریتانیا - سده 21معنوان: هری پاتر و شاهزاده ی دورگه - کتاب شش در دو جلد ؛ نویسنده: جی.کی رولینگ؛ مترجم: ویدا اسلامیه؛ تهران، تندیس، 1384؛ در دو جلد؛ شابک 9648944024؛ چاپ دوم تا هشتم 1384؛ چاپ یازدهم 1392؛ شابک 9789648944013؛عنوان: هری پاتر و پرنس دورگه - کتاب شش؛ نویسنده: جی.کی رولینگ؛ مترجم: غلامحسین اعرابی؛ تهران، پلیکان، 1384؛ در 912ص؛ شابک9648690065؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: محمدحسن واحد؛ قم گنج عرفان‏‫، 1384؛ در دو جلد؛ شابک9647985498؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: مریم شعبانی (نصیری آذر)؛ تهران، طحان، 1384؛ در دو جلد؛ چاپ دیگر تهران علمی شایان‏‫، 1391؛ در دو جلد؛ شابک 9786009304219؛عنوان: هری‌ پاتر و شاهزاده‌ ی نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: سعید ابراهیمی؛ تهران، نگاه امروز‏‫، 1384؛ در دو جلد؛ شابک دوره9647470002؛عنوان: هری‌ پاتر و شاهزاده‌ نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: محمد نوراللهی؛ تهران، بهنام‏‫، 1384؛ در دو جلد؛ شابک دوره9645668360؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: نامور عابدینی؛ تهران، نامور عابدینی‏‫، 1384؛ در سه جلد؛ شابک دوره9640670464؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: الهام آرام نیا؛ شمس الدین حسینی؛ تهران، پیکان‏‫، 1384؛ در دو جلد؛ شابک دوره9643284913؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: شهناز مجیدی؛ تهران، روشا‏‫، 1384؛ در دو جلد؛فهرست: آن وزیر دیگر؛ بن‌بست اسپینر؛ وصیت‌نامه و جن خانه؛ هوریس اسلاگهورن؛ خلط اضافی؛ مسیر بیراهه‌ی دراکو؛ انجمن اسلاگ؛ اسنیپ پیروز؛ شاهزاده‌ی دورگه؛ خانه‌ی گونت؛ همکاری هرمیون؛ نقره و عقیق سلیمانی؛ ریدل، معمای مرموز؛ فلیکس فلیسیس؛ و پیمان ناگسستنی؛ششمين سال تحصيلی هری در مدرسه‌ ی علوم و فنون جادوگری هاگوارتز آغاز میشود؛ «آلبوس دامبلدور»، مدیر مدرسه، برای «هری» کلاس‌های خصوصی ترتیب میدهد، و در کلاس‌ها، او را با گذشته‌ ی «لرد ولدمورت»، و اندیشه ها و آرزوهای او آشنا میکند؛ و راز جاودانگی او را برملا میسازدنقل از متن جلد نخست: (هری پاتر با صدای بلندی خروپف می‌کرد؛ بیش‌تر چهار ساعت گذشته را در کنار پنجره‌ ی اتاق‌ خوابش، بر روی صندلی نشسته و به منظره‌ ی خیابان زل زده بود، که دم‌ به‌ دم تاریک‌تر می‌شد و سرانجام، در حالی که یک‌طرف صورتش به پنجره تکیه داشت، با دهان باز و عینک، یک وری، به خواب رفته بود؛ بخشی از شیشه‌ ی پنجره که در اثر نفس‌های او بخار گرفته بود، در برابر نور نارنجی رنگ چراغ خیابان می‌درخشید و در پرتو این نور غیرطبیعی، هیچ رنگ دیگری بر چهره‌ اش سایه نمی‌انداخت، چنان که صورتش در زیر سیاهی متضاد موهای نامرتبش، رنگ پریده و ترسناک به نظر می‌رسید؛ اتاق، پر از وسایل درهم ریخته‌ ی گوناگون و خرده آشغال‌های پراکنده بود؛ پرهای جغد، دانه‌های سیب و کاغذهای مچاله‌ ی شکلات در گوشه و کنار اتاق ريخته بود؛ چندین کتاب جادوگری لابه‌لای رداهای درهم گوریده‌ ی روی تختش قرار داشت و دسته‌ ی نامرتب روزنامه‌ها بر روی میز تحریرش در زیر هاله‌ ای از نور به چشم می‌خورد؛ عنوان یکی از روزنامه‌ها گویی با داد و فریاد، خودنمایی می‌کرد: هری پاتر: پسر برگزیده؟)؛ پایانتاریخ بهنگام رسانی 09/07/1399هجری خورشیدی؛ 30/05/1400هجری خورشیدی؛ ا. شربیانی",
+              "domainType":"review",
+              "_version_":1718686250497474560}]},
+        {
+          "id":"871319",
+          "name":"Harry Potter en de Gevangene van Azkaban (Harry Potter, #3)",
+          "rating":4.57,
+          "publishYear":2000,
+          "publishMonth":16,
+          "publishDay":2,
+          "publisher":"Uitgeverij De Harmonie",
+          "countsOfReviews":97,
+          "pagesNumber":326,
+          "description":"Voordat Harry Potter aan zijn derde jaar op Zweinstein kan beginnen, moet hij de zomervakantie doorbrengen bij zijn gemene oom en tante en vervelende neefje Dirk. Door een magisch ongelukje komt hij 's avonds laat opeens op straat te staan. Dan blijkt, dat Sirius Zwarts, een beruchte volgeling van Voldemort, uit de gevangenis van Azkaban is ontsnapt. Hij is op de vlucht en heeft het wellicht op Harry gemunt. Er volgt een enerverend schooljaar met nieuwe vakken als Dreuzelkunde en Zorg voor Fabeldieren, spannende Zwerkbalwedstrijden en griezelige voorspellingen. De school wordt bewaakt door Dementors, de gevreesde bewakers van Azkaban en Harry zal zijn lessen Verweer tegen de Zwarte Kunsten hard nodig hebben.",
+          "author":"J.K. Rowling",
+          "language":"Dutch; Flemish",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"9076174148",
+          "domainType":"book",
+          "_version_":1718686236287172610},
+        {
+          "id":"742626",
+          "name":"Harry Potter et le prisonnier d'Azkaban (Harry Potter, #3)",
+          "rating":4.57,
+          "publishYear":2007,
+          "publishMonth":28,
+          "publishDay":3,
+          "publisher":"Gallimard",
+          "countsOfReviews":13,
+          "pagesNumber":443,
+          "description":"Sirius Black, le dangereux criminel, qui s'est échappé de la forteresse d'Azkaban, recherche Harry Potter. C'est donc sous bonne garde que l'apprenti sorcier fait sa troisième rentrée. Au programme : des cours de divination, la fabrication d'une potion de ratatinage, le dressage des hippogriffes... Mais Harry est-il vraiment à l'abri du danger qui le menace ? Le troisième tome des aventures de Harry Potter vous emportera dans un tourbillon de surprises et d'émotions. Frissons et humour garantis !",
+          "author":"J.K. Rowling",
+          "language":"French",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"2070612384",
+          "domainType":"book",
+          "_version_":1718686207991349248},
+        {
+          "id":"633308",
+          "name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
+          "rating":4.57,
+          "publishYear":2007,
+          "publishMonth":1,
+          "publishDay":7,
+          "publisher":"Large Print Press",
+          "countsOfReviews":12,
+          "pagesNumber":831,
+          "description":"The war against Voldemort is not going well; even Muggle governments are noticing. Ron scans the obituary pages of the Daily Prophet, looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet…As in all wars, life goes on. Sixth-year students learn to Apparate — and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince.So it’s the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Here at Hogwarts, Harry will search for the full and complex story of the boy who became Lord Voldemort — and thereby find what may be his only vulnerability.",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"1594132216",
+          "domainType":"book",
+          "_version_":1718686160639754240,
+          "reviews":[
+            {
+              "id":"633308-r0",
+              "review":"(A) 86% | ExtraordinaryNotes: It dwells on the delightfully mundane aspects of the magical world, and adds new dimensions to familiar characters.",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r1",
+              "review":"(A) 86% | ExtraordinaryNotes: A relationshippy respite, it’s Sturm und Drang defogging: all lovesick woe, observing foes, and problematic snogging.",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r2",
+              "review":"Holy shit, I'm in all sorts right now.Video Review: https://www.youtube.com/watch?v=sTfaG...",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r3",
+              "review":"BEST BOOK EVER",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r4",
+              "review":"This remains one of my top favorite HP books! The Voldemort origins, the Dumbledore/Harry business, Draco's mission, the Snape reveal, and the moment the trio decide to not return to Hogwarts so they can stop Voldemort once and for all. It's a book that manages to balance so much darkness with light, so evident too in the last line. #AdamRereadsHP ",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r5",
+              "review":"“I am a wizard, not a baboon or a transphobe.”- Not JKRMermaids UKThe Trevor ProjectBlack Visions Collective because Black trans lives matter.",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r6",
+              "review":"Harry Potter and the Half-Blood Prince (Harry Potter #6), J.K. Rowling Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J. K. Rowling and the sixth and penultimate novel in the Harry Potter series. Set during protagonist Harry Potter's sixth year at Hogwarts, the novel explores the past of Harry's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore. The book was published in the United Kingdom by Bloomsbury, and in the United States by Scholastic on 16 July 2005, as well as in several other countries.Lord Voldemort is tightening his grip on both the wizarding and Muggle worlds, with his Death Eaters kidnapping wand-maker Garrick Ollivander from Diagon Alley and destroying the Millennium Bridge. The Malfoy family is disgraced when Lucius is apprehended and sent to Azkaban for his involvement with the Death Eaters. Voldemort instead chooses Draco to carry out a secret mission at Hogwarts. Draco's mother Narcissa and aunt Bellatrix Lestrange seek help from Severus Snape, who claims to have been acting as a mole within the Order of the Phoenix all along. Snape makes an Unbreakable Vow with Narcissa to protect Draco and fulfill the assignment if he fails.Harry Potter, now 16 years old, accompanies Albus Dumbledore from Surbiton to the village of Budleigh Babberton to visit former Potions professor Horace Slughorn. Slughorn, who has been in hiding, agrees to return to teach at Hogwarts. Dumbledore then takes Harry to The Burrow, where Harry reunites with his best friends, Ron Weasley and Hermione Granger. The three visit Fred and George Weasley's new joke shop at Diagon Alley and see Draco entering Knockturn Alley with a group of Death Eaters including Fenrir Greyback. Harry believes Voldemort has made Draco a Death Eater, but Ron and Hermione are sceptical. On the Hogwarts Express, Harry hides in the Slytherin carriage using his Invisibility Cloak, but is spotted and petrified by Malfoy. عنوانهای چاپ شده در ایران: «هری پاتر و پرنس نیمه اصیل»؛ «هری پاتر و شاهزاده دورگه»؛ «هری پاتر و پرنس دو رگه»؛ «هری پاتر و شاهزاده نیمه اصیل»؛ نویسنده: جی.کی رولینگ؛ تاریخ نخستین خوانش: ماه نوامبر سال 2005میلادیعنوان: هری پاتر و پرنس نیمه اصیل - کتاب شش در دو جلد؛ نویسنده: جی.کی رولینگ؛ مترجم: سمیه گنجی؛ ساری، زهره، 1384؛ در دوجلد، در660ص؛ شابک 9645704766؛ موضوع داستانهای نویسندگان بریتانیا - سده 21معنوان: هری پاتر و شاهزاده ی دورگه - کتاب شش در دو جلد ؛ نویسنده: جی.کی رولینگ؛ مترجم: ویدا اسلامیه؛ تهران، تندیس، 1384؛ در دو جلد؛ شابک 9648944024؛ چاپ دوم تا هشتم 1384؛ چاپ یازدهم 1392؛ شابک 9789648944013؛عنوان: هری پاتر و پرنس دورگه - کتاب شش؛ نویسنده: جی.کی رولینگ؛ مترجم: غلامحسین اعرابی؛ تهران، پلیکان، 1384؛ در 912ص؛ شابک9648690065؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: محمدحسن واحد؛ قم گنج عرفان‏‫، 1384؛ در دو جلد؛ شابک9647985498؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: مریم شعبانی (نصیری آذر)؛ تهران، طحان، 1384؛ در دو جلد؛ چاپ دیگر تهران علمی شایان‏‫، 1391؛ در دو جلد؛ شابک 9786009304219؛عنوان: هری‌ پاتر و شاهزاده‌ ی نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: سعید ابراهیمی؛ تهران، نگاه امروز‏‫، 1384؛ در دو جلد؛ شابک دوره9647470002؛عنوان: هری‌ پاتر و شاهزاده‌ نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: محمد نوراللهی؛ تهران، بهنام‏‫، 1384؛ در دو جلد؛ شابک دوره9645668360؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: نامور عابدینی؛ تهران، نامور عابدینی‏‫، 1384؛ در سه جلد؛ شابک دوره9640670464؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: الهام آرام نیا؛ شمس الدین حسینی؛ تهران، پیکان‏‫، 1384؛ در دو جلد؛ شابک دوره9643284913؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: شهناز مجیدی؛ تهران، روشا‏‫، 1384؛ در دو جلد؛فهرست: آن وزیر دیگر؛ بن‌بست اسپینر؛ وصیت‌نامه و جن خانه؛ هوریس اسلاگهورن؛ خلط اضافی؛ مسیر بیراهه‌ی دراکو؛ انجمن اسلاگ؛ اسنیپ پیروز؛ شاهزاده‌ی دورگه؛ خانه‌ی گونت؛ همکاری هرمیون؛ نقره و عقیق سلیمانی؛ ریدل، معمای مرموز؛ فلیکس فلیسیس؛ و پیمان ناگسستنی؛ششمين سال تحصيلی هری در مدرسه‌ ی علوم و فنون جادوگری هاگوارتز آغاز میشود؛ «آلبوس دامبلدور»، مدیر مدرسه، برای «هری» کلاس‌های خصوصی ترتیب میدهد، و در کلاس‌ها، او را با گذشته‌ ی «لرد ولدمورت»، و اندیشه ها و آرزوهای او آشنا میکند؛ و راز جاودانگی او را برملا میسازدنقل از متن جلد نخست: (هری پاتر با صدای بلندی خروپف می‌کرد؛ بیش‌تر چهار ساعت گذشته را در کنار پنجره‌ ی اتاق‌ خوابش، بر روی صندلی نشسته و به منظره‌ ی خیابان زل زده بود، که دم‌ به‌ دم تاریک‌تر می‌شد و سرانجام، در حالی که یک‌طرف صورتش به پنجره تکیه داشت، با دهان باز و عینک، یک وری، به خواب رفته بود؛ بخشی از شیشه‌ ی پنجره که در اثر نفس‌های او بخار گرفته بود، در برابر نور نارنجی رنگ چراغ خیابان می‌درخشید و در پرتو این نور غیرطبیعی، هیچ رنگ دیگری بر چهره‌ اش سایه نمی‌انداخت، چنان که صورتش در زیر سیاهی متضاد موهای نامرتبش، رنگ پریده و ترسناک به نظر می‌رسید؛ اتاق، پر از وسایل درهم ریخته‌ ی گوناگون و خرده آشغال‌های پراکنده بود؛ پرهای جغد، دانه‌های سیب و کاغذهای مچاله‌ ی شکلات در گوشه و کنار اتاق ريخته بود؛ چندین کتاب جادوگری لابه‌لای رداهای درهم گوریده‌ ی روی تختش قرار داشت و دسته‌ ی نامرتب روزنامه‌ها بر روی میز تحریرش در زیر هاله‌ ای از نور به چشم می‌خورد؛ عنوان یکی از روزنامه‌ها گویی با داد و فریاد، خودنمایی می‌کرد: هری پاتر: پسر برگزیده؟)؛ پایانتاریخ بهنگام رسانی 09/07/1399هجری خورشیدی؛ 30/05/1400هجری خورشیدی؛ ا. شربیانی",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r7",
+              "review":"Here's the thing about the Harry Potter books...They're awesome.Deep, huh? Well, deep or shallow, it's the truth. I waited a long time to read the Harry Potter books because I wanted to experience them with my own children. My son (8) and I just finished the sixth book, my first daughter (6) and I are working on the first, and my youngest child (3) is content to commandeer her siblings' wands and run around shrieking, I have a Harry Potter stick!In other words",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r8",
+              "review":"Since pretty much everyone I know has read these books, I figure reviewing them is pretty pointless. But with the new book coming out in a couple of days, I have to go through them beginning to end. To make the reviews more entertaining, I will be doing them in a variety of unexpected formats. For this review, I will be writing as a power ballad.(Intro: Piano and strings)You were always by my sideYou will always be my guideBut the road I'm onGoes on and onAnd I've left you beHIIIIIND!(Big crunchy electric guitar)(DUMBLEDORE!)I will never forget the strength you showed!(DUMBLEDORE!)I will never forget the debt you're owed!(DUMBLEDORE!)And when I face the final hour(DUMBLEDORE!)I will call on all your power!(Guitar solo)There's no way back againBut if I can find a friendTo see me thoughAnd remember youI'll make it to the EEEENNNND!(DUMBLEDORE!)When I finally catch that snake in the grass(DUMBLEDORE!)You will be able to rest at last!(DUMBLEDORE!)You know he never will escape(DUMBLEDORE!)I'm comin' for you SNAAAAAAAAPE!!!!(Guitar solo)(Guitar solo with children's choir singing Run",
+              "domainType":"review",
+              "_version_":1718686160639754240},
+            
+            {
+              "id":"633308-r9",
+              "review":"Here's my video review https://youtu.be/lgj2rQTmymw",
+              "domainType":"review",
+              "_version_":1718686160639754240}]},
+        {
+          "id":"840579",
+          "name":"Harry Potter und der Gefangene von Askaban (Harry Potter, #3)",
+          "rating":4.57,
+          "publishYear":2007,
+          "publishMonth":1,
+          "publishDay":3,
+          "publisher":"Carlsen Verlag GmbH",
+          "countsOfReviews":21,
+          "pagesNumber":480,
+          "description":"Natürlich weiß Harry, dass das Zaubern in den Ferien strengstens verboten ist, und trotzdem befördert er seine schreckliche Tante mit einem Schwebezauber an die Decke. Die Konsequenz ist normalerweise: Schulverweis! Nicht so bei Harry, im Gegenteil, man behandelt ihn wie ein rohes Ei. Hat es etwa damit zu tun, dass ein gefürchteter Verbrecher in die Schule eingedrungen ist und es auf Harry abgesehen hat? Mit seinen Freunden Ron und Hermine versucht Harry ein Geflecht an Verrat, Rache, Feigheit und Verleumdung aufzudröseln und stößt dabei auf Dinge, die ihn fast an seinem Verstand zweifeln lassen.",
+          "author":"J.K. Rowling",
+          "language":"German",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"3551354030",
+          "domainType":"book",
+          "_version_":1718686229638152192},
+        {
+          "id":"840616",
+          "name":"Harry Potter et le Prince de Sang-Mêlé (Harry Potter, #6)",
+          "rating":4.57,
+          "publishYear":2006,
+          "publishMonth":6,
+          "publishDay":9,
+          "publisher":"Folio Junior",
+          "countsOfReviews":4,
+          "pagesNumber":751,
+          "description":"Dans un monde de plus en plus inquiétant, Harry se prépare à retrouver Ron et Hermione. Bientôt, ce sera la rentrée à Poudlard, avec les autres étudiants de sixième année. Mais pourquoi Dumbledore vient-il en personne chercher Harry chez les Dursley? Dans quels extraordinaires voyages au cœur de la mémoire va-t-il l'entraîner?Sujet : Dans une atmosphère assombrie par des meurtres violents et des destructions inexpliquées, cette sixième année à Poudlard voit Harry prendre la tête de l'équipe de Quiddich. Il apprécie tout particulièrement l'utilisation d'un manuel de potions ayant appartenu à un mystérieux prince de sang mêlé et rempli d'annotations, qui lui permet de briller dans cette matière et de gagner un temps précieux... Commentaire : Une violence accrue dans une atmosphère sombre et pesante caractérise ce nouveau volet des aventures de Harry Potter, d'où l'humour disparaît. Ce jeune sorcier prodige grandit et s'il n'est plus directement confronté à Lord Voldemort, du moins par la pensée, la puissance que regagne indiscutablement ce personnage ne lui laisse guère de répit ! Suspicion, trahison et batailles sanglantes semblent devenir le lot quotidien de Harry. Dans ce contexte, le conflit qui anime Ron et Hermione et les flirts qui vont et viennent entre les élèves semblent bien futiles. Un roman aux rebondissements multiples, aux réponses incomplètes qui se termine sur une note bien sombre.",
+          "author":"J.K. Rowling",
+          "language":"French",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"2070577643",
+          "domainType":"book",
+          "_version_":1718686229653880832,
+          "reviews":[
+            {
+              "id":"840616-r0",
+              "review":"(A) 86% | ExtraordinaryNotes: It dwells on the delightfully mundane aspects of the magical world, and adds new dimensions to familiar characters.",
+              "domainType":"review",
+              "_version_":1718686229653880832},
+            
+            {
+              "id":"840616-r1",
+              "review":"(A) 86% | ExtraordinaryNotes: A relationshippy respite, it’s Sturm und Drang defogging: all lovesick woe, observing foes, and problematic snogging.",
+              "domainType":"review",
+              "_version_":1718686229653880832},
+            
+            {
+              "id":"840616-r2",
+              "review":"Holy shit, I'm in all sorts right now.Video Review: https://www.youtube.com/watch?v=sTfaG...",
+              "domainType":"review",
+              "_version_":1718686229653880832},
+            
+            {
+              "id":"840616-r3",
+              "review":"BEST BOOK EVER",
+              "domainType":"review",
+              "_version_":1718686229653880832},
+            
+            {
+              "id":"840616-r4",
+              "review":"This remains one of my top favorite HP books! The Voldemort origins, the Dumbledore/Harry business, Draco's mission, the Snape reveal, and the moment the trio decide to not return to Hogwarts so they can stop Voldemort once and for all. It's a book that manages to balance so much darkness with light, so evident too in the last line. #AdamRereadsHP ",
+              "domainType":"review",
+              "_version_":1718686229653880832},
+            
+            {
+              "id":"840616-r5",
+              "review":"“I am a wizard, not a baboon or a transphobe.”- Not JKRMermaids UKThe Trevor ProjectBlack Visions Collective because Black trans lives matter.",
+              "domainType":"review",
+              "_version_":1718686229653880832},
+            
+            {
+              "id":"840616-r6",
+              "review":"Harry Potter and the Half-Blood Prince (Harry Potter #6), J.K. Rowling Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J. K. Rowling and the sixth and penultimate novel in the Harry Potter series. Set during protagonist Harry Potter's sixth year at Hogwarts, the novel explores the past of Harry's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore. The book was published in the United Kingdom by Bloomsbury, and in the United States by Scholastic on 16 July 2005, as well as in several other countries.Lord Voldemort is tightening his grip on both the wizarding and Muggle worlds, with his Death Eaters kidnapping wand-maker Garrick Ollivander from Diagon Alley and destroying the Millennium Bridge. The Malfoy family is disgraced when Lucius is apprehended and sent to Azkaban for his involvement with the Death Eaters. Voldemort instead chooses Draco to carry out a secret mission at Hogwarts. Draco's mother Narcissa and aunt Bellatrix Lestrange seek help from Severus Snape, who claims to have been acting as a mole within the Order of the Phoenix all along. Snape makes an Unbreakable Vow with Narcissa to protect Draco and fulfill the assignment if he fails.Harry Potter, now 16 years old, accompanies Albus Dumbledore from Surbiton to the village of Budleigh Babberton to visit former Potions professor Horace Slughorn. Slughorn, who has been in hiding, agrees to return to teach at Hogwarts. Dumbledore then takes Harry to The Burrow, where Harry reunites with his best friends, Ron Weasley and Hermione Granger. The three visit Fred and George Weasley's new joke shop at Diagon Alley and see Draco entering Knockturn Alley with a group of Death Eaters including Fenrir Greyback. Harry believes Voldemort has made Draco a Death Eater, but Ron and Hermione are sceptical. On the Hogwarts Express, Harry hides in the Slytherin carriage using his Invisibility Cloak, but is spotted and petrified by Malfoy. عنوانهای چاپ شده در ایران: «هری پاتر و پرنس نیمه اصیل»؛ «هری پاتر و شاهزاده دورگه»؛ «هری پاتر و پرنس دو رگه»؛ «هری پاتر و شاهزاده نیمه اصیل»؛ نویسنده: جی.کی رولینگ؛ تاریخ نخستین خوانش: ماه نوامبر سال 2005میلادیعنوان: هری پاتر و پرنس نیمه اصیل - کتاب شش در دو جلد؛ نویسنده: جی.کی رولینگ؛ مترجم: سمیه گنجی؛ ساری، زهره، 1384؛ در دوجلد، در660ص؛ شابک 9645704766؛ موضوع داستانهای نویسندگان بریتانیا - سده 21معنوان: هری پاتر و شاهزاده ی دورگه - کتاب شش در دو جلد ؛ نویسنده: جی.کی رولینگ؛ مترجم: ویدا اسلامیه؛ تهران، تندیس، 1384؛ در دو جلد؛ شابک 9648944024؛ چاپ دوم تا هشتم 1384؛ چاپ یازدهم 1392؛ شابک 9789648944013؛عنوان: هری پاتر و پرنس دورگه - کتاب شش؛ نویسنده: جی.کی رولینگ؛ مترجم: غلامحسین اعرابی؛ تهران، پلیکان، 1384؛ در 912ص؛ شابک9648690065؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: محمدحسن واحد؛ قم گنج عرفان‏‫، 1384؛ در دو جلد؛ شابک9647985498؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: مریم شعبانی (نصیری آذر)؛ تهران، طحان، 1384؛ در دو جلد؛ چاپ دیگر تهران علمی شایان‏‫، 1391؛ در دو جلد؛ شابک 9786009304219؛عنوان: هری‌ پاتر و شاهزاده‌ ی نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: سعید ابراهیمی؛ تهران، نگاه امروز‏‫، 1384؛ در دو جلد؛ شابک دوره9647470002؛عنوان: هری‌ پاتر و شاهزاده‌ نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: محمد نوراللهی؛ تهران، بهنام‏‫، 1384؛ در دو جلد؛ شابک دوره9645668360؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: نامور عابدینی؛ تهران، نامور عابدینی‏‫، 1384؛ در سه جلد؛ شابک دوره9640670464؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: الهام آرام نیا؛ شمس الدین حسینی؛ تهران، پیکان‏‫، 1384؛ در دو جلد؛ شابک دوره9643284913؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: شهناز مجیدی؛ تهران، روشا‏‫، 1384؛ در دو جلد؛فهرست: آن وزیر دیگر؛ بن‌بست اسپینر؛ وصیت‌نامه و جن خانه؛ هوریس اسلاگهورن؛ خلط اضافی؛ مسیر بیراهه‌ی دراکو؛ انجمن اسلاگ؛ اسنیپ پیروز؛ شاهزاده‌ی دورگه؛ خانه‌ی گونت؛ همکاری هرمیون؛ نقره و عقیق سلیمانی؛ ریدل، معمای مرموز؛ فلیکس فلیسیس؛ و پیمان ناگسستنی؛ششمين سال تحصيلی هری در مدرسه‌ ی علوم و فنون جادوگری هاگوارتز آغاز میشود؛ «آلبوس دامبلدور»، مدیر مدرسه، برای «هری» کلاس‌های خصوصی ترتیب میدهد، و در کلاس‌ها، او را با گذشته‌ ی «لرد ولدمورت»، و اندیشه ها و آرزوهای او آشنا میکند؛ و راز جاودانگی او را برملا میسازدنقل از متن جلد نخست: (هری پاتر با صدای بلندی خروپف می‌کرد؛ بیش‌تر چهار ساعت گذشته را در کنار پنجره‌ ی اتاق‌ خوابش، بر روی صندلی نشسته و به منظره‌ ی خیابان زل زده بود، که دم‌ به‌ دم تاریک‌تر می‌شد و سرانجام، در حالی که یک‌طرف صورتش به پنجره تکیه داشت، با دهان باز و عینک، یک وری، به خواب رفته بود؛ بخشی از شیشه‌ ی پنجره که در اثر نفس‌های او بخار گرفته بود، در برابر نور نارنجی رنگ چراغ خیابان می‌درخشید و در پرتو این نور غیرطبیعی، هیچ رنگ دیگری بر چهره‌ اش سایه نمی‌انداخت، چنان که صورتش در زیر سیاهی متضاد موهای نامرتبش، رنگ پریده و ترسناک به نظر می‌رسید؛ اتاق، پر از وسایل درهم ریخته‌ ی گوناگون و خرده آشغال‌های پراکنده بود؛ پرهای جغد، دانه‌های سیب و کاغذهای مچاله‌ ی شکلات در گوشه و کنار اتاق ريخته بود؛ چندین کتاب جادوگری لابه‌لای رداهای درهم گوریده‌ ی روی تختش قرار داشت و دسته‌ ی نامرتب روزنامه‌ها بر روی میز تحریرش در زیر هاله‌ ای از نور به چشم می‌خورد؛ عنوان یکی از روزنامه‌ها گویی با داد و ف��یاد، خودنمایی می‌کرد: هری پاتر: پسر برگزیده؟)؛ پایانتاریخ بهنگام رسانی 09/07/1399هجری خورشیدی؛ 30/05/1400هجری خورشیدی؛ ا. شربیانی",
+              "domainType":"review",
+              "_version_":1718686229653880832}]},
+        {
+          "id":"840699",
+          "name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
+          "rating":4.57,
+          "publishYear":2006,
+          "publishMonth":23,
+          "publishDay":6,
+          "publisher":"Bloomsbury Publishing",
+          "countsOfReviews":283,
+          "pagesNumber":608,
+          "description":"It is Harry Potter's sixth year at Hogwarts School of Witchcraft and Wizardry. As Voldemort's sinister forces amass and a spirit of gloom and fear sweeps the land, it becomes more and more clear to Harry that he will soon have to confront his destiny. But is he up to the challenges ahead of him?In her darkest and most breathtaking adventure yet, J.K. Rowling skilfully begins to unravel the complex web she has woven, as we discover more of the truth about Harry, Dumbledore, Snape and, of course, He Who Must Not Be Named ...",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"0747584680",
+          "domainType":"book",
+          "_version_":1718686229666463744,
+          "reviews":[
+            {
+              "id":"840699-r0",
+              "review":"(A) 86% | ExtraordinaryNotes: It dwells on the delightfully mundane aspects of the magical world, and adds new dimensions to familiar characters.",
+              "domainType":"review",
+              "_version_":1718686229666463744},
+            
+            {
+              "id":"840699-r1",
+              "review":"(A) 86% | ExtraordinaryNotes: A relationshippy respite, it’s Sturm und Drang defogging: all lovesick woe, observing foes, and problematic snogging.",
+              "domainType":"review",
+              "_version_":1718686229666463744},
+            
+            {
+              "id":"840699-r2",
+              "review":"Holy shit, I'm in all sorts right now.Video Review: https://www.youtube.com/watch?v=sTfaG...",
+              "domainType":"review",
+              "_version_":1718686229666463744},
+            
+            {
+              "id":"840699-r3",
+              "review":"BEST BOOK EVER",
+              "domainType":"review",
+              "_version_":1718686229666463744},
+            
+            {
+              "id":"840699-r4",
+              "review":"This remains one of my top favorite HP books! The Voldemort origins, the Dumbledore/Harry business, Draco's mission, the Snape reveal, and the moment the trio decide to not return to Hogwarts so they can stop Voldemort once and for all. It's a book that manages to balance so much darkness with light, so evident too in the last line. #AdamRereadsHP ",
+              "domainType":"review",
+              "_version_":1718686229666463744},
+            
+            {
+              "id":"840699-r5",
+              "review":"“I am a wizard, not a baboon or a transphobe.”- Not JKRMermaids UKThe Trevor ProjectBlack Visions Collective because Black trans lives matter.",
+              "domainType":"review",
+              "_version_":1718686229666463744},
+            
+            {
+              "id":"840699-r6",
+              "review":"Harry Potter and the Half-Blood Prince (Harry Potter #6), J.K. Rowling Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J. K. Rowling and the sixth and penultimate novel in the Harry Potter series. Set during protagonist Harry Potter's sixth year at Hogwarts, the novel explores the past of Harry's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore. The book was published in the United Kingdom by Bloomsbury, and in the United States by Scholastic on 16 July 2005, as well as in several other countries.Lord Voldemort is tightening his grip on both the wizarding and Muggle worlds, with his Death Eaters kidnapping wand-maker Garrick Ollivander from Diagon Alley and destroying the Millennium Bridge. The Malfoy family is disgraced when Lucius is apprehended and sent to Azkaban for his involvement with the Death Eaters. Voldemort instead chooses Draco to carry out a secret mission at Hogwarts. Draco's mother Narcissa and aunt Bellatrix Lestrange seek help from Severus Snape, who claims to have been acting as a mole within the Order of the Phoenix all along. Snape makes an Unbreakable Vow with Narcissa to protect Draco and fulfill the assignment if he fails.Harry Potter, now 16 years old, accompanies Albus Dumbledore from Surbiton to the village of Budleigh Babberton to visit former Potions professor Horace Slughorn. Slughorn, who has been in hiding, agrees to return to teach at Hogwarts. Dumbledore then takes Harry to The Burrow, where Harry reunites with his best friends, Ron Weasley and Hermione Granger. The three visit Fred and George Weasley's new joke shop at Diagon Alley and see Draco entering Knockturn Alley with a group of Death Eaters including Fenrir Greyback. Harry believes Voldemort has made Draco a Death Eater, but Ron and Hermione are sceptical. On the Hogwarts Express, Harry hides in the Slytherin carriage using his Invisibility Cloak, but is spotted and petrified by Malfoy. عنوانهای چاپ شده در ایران: «هری پاتر و پرنس نیمه اصیل»؛ «هری پاتر و شاهزاده دورگه»؛ «هری پاتر و پرنس دو رگه»؛ «هری پاتر و شاهزاده نیمه اصیل»؛ نویسنده: جی.کی رولینگ؛ تاریخ نخستین خوانش: ماه نوامبر سال 2005میلادیعنوان: هری پاتر و پرنس نیمه اصیل - کتاب شش در دو جلد؛ نویسنده: جی.کی رولینگ؛ مترجم: سمیه گنجی؛ ساری، زهره، 1384؛ در دوجلد، در660ص؛ شابک 9645704766؛ موضوع داستانهای نویسندگان بریتانیا - سده 21معنوان: هری پاتر و شاهزاده ی دورگه - کتاب شش در دو جلد ؛ نویسنده: جی.کی رولینگ؛ مترجم: ویدا اسلامیه؛ تهران، تندیس، 1384؛ در دو جلد؛ شابک 9648944024؛ چاپ دوم تا هشتم 1384؛ چاپ یازدهم 1392؛ شابک 9789648944013؛عنوان: هری پاتر و پرنس دورگه - کتاب شش؛ نویسنده: جی.کی رولینگ؛ مترجم: غلامحسین اعرابی؛ تهران، پلیکان، 1384؛ در 912ص؛ شابک9648690065؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: محمدحسن واحد؛ قم گنج عرفان‏‫، 1384؛ در دو جلد؛ شابک9647985498؛عنوان: هری‌ پاتر و شاهزاده‌ ی دو‌رگه؛ نویسنده: جی.کی رولینگ؛ مترجم: مریم شعبانی (نصیری آذر)؛ تهران، طحان، 1384؛ در دو جلد؛ چاپ دیگر تهران علمی شایان‏‫، 1391؛ در دو جلد؛ شابک 9786009304219؛عنوان: هری‌ پاتر و شاهزاده‌ ی نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: سعید ابراهیمی؛ تهران، نگاه امروز‏‫، 1384؛ در دو جلد؛ شابک دوره9647470002؛عنوان: هری‌ پاتر و شاهزاده‌ نیمه اصیل؛ نویسنده: جی.کی رولینگ؛ مترجم: محمد نوراللهی؛ تهران، بهنام‏‫، 1384؛ در دو جلد؛ شابک دوره9645668360؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: نامور عابدینی؛ تهران، نامور عابدینی‏‫، 1384؛ در سه جلد؛ شابک دوره9640670464؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: الهام آرام نیا؛ شمس الدین حسینی؛ تهران، پیکان‏‫، 1384؛ در دو جلد؛ شابک دوره9643284913؛عنوان: هری‌ پاتر و شاهزاده‌ دورگه؛ نویسنده: جی.کی رولینگ؛ مترجم: شهناز مجیدی؛ تهران، روشا‏‫، 1384؛ در دو جلد؛فهرست: آن وزیر دیگر؛ بن‌بست اسپینر؛ وصیت‌نامه و جن خانه؛ هوریس اسلاگهورن؛ خلط اضافی؛ مسیر بیراهه‌ی دراکو؛ انجمن اسلاگ؛ اسنیپ پیروز؛ شاهزاده‌ی دورگه؛ خانه‌ی گونت؛ همکاری هرمیون؛ نقره و عقیق سلیمانی؛ ریدل، معمای مرموز؛ فلیکس فلیسیس؛ و پیمان ناگسستنی؛ششمين سال تحصيلی هری در مدرسه‌ ی علوم و فنون جادوگری هاگوارتز آغاز میشود؛ «آلبوس دامبلدور»، مدیر مدرسه، برای «هری» کلاس‌های خصوصی ترتیب میدهد، و در کلاس‌ها، او را با گذشته‌ ی «لرد ولدمورت»، و اندیشه ها و آرزوهای او آشنا میکند؛ و راز جاودانگی او را برملا میسازدنقل از متن جلد نخست: (هری پاتر با صدای بلندی خروپف می‌کرد؛ بیش‌تر چهار ساعت گذشته را در کنار پنجره‌ ی اتاق‌ خوابش، بر روی صندلی نشسته و به منظره‌ ی خیابان زل زده بود، که دم‌ به‌ دم تاریک‌تر می‌شد و سرانجام، در حالی که یک‌طرف صورتش به پنجره تکیه داشت، با دهان باز و عینک، یک وری، به خواب رفته بود؛ بخشی از شیشه‌ ی پنجره که در اثر نفس‌های او بخار گرفته بود، در برابر نور نارنجی رنگ چراغ خیابان می‌درخشید و در پرتو این نور غیرطبیعی، هیچ رنگ دیگری بر چهره‌ اش سایه نمی‌انداخت، چنان که صورتش در زیر سیاهی متضاد موهای نامرتبش، رنگ پریده و ترسناک به نظر می‌رسید؛ اتاق، پر از وسایل درهم ریخته‌ ی گوناگون و خرده آشغال‌های پراکنده بود؛ پرهای جغد، دانه‌های سیب و کاغذهای مچاله‌ ی شکلات در گوشه و کنار اتاق ريخته بود؛ چندین کتاب جادوگری لابه‌لای رداهای درهم گوریده‌ ی روی تختش قرار داشت و دسته‌ ی نامرتب روزنامه‌ها بر روی میز تحریرش در زیر هاله‌ ای از نور به چشم می‌خورد؛ عنوان یکی از روزنامه‌ها گویی با داد و ف��یاد، خودنمایی می‌کرد: هری پاتر: پسر برگزیده؟)؛ پایانتاریخ بهنگام رسانی 09/07/1399هجری خورشیدی؛ 30/05/1400هجری خورشیدی؛ ا. شربیانی",
+              "domainType":"review",
+              "_version_":1718686229666463744}]},
+        {
+          "id":"804238",
+          "name":"Fullmetal Alchemist 5: Hana Yori Dango",
+          "rating":4.56,
+          "publishYear":2006,
+          "publishMonth":1,
+          "publishDay":1,
+          "publisher":"Turtleback Books",
+          "countsOfReviews":0,
+          "pagesNumber":192,
+          "description":"Winry, Ed and Alphonse go south in search of lzumi Curtis, the master alchemist who taught the brothers how to use alchemy many years ago. But in the boomtown of Rush Valley, an encounter with a pickpocket turns them down a different path, in search on an auto-mail blacksmith whose handiwork is the best that Winry's ever seen. Then the action flashes back to the past, to show how Ed and Alphonse first learned alchemy...",
+          "author":"Hiromu Arakawa",
+          "language":"English",
+          "genres":["Manga,Fantasy,Comics,Graphic Novels"],
+          "ISBN":"1417752092",
+          "domainType":"book",
+          "_version_":1718686221124763649},
+        {
+          "id":"862710",
+          "name":"Harry Potter and the Goblet of Fire (Harry Potter, #4)",
+          "rating":4.56,
+          "publishYear":2004,
+          "publishMonth":4,
+          "publishDay":10,
+          "publisher":"Raincoast Books",
+          "countsOfReviews":5,
+          "pagesNumber":796,
+          "description":"Harry Potter is midway through his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup with Hermione, Ron, and the Weasleys. He wants to dream about Cho Chang, his crush (and maybe do more than dream). He wants to find out about the mysterious event that's supposed to take place at Hogwarts this year, an event involving two other rival schools of magic, and a competition that hasn't happened for hundreds of years. He wants to be a normal, fourteen-year-old wizard. But unfortunately for Harry Potter, he's not normal - even by wizarding standards.And in his case, different can be deadly.",
+          "author":"J.K. Rowling",
+          "language":"English",
+          "genres":["Fantasy,Young Adult,Fiction,Magic"],
+          "ISBN":"1551927349",
+          "domainType":"book",
+          "_version_":1718686234550730752,
+          "reviews":[
+            {
+              "id":"862710-r0",
+              "review":"Don't mind me, just crying my eyes out. This was WAY better than I remember it being, and I remember it being pretty darn good. J.K. Rowling is a writing goddess and I can't believe how much foresight and planning went into this series. She already hints at the horcruxes and many other things in this book that don't show up until much later. Definitely one of my favorites in the series (but I say that about all of them)!",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r1",
+              "review":"Um. Wow. Yeah. That was freaking FANTASTIC!!!! Probably my favorite so far, just wow oh my gosh......WHAT EVEN!! I feel empowered and sad at the same time (sad because...you know). 5/5 stars of course! ",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r2",
+              "review":"One of my favorites in the series.The ending always gets to me and breaks my heart.",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r3",
+              "review":"This series has taken a damn TURN!Watch my video review here: https://www.youtube.com/watch?v=AEqu8...",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r4",
+              "review":"(A) 86% | ExtraordinaryNotes: A tone transfiguration, it's so the boy-girl drama, bright to start, but breaks your heart, and ends in tears and trauma.",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r5",
+              "review":"(A) 86% | ExtraordinaryNotes: After a steady build, the series hits its stride. Deep and layered, it goes down smooth, never seeming overly complex.",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r6",
+              "review":"*To read more reviews by me visit Views & Reviews *I seriously have no idea why I still review these books when I have nothing new to say. I mean... J.K. Rowling is perfect. This series is perfect. And I dream day & night of going to Hogwarts. So what I'm going to do is, I'm going to show you how I felt about this book:When I started the book:During the book:At the end: Umm.. Mam Rowling..All in allSorry for the lame review, readers. I just really don't know what to say..",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r7",
+              "review":"There is an incredibly somber mood that descends on me every time I finish this book in the series, and reading it with the illustrations did nothing to change that. I felt the drawings were impeccable, and I loved how some of the characters were reimagined to look a different way than portrayed in the movies, my favorite being Mad Eye Moody. Now, the long wait for the remainder of the illustrated editions. :(",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r8",
+              "review":" 4th read: October 2019 - April 2020 (Physical & Stephen Fry audiobook)  ★★★★★read for the 24 hour harry potter readathon 3rd read: June 2018 (Stephen Fry audiobook)  ★★★★★ 2nd read: June - July 2017  ★★★★★SOOO many good scenes they should have included in the movie! Like  SPEW, Moody confiscating the map, Hermione discovering Rita Skeeter as an unregistered animagus, etc.  AHHHH I wish they could have made a 10 hour movie to include everything lol.",
+              "domainType":"review",
+              "_version_":1718686234550730752},
+            
+            {
+              "id":"862710-r9",
+              "review":"Here's some pics from the new Illustrated Edition! I have no idea why this didn't show as being read but who cares. It's Harry Potter and I can reread and listen to them forever!! Mel 🖤🐾🐺",
+              "domainType":"review",
+              "_version_":1718686234550730752}]},
+        {
+          "id":"732140",
+          "name":"Nausicaä of the Valley of the Wind, Vol. 3 (Nausicaä of the Valley of the Wind, #3)",
+          "rating":4.56,
+          "publishYear":2004,
+          "publishMonth":5,
+          "publishDay":5,
+          "publisher":"VIZ Media",
+          "countsOfReviews":61,
+          "pagesNumber":150,
+          "description":"Nausicaä finds herself on the edge of despair as she comes to realize the full extent of the ecological destruction that's ravaging Earth. Meanwhile, Queen Kushana of Torumekia plots to lead her troops back to the imperial capital and seize the crown. Nausicaä agrees to join Kushana and her people in the fight against the Doroks and her scheming brothers.",
+          "author":"Hayao Miyazaki",
+          "language":"English",
+          "genres":["Manga,Graphic Novels,Fantasy,Comics"],
+          "ISBN":"1591164109",
+          "domainType":"book",
+          "_version_":1718686206415339520,
+          "reviews":[
+            {
+              "id":"732140-r0",
+              "review":"La tercera entrega de Nausicaä del Valle del Viento ya es territorio totalmente nuevo para mí. Nos alejamos de la película en una tercera entrega donde empezamos a percatarnos de la verdadera destrucción ecológica que esta significando esta guerra entre Durku y Tormekia. Hay varios momentos clave en esta entrega, de conceptos que preveo importantes de cara a lo que viene en el resto de la serie. Un volumen que reflexiona sobre la guerra (y se centra mucho en ella) y sobre el sufrimiento de los inocentes.",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r1",
+              "review":"My experience with this was pretty much the same as with the previous volumes.",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r2",
+              "review":"This is such an amazing work of fiction! The world building is simply astonishing and the characters are all very well thought out and portrayed. The ending of this volume left me in tears.I really wish there was a continuation of the movie Nausicaä of the Valley of the Wind because the story is so amazing and beautiful more people need to know about it!!!I read this graphic novel for the Winter Cramathon 2016 and it completed the challenge:-Read a graphic novel/manga",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r3",
+              "review":"The tale is growing trickier to follow, but not so much that I couldn't grasp it after a bit of thought and the occasional re-read of a page. It remains engaging and entertaining, well-written and -drawn.",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r4",
+              "review":"20201001 10th read宮老其實很愛畫戰爭場面吧，氣勢磅礡阿--保護那烏西卡的瑪尼上人 如果維基用的羅馬拼音沒錯的話是Mani 是摩尼教創始人摩尼的名字 查了一下發現也是北歐神話的月神 這書取的名字還真有意思2009/03/12 1st read2016/10 7th read2018/04 8th read2019/01/31 9th read",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r5",
+              "review":"Another great segment of this story. A thoughtful portrayal of war and suffering. I enjoyed the development of Nausicaa and Kushama as characters in this volume. ",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r6",
+              "review":"Dans ce tome 3, on en apprend plus sur l'empire dork et l'assemblée des bonzes. Cet empire est mené par un chef religieux, maintenu en vie par un procédé mystérieux. Nausicaä s'allie avec la princesse Kushana lors d'un assaut contre l'empire dork afin de pouvoir sauver les prisonniers de guerre dorks. Un tome palpitant, fort en rebondissements, émouvant notamment la fin de la bataille. La question reste en suspens, où Nausicaä va-t-elle aller maintenant que les bonzes voient en elle l'être vêtu de bleu annoncé par la légende ? L'étau se resserre autour de Nausicaä toujours plus courageuse et sensible à la souffrance qui l'entoure. Des personnages très étoffés, la princesse Kushana apparaît sous un jour nouveau, un peu plus humaine, disons qu'on arrive à lui trouver des raisons d'agir comme elle le fait. J'ai hâte de voir la suite. ",
+              "domainType":"review",
+              "_version_":1718686206415339520},
+            
+            {
+              "id":"732140-r7",
+              "review":"Se nota que la historia ya va por la mitad. Es como una bola de nieve que cada vez se va haciendo más y más grande y es indudable que algo épico va a suceder. En este tomo se notan las ganas de ver el desenlace constantemente. Quieres ver que va a pasar a cada momento y vas pasando páginas sin darte cuenta. Además ya empieza a haber muchas explicaciones clave, lo cual solo hace que mejorar el libro. Lo mejor son las estrategias bélicas y la manera como lo explican. No se hace para nada aburrido. Creo que me voy situando con esto de identificar los bandos. ",
+              "domainType":"review",
+              "_version_":1718686206415339520}]}]
+    }}

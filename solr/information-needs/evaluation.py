@@ -8,7 +8,7 @@ import pandas as pd
 
 #Romance books about family to gift on Christmas
 QRELS_FILE = "1_qrels.txt"
-QUERY_URL = "http://localhost:8983/solr/books/select?fl=*%2C%20%5Bchild%20childFilter%3Dreview%3Afamily%26romance%5D&fq=description%3A%20romance%7C%7Cfamily&fq=name%3Aromance%7C%7Cfamily&indent=true&q.op=OR&q=%7B!parent%20which%3D%27-_nest_path_%3A*%20genres%3Aromance%27%7D%20review%3Afamily%20AND%20review%3Aromance"
+QUERY_URL = "http://localhost:8983/solr/books/select?indent=true&q.op=AND&q=%7B!parent%20which%3D%27-_nest_path_%3A*%20genres%3Aromance%20description%3Afamily%20description%3A%20christmas%27%7D%20review%3Afamily%20review%3Aromance%20review%3Achristmas&rows=27"
 
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
@@ -36,7 +36,7 @@ def ap(results, relevant):
     return sum(precision_values)/len(precision_values)
 
 @metric
-def p10(results, relevant, n=10):
+def p9(results, relevant, n=9):
     """Precision at N"""
     return len([doc for doc in results[:n] if doc['id'] in relevant])/n
 
@@ -46,7 +46,7 @@ def calculate_metric(key, results, relevant):
 # Define metrics to be calculated
 evaluation_metrics = {
     'ap': 'Average Precision',
-    'p10': 'Precision at 10 (P@10)'
+    'p9': 'Precision at 9 (P@9)'
 }
 
 # Calculate all metrics and export results as LaTeX table
