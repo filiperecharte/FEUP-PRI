@@ -5,10 +5,14 @@ import numpy as np
 import json
 import requests
 import pandas as pd
+from itertools import cycle
 
-#Romance books about family to gift on Christmas
-QRELS_FILE = "1_qrels.txt"
-QUERY_URL = "http://localhost:8983/solr/books/select?indent=true&q.op=AND&q=%7B!parent%20which%3D%27-_nest_path_%3A*%20genres%3Aromance%20description%3Afamily%20description%3A%20christmas%27%7D%20review%3Afamily%20review%3Aromance%20review%3Achristmas&rows=27"
+# setup plot details
+colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
+
+BOOSTED = True
+QRELS_FILE = "query3/3_qrels.txt"
+QUERY_URL = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&indent=true&pf=reviews%5E20&ps=5&q.op=AND&q=fast%20read&qf=reviews&rows=37"
 
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
@@ -36,9 +40,14 @@ def ap(results, relevant):
     return sum(precision_values)/len(precision_values)
 
 @metric
-def p9(results, relevant, n=9):
+def p10(results, relevant, n=10):
     """Precision at N"""
     return len([doc for doc in results[:n] if doc['id'] in relevant])/n
+
+@metric
+def r10(results, relevant, n=10):
+    """Recall at N"""
+    return len([doc for doc in results[:n] if doc['id'] in relevant]) / len(relevant)
 
 def calculate_metric(key, results, relevant):
     return metrics[key](results, relevant)
@@ -46,7 +55,8 @@ def calculate_metric(key, results, relevant):
 # Define metrics to be calculated
 evaluation_metrics = {
     'ap': 'Average Precision',
-    'p9': 'Precision at 9 (P@9)'
+    'p10': 'Precision at 10 (P@10)',
+    'r10': 'Recall at 10(R@10)'
 }
 
 # Calculate all metrics and export results as LaTeX table
@@ -57,43 +67,9 @@ df = pd.DataFrame([['Metric','Value']] +
     ]
 )
 
-with open('results.tex','w') as tf:
-    tf.write(df.to_latex())
-
-
-# PRECISION-RECALL CURVE
-# Calculate precision and recall values as we move down the ranked list
-precision_values = [
-    len([
-        doc 
-        for doc in results[:idx]
-        if doc['id'] in relevant
-    ]) / idx 
-    for idx, _ in enumerate(results, start=1)
-]
-
-recall_values = [
-    len([
-        doc for doc in results[:idx]
-        if doc['id'] in relevant
-    ]) / len(relevant)
-    for idx, _ in enumerate(results, start=1)
-]
-
-precision_recall_match = {k: v for k,v in zip(recall_values, precision_values)}
-
-# Extend recall_values to include traditional steps for a better curve (0.1, 0.2 ...)
-recall_values.extend([step for step in np.arange(0.1, 1.1, 0.1) if step not in recall_values])
-recall_values = sorted(set(recall_values))
-
-# Extend matching dict to include these new intermediate steps
-for idx, step in enumerate(recall_values):
-    if step not in precision_recall_match:
-        if recall_values[idx-1] in precision_recall_match:
-            precision_recall_match[step] = precision_recall_match[recall_values[idx-1]]
-        else:
-            precision_recall_match[step] = precision_recall_match[recall_values[idx+1]]
-
-disp = PrecisionRecallDisplay([precision_recall_match.get(r) for r in recall_values], recall_values)
-disp.plot()
-plt.savefig('precision_recall.png')
+if(BOOSTED):
+    with open('query3/results_boosted.tex','w') as tf:
+        tf.write(df.to_latex())
+else:
+    with open('query3/results.tex','w') as tf:
+        tf.write(df.to_latex())

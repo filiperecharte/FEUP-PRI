@@ -1,21 +1,6 @@
 {
 	"add-field-type": [
         {
-            "name":"title",
-            "class":"solr.TextField",
-            "analyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
-                },
-                "filters":[
-                    {"class":"solr.EdgeNGramTokenizerFactory", "minGramSize":"2", "maxGramSize":"5"},
-                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
-                ]
-            }
-        },
-
-        {
             "name":"text",
             "class":"solr.TextField",
             "analyzer":{
@@ -25,31 +10,17 @@
                 "filters":[
                     {"class":"solr.StopFilterFactory", "words":"stopwords.txt", "ignoreCase":"true"},    
                     {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class":"solr.EnglishMinimalStemFilterFactory"}
                 ]
             }
-        },
-
-        {
-            "name":"separate_commas_only",
-            "class":"solr.TextField",
-            "analyzer":{
-                "tokenizer":{
-                    "class":"solr.PatternTokenizerFactory",
-                    "pattern":","
-                },
-                "filters":[
-                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
-                ]
-            }
-        }
+        }       
     ],
 
     "add-field": [
         {
             "name": "name",
-            "type": "title",
+            "type": "text",
             "indexed": true,
             "stored": true
         },
@@ -58,7 +29,7 @@
             "name": "ISBN",
             "type": "string",
             "indexed": false,
-            "stored": false
+            "stored": true
         },
 
         {
@@ -95,7 +66,7 @@
 
         {
             "name": "publisher",
-            "type": "title",
+            "type": "text",
             "indexed": true,
             "stored": true
 
@@ -135,22 +106,6 @@
 
         {
             "name": "language",
-            "type": "title",
-            "indexed": true,
-            "stored": true
-
-        },
-
-        {
-            "name": "domainType",
-            "type": "string",
-            "indexed": true,
-            "stored": false
-
-        },
-
-        {
-            "name": "review",
             "type": "text",
             "indexed": true,
             "stored": true
@@ -158,19 +113,20 @@
         },
 
         {
-            "name": "genre",
-            "type": "separate_commas_only",
+            "name": "reviews",
+            "type": "text_en",
             "indexed": true,
-            "stored": true
+            "stored": true,
+            "multiValued": true
 
         },
 
         {
-            "name": "domainId",
-            "type": "string",
+            "name": "genres",
+            "type": "text_en",
             "indexed": true,
-            "stored": true
-
+            "stored": true,
+            "multiValued": true
         }
     ]
 }
