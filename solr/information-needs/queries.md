@@ -115,12 +115,12 @@ url: http://localhost:8983/solr/books/select?bq=(reviews%3Aemotive)%5E80&defType
 ```
 q: christmas gift
 
-fq: description: family
+fq: description: friends
 fq: genres: romance
 
 qf: reviews genres description
 
-url: http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&fq=description%3A%20family&fq=genres%3Aromance&indent=true&q.op=OR&q=christmas%20gift&qf=reviews%20genres%20description&rows=10
+url: http://localhost:8983/solr/books/select?defType=edismax&fq=description%3A%20friends&fq=genres%3A%20romance&indent=true&q.op=OR&q=christmas%20gift&qf=reviews%20genres%20description
 ```
 
 *Bosted*

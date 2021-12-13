@@ -10,16 +10,16 @@ from itertools import cycle
 # setup plot details
 colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
 
-QRELS_FILE = "query4/4_qrels.txt"
+QRELS_FILE = "query5/5_qrels.txt"
 
-QUERY_URL_NORMAL = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&indent=true&q.op=AND&q=%22world%20war%20II%22%20emotive%20holocaust&qf=reviews%20genres%20description&rows=10"
-QUERY_URL_BOOSTED = "http://localhost:8983/solr/books/select?bq=(reviews%3Aemotive)%5E80&defType=edismax&fl=*%2C%20score&indent=true&q.op=AND&q=%22world%20war%20II%22%20emotive%20holocaust&qf=reviews%5E20%20genres%5E100%20description%5E10&rows=10"
+QUERY_URL_NORMAL = "http://localhost:8983/solr/books/select?defType=edismax&fq=description%3A%20friends&fq=genres%3A%20romance&indent=true&q.op=OR&q=christmas%20gift&qf=reviews%20genres%20description"
+QUERY_URL_BOOSTED = "http://localhost:8983/solr/books/select?bq=(genres%3Aromance)%5E60%20(description%3Afriends)%5E20&defType=edismax&fl=*%2C%20score&indent=true&pf=reviews%5E30&ps=5&q.op=OR&q=christmas%20gift&qf=reviews&rows=10"
 
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
 # Get query results from Solr instance
 
-results_noschema = json.load(open('query4/noschema.json', encoding="utf8"))['response']['docs']
+results_noschema = json.load(open('query5/noschema.json', encoding="utf8"))['response']['docs']
 results_normal = requests.get(QUERY_URL_NORMAL).json()['response']['docs']
 results_boosted = requests.get(QUERY_URL_BOOSTED).json()['response']['docs']
 
@@ -76,6 +76,6 @@ handles, labels = disp.ax_.get_legend_handles_labels()
 
 # set the legend and the axes
 ax.legend(handles=handles, labels=labels, loc="best")
-ax.set_title("Precision-Recall curve to Query 4")
+ax.set_title("Precision-Recall curve to Query 5")
 
 plt.savefig('precision_recall.png')
