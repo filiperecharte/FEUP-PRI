@@ -10,17 +10,20 @@ from itertools import cycle
 # setup plot details
 colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
 
-QRELS_FILE = "query2/2_qrels.txt"
-QUERY_URL_NORMAL = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&indent=true&q.op=AND&q=fiction%20novel&qf=genres%20description%20name&rows=37"
-QUERY_URL_BOOSTED = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&indent=true&q.op=AND&q=fiction%20novel&qf=genres%5E20%20description%5E10%20name%5E15&rows=37"
+QRELS_FILE = "query5/5_qrels.txt"
+
+QUERY_URL_NORMAL = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&fq=description%3A%20family&fq=genres%3Aromance&indent=true&q.op=OR&q=christmas%20gift&qf=reviews%20genres%20description&rows=10"
+QUERY_URL_BOOSTED = "http://localhost:8983/solr/books/select?bq=(genres%3Aromance)%5E60%20(description%3Afriends)%5E20&defType=edismax&fl=*%2C%20score&indent=true&pf=reviews%5E30&ps=5&q.op=OR&q=christmas%20gift&qf=reviews&rows=10"
 
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
 # Get query results from Solr instance
+
+results_noschema = json.load(open('query5/noschema.json', encoding="utf8"))['response']['docs']
 results_normal = requests.get(QUERY_URL_NORMAL).json()['response']['docs']
 results_boosted = requests.get(QUERY_URL_BOOSTED).json()['response']['docs']
 
-results_list = [results_normal, results_boosted]
+results_list = [results_noschema, results_normal, results_boosted]
 
 _, ax = plt.subplots(figsize=(7, 8))
 
@@ -61,9 +64,11 @@ for results, color in zip(results_list, colors):
 
     disp = PrecisionRecallDisplay([precision_recall_match.get(r) for r in recall_values], recall_values)
     if(i==0):
-        disp.plot(ax=ax, name=f"Precision-recall without boost", color=color)
-    else:
-        disp.plot(ax=ax, name=f"Precision-recall with boost", color=color, linewidth=1)
+        disp.plot(ax=ax, name=f"Precision-recall without schema", color=color, linewidth=1)
+    elif(i==1):
+        disp.plot(ax=ax, name=f"Precision-recall without boost", color=color, linewidth=1)
+    elif(i==2):
+        disp.plot(ax=ax, name=f"Precision-recall with boost", color=color, linewidth=1.5)
     i+=1
 
 # add the legend for the iso-f1 curves
@@ -71,6 +76,6 @@ handles, labels = disp.ax_.get_legend_handles_labels()
 
 # set the legend and the axes
 ax.legend(handles=handles, labels=labels, loc="best")
-ax.set_title("Precision-Recall curve to Query 2")
+ax.set_title("Precision-Recall curve to Query 5")
 
 plt.savefig('precision_recall.png')

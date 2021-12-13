@@ -8,11 +8,11 @@ import pandas as pd
 from itertools import cycle
 
 # setup plot details
-colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
+colors = cycle(["navy", "turquoise", "cornflowerblue", "teal"])
 
 BOOSTED = True
-QRELS_FILE = "query3/3_qrels.txt"
-QUERY_URL = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&indent=true&pf=reviews%5E20&ps=5&q.op=AND&q=fast%20read&qf=reviews&rows=37"
+QRELS_FILE = "query1/1_qrels.txt"
+QUERY_URL = "http://localhost:8983/solr/books/select?bq=(genres%3Ahistory)%5E20%20(description%3Afamily)%5E15&defType=edismax&fl=*%2C%20score&indent=true&q.op=AND&q=history%20family&qf=genres%20description%20reviews&rows=10"
 
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
@@ -68,8 +68,8 @@ df = pd.DataFrame([['Metric','Value']] +
 )
 
 if(BOOSTED):
-    with open('query3/results_boosted.tex','w') as tf:
+    with open('query1/results_boosted.tex','w') as tf:
         tf.write(df.to_latex())
 else:
-    with open('query3/results.tex','w') as tf:
+    with open('query1/results.tex','w') as tf:
         tf.write(df.to_latex())
