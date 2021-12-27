@@ -9,8 +9,8 @@
 }
 
 .App {
-    margin-right: 90px;
-    margin-left: 90px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 
 /******** NavBar ********/
@@ -20,16 +20,21 @@
     font-size: 20px;
 }
 
+/******** Main Page ********/
+#mainPage {
+    margin-bottom: 30px;
+}
+
 #mainPage img {
     width: 100%;
-    max-height: 250px;
+    max-height: 150px;
     border-radius: 25px;
 }
 
 #mainPage .searchContainer {
     position: relative;
     text-align: center;
-    color: white;
+    margin-bottom: 70px;
 }
 
 
@@ -43,13 +48,14 @@
     position: relative;
 }
 
-#mainPage input {
+#mainPage #enter {
     width: 100%;
     outline: none;
     height: 40px;
     border-radius: 10px;
     border: 1px solid rgba(184, 144, 125, 0.64);
     padding-left: 15px;
+    background: var(--white);
 }
 
 #mainPage button {
@@ -57,10 +63,98 @@
     right: 6px;
     border: none;
     background: none;
-    top: 4px;
 }
 
-#mainPage svg {
+#mainPage #clear svg {
     color: var(--brown);
     font-size: 25px;
+}
+
+#mainPage .filtersCol {
+    border-right: 1px solid var(--brown);
+    margin-top: 50px;
+}
+
+#mainPage .form-range {
+    width: 80%;
+}
+
+#mainPage h2 {
+    font-weight: bold;
+}
+
+#mainPage .resultsCol {
+    padding-left: 70px;
+}
+
+@media (max-width: 768px) {
+    #mainPage .filtersCol {
+        border-right: none !important;
+        border-bottom: 1px solid var(--brown);
+        margin-top: 20px !important;
+        margin-bottom: 30px;
+    }
+
+    #mainPage .form-range {
+        margin-bottom: 20px;
+    }
+
+    #mainPage .resultsCol {
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 452px) {
+    #bookCard svg {
+        display: none;
+    }
+}
+
+/******** Book Card ********/
+#bookCard {
+    background: rgba(228, 228, 228, 0.28);
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+
+#bookCard a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#bookCard .card-title {
+    font-weight: bold;
+}
+
+#bookCard .list-group-item {
+    background: none;
+    border: none;
+}
+
+/******** Footer ********/
+#footer{
+    color: white;
+    background-color: var(--brown);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 80px;
+}
+
+#footer .buttonDiv {
+    text-align: right;
+}
+
+#footer a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+@media (max-width: 358px) {
+    #footer .buttonDiv, .copyrightsDiv{
+        text-align: center !important;
+    }
 }

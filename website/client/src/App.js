@@ -1,9 +1,11 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {MainPage} from "./pages/MainPage";
 import './css/style.css';
+import {Footer} from "./components/Footer";
 
 function App() {
   return (
+    <>
     <div className="App">
       <Router>
         <Routes>
@@ -11,6 +13,8 @@ function App() {
         </Routes>
       </Router>
     </div>
+  <Footer />
+    </>
   );
 }
 
