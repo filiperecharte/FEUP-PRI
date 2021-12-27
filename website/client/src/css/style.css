@@ -1,0 +1,66 @@
+:root {
+    --brown: #b8907d;
+    --white: #f6f4f3;
+    --black: #011635;
+}
+
+#root {
+    background: var(--white);
+}
+
+.App {
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+/******** NavBar ********/
+#navbar a{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#mainPage img {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 25px;
+}
+
+#mainPage .searchContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+#mainPage .centered {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainPage .buttonIn {
+    position: relative;
+}
+
+#mainPage input {
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(184, 144, 125, 0.64);
+    padding-left: 15px;
+}
+
+#mainPage button {
+    position: absolute;
+    right: 6px;
+    border: none;
+    background: none;
+    top: 4px;
+}
+
+#mainPage svg {
+    color: var(--brown);
+    font-size: 25px;
+}
