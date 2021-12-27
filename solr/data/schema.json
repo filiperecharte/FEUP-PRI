@@ -90,7 +90,7 @@
 
         {
             "name": "description",
-            "type": "text",
+            "type": "text_en",
             "indexed": true,
             "stored": true
 

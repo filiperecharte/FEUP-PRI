@@ -118,9 +118,9 @@ q: christmas gift
 fq: description: friends
 fq: genres: romance
 
-qf: reviews genres description
+qf: reviews
 
-url: http://localhost:8983/solr/books/select?defType=edismax&fq=description%3A%20friends&fq=genres%3A%20romance&indent=true&q.op=OR&q=christmas%20gift&qf=reviews%20genres%20description
+url: http://localhost:8983/solr/books/select?defType=edismax&fq=description%3A%20friends&fq=genres%3A%20romance&indent=true&q.op=OR&q=christmas%20gift&qf=reviews
 ```
 
 *Bosted*

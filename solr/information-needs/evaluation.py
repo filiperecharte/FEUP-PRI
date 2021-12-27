@@ -10,16 +10,16 @@ from itertools import cycle
 # setup plot details
 colors = cycle(["navy", "turquoise", "cornflowerblue", "teal"])
 
-BOOSTED = False
-NOSCHEMA = True
-QRELS_FILE = "query2/2_qrels.txt"
-QUERY_URL = "http://localhost:8983/solr/books/select?defType=edismax&fl=*%2C%20score&indent=true&q.op=AND&q=fiction%20novel&qf=genres%20description%20name&rows=10"
+BOOSTED = True
+NOSCHEMA = False
+QRELS_FILE = "query5/5_qrels.txt"
+QUERY_URL = "http://localhost:8983/solr/books/select?bq=(genres%3Aromance)%5E60%20(description%3Afriends)%5E20&defType=edismax&fl=*%2C%20score&indent=true&pf=reviews%5E30&ps=5&q.op=OR&q=christmas%20gift&qf=reviews&rows=10"
 
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
 # Get query results from Solr instance
-#results = requests.get(QUERY_URL).json()['response']['docs']
-results = json.load(open('query2/noschema.json', encoding="utf8"))['response']['docs']
+results = requests.get(QUERY_URL).json()['response']['docs']
+# results = json.load(open('query4/noschema.json', encoding="utf8"))['response']['docs']
 
 
 # METRICS TABLE
@@ -69,11 +69,11 @@ df = pd.DataFrame([['Metric','Value']] +
 )
 
 if(BOOSTED):
-    with open('query2/results_boosted.tex','w') as tf:
+    with open('query5/results_boosted.tex','w') as tf:
         tf.write(df.to_latex())
 elif(NOSCHEMA):
-    with open('query2/results_noschema.tex','w') as tf:
+    with open('query5/results_noschema.tex','w') as tf:
         tf.write(df.to_latex())
 else:
-    with open('query2/results.tex','w') as tf:
+    with open('query5/results.tex','w') as tf:
         tf.write(df.to_latex())
