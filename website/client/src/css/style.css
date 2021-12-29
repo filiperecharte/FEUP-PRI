@@ -27,7 +27,7 @@
 
 #mainPage img {
     width: 100%;
-    max-height: 150px;
+    max-height: 200px;
     border-radius: 25px;
 }
 
@@ -104,10 +104,17 @@
     }
 }
 
-@media (max-width: 452px) {
-    #bookCard svg {
-        display: none;
-    }
+#mainPage .form-check {
+    margin-bottom: 1rem;
+}
+
+#mainPage .form-check-input:checked {
+    background-color: var(--brown);
+    border-color: var(--brown);
+}
+
+#mainPage .form-check-input:focus {
+    box-shadow: none;
 }
 
 /******** Book Card ********/
@@ -130,6 +137,12 @@
 #bookCard .list-group-item {
     background: none;
     border: none;
+}
+
+@media (max-width: 452px) {
+    #bookCard svg {
+        display: none;
+    }
 }
 
 /******** Footer ********/
