@@ -8,9 +8,37 @@
     background: var(--white);
 }
 
-.App {
-    margin-right: 80px;
-    margin-left: 80px;
+h1 {
+    font-weight: bold;
+    color: var(--brown);
+}
+
+.layout {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+@media (max-width: 992px) {
+    .layout {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+
+    #navbar .navbar-brand{
+        margin-left: 15px !important;
+    }
+
+    #navbar .collapse {
+        margin-right: 15px !important;
+    }
+
+    #navbar button {
+        margin-right: 15px;
+    }
+}
+
+.box {
+    margin-top: 50px;
 }
 
 /******** NavBar ********/
@@ -18,6 +46,14 @@
     color: var(--black);
     font-weight: bold;
     font-size: 20px;
+}
+
+#navbar .navbar-brand {
+    margin-left: 100px;
+}
+
+#navbar .collapse {
+    margin-right: 100px;
 }
 
 /******** Main Page ********/
@@ -95,12 +131,22 @@
         margin-bottom: 30px;
     }
 
-    #mainPage .form-range {
+    #mainPage .select {
         margin-bottom: 20px;
     }
 
     #mainPage .resultsCol {
         padding-left: 0 !important;
+    }
+
+    #mainPage .searchContainer {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 370px) {
+    #mainPage img {
+        min-height: 60px;
     }
 }
 
@@ -115,6 +161,19 @@
 
 #mainPage .form-check-input:focus {
     box-shadow: none;
+}
+
+#mainPage .css-1s2u09g-control {
+    border-color: var(--brown);
+}
+
+#mainPage .css-tj5bde-Svg {
+    fill: var(--brown);
+}
+
+#mainPage .css-1pahdxg-control {
+    border-color: var(--brown);
+    box-shadow: 0 0 0 1px var(--brown);
 }
 
 /******** Book Card ********/
@@ -166,8 +225,74 @@
     text-decoration: none;
 }
 
+#footer a:hover {
+    color: #5C473E;
+}
+
+#footer .active {
+    color: #5C473E;
+}
+
 @media (max-width: 358px) {
     #footer .buttonDiv, .copyrightsDiv{
         text-align: center !important;
     }
+}
+
+/******** Contact Card ********/
+
+#contactCard {
+    text-align: center;
+    background: rgba(228, 228, 228, 0.28);
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+    width: 70%;
+    margin-bottom: 10px;
+    min-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contactCard img{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 9px;
+}
+
+#contactCard .card-title {
+    font-weight: 600;
+}
+
+#contactCard a {
+    color: var(--black);
+}
+
+#contactCard a:hover {
+    color: var(--brown);
+}
+
+
+
+/******** About Us ********/
+#aboutPage h1 {
+    margin-bottom: 50px;
+}
+
+#aboutPage h2 {
+    margin-bottom: 20px;
+}
+
+#aboutPage .aboutApp {
+    margin-bottom: 50px;
+}
+
+#aboutPage .aboutTeam {
+    margin-bottom: 50px;
+}
+
+#aboutPage #navbar {
+    padding-bottom: 0;
+    border-bottom: 1px solid var(--brown);
 }
