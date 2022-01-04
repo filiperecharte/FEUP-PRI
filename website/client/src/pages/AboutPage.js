@@ -29,14 +29,14 @@ export function AboutPage() {
           </div>
         <div className="aboutTeam">
           <h2>Our Team</h2>
-          <Row>
-            <Col md={3} sm={12}>
+          <Row className="justify-content-center">
+            <Col md={4} sm={12}>
               <ContactCard name="Ana Cruz" img="/img/ana.jpg" email="up201806460@up.pt"/>
             </Col>
-            <Col md={3} sm={12}>
+            <Col md={4} sm={12}>
               <ContactCard name="Inês Quarteu" img="/img/ines.jpg" email="201806279@up.pt"/>
             </Col>
-            <Col md={3} m={12}>
+            <Col md={4} sm={12}>
               <ContactCard name="Filipe Recharte" img="/img/filipe.jpg" email="201806743@up.pt"/>
             </Col>
           </Row>
