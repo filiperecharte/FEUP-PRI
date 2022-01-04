@@ -1,0 +1,1166 @@
+{
+    "props": {
+        "pageProps": {
+            "apolloState": {
+                "ROOT_QUERY": {
+                    "__typename": "Query",
+                    "getAdsTargeting({\"getAdsTargetingInput\":{\"contextual\":{\"legacyId\":\"935545\",\"legacyResourceType\":\"book\"}}})": {
+                        "__typename": "AdsTargeting",
+                        "behavioral": null,
+                        "contextual": {
+                            "__typename": "ContextualTargeting",
+                            "resource": "Work_711980",
+                            "tags": [
+                                "117",
+                                "68",
+                                "797",
+                                "1",
+                                "35"
+                            ],
+                            "adult": false
+                        }
+                    },
+                    "getSiteHeaderBanner": {
+                        "__typename": "SiteHeaderBanner",
+                        "altText": "Join the 2022 Reading Challenge",
+                        "clickthroughUrl": "https://www.goodreads.com/challenges/11636?ref=rc22_strip",
+                        "desktop1xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1639680511i/77.jpg",
+                        "desktop2xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1639680517i/78.jpg",
+                        "mobile1xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1639680523i/79.jpg",
+                        "mobile2xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1639680528i/80.jpg",
+                        "siteStripColor": "#D36800"
+                    },
+                    "getBookByLegacyId({\"legacyId\":\"935545\"})": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.0bX7BpvpopgVyLsl5u72kg"
+                    }
+                },
+                "User:4510019": {
+                    "id": 4510019,
+                    "__typename": "User",
+                    "legacyId": 4510019,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 12
+                },
+                "Contributor:kca://author/amzn1.gr.author.v1.vE4s70sLwOfVbB17ID1P1g": {
+                    "id": "kca://author/amzn1.gr.author.v1.vE4s70sLwOfVbB17ID1P1g",
+                    "__typename": "Contributor",
+                    "legacyId": 385982,
+                    "name": "Ken Derby",
+                    "description": "Ken Derby is a slightly famous author, monkey trainer, twelve-minute rock star, five-minute TV star, two-minute movie star, fisherman, and former CIA operative (okay . . . not really). When he isn't teaching or writing, he might be found reading, working out, biking, or rooting for the Denver Broncos. Ken lives in Budapest, Hungary and teaches grade five at the American International School of Budapest. One of his books, \"The Top 10 Ways to Ruin the First Day of School,\" is an International Reading Association and Children's Book Council \"Children's Choices\" Honor Book and an Alabama \"Children's Choice Book Award Program\" winner. Ken is available for author visits and virtual author visits. Visit Ken's website to learn more about him.\u003cbr /\u003e\u003cbr /\u003eNew Book Released on Sept. 6, 2013!\u003cbr /\u003eHarley Patrick Davidsun, the zany biker/rocker/teacher dude from \"The Top 10 Ways to Ruin the First Day of School\" will tickle your funny bone in my new book called \"Harley P. Davidsun's Loony Bin\"! And his classroom is not what one would call \"traditional.\" He's nicknamed it \"The Fourth Grade Loony Bin,\" and that's exactly what it is, especially when he pits the boys against the girls in a contest to win a ride on his chopped motorcycle. Zany events - ranging from a flatulence test to Kiss-A-Mania - mean you'll never know what's going to happen next. Step into the Loony Bin and find out who wins the wacky contest, and you'll be glad you went along for the ride!",
+                    "isGrAuthor": true,
+                    "works": {
+                        "__typename": "ContributorWorksConnection",
+                        "totalCount": 5
+                    },
+                    "profileImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/authors/1412359220i/385982._UX200_CR0,32,200,200_.jpg",
+                    "webUrl": "https://www.goodreads.com/author/show/385982.Ken_Derby",
+                    "user": {
+                        "__ref": "User:4510019"
+                    },
+                    "viewerIsFollowing": null,
+                    "followers": {
+                        "__typename": "ContributorFollowersConnection",
+                        "totalCount": 15
+                    }
+                },
+                "Book:kca://book/amzn1.gr.book.v1.q-OPBkmhyubt_6gECh6NUw": {
+                    "id": "kca://book/amzn1.gr.book.v1.q-OPBkmhyubt_6gECh6NUw",
+                    "__typename": "Book",
+                    "legacyId": 21877937,
+                    "webUrl": "https://www.goodreads.com/book/show/21877937-the-top-10-ways-to-ruin-the-first-day-of-school"
+                },
+                "User:46974649": {
+                    "id": 46974649,
+                    "__typename": "User",
+                    "legacyId": 46974649,
+                    "imageUrlSquare": "",
+                    "isAuthor": false,
+                    "textReviewsCount": 38,
+                    "viewableName": "Alondra Rodriguez",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/46974649-alondra-rodriguez",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 5
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.lHBs-gCHN8Jb3AmtDJoCmA": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.lHBs-gCHN8Jb3AmtDJoCmA",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.q-OPBkmhyubt_6gECh6NUw"
+                    },
+                    "creator": {
+                        "__ref": "User:46974649"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1471112491680,
+                    "createdAt": 1447356060000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1451852912000,
+                    "text": "This book is about a kid that thinks of things how to ruin the 5 grade. I like this book because it has so much detail for you to understand the book. I recommend his book to 5 grade because of the story it gives you about 5 grade and what not to do an o listen to your teacher read this book it will help you",
+                    "rating": 5,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/46974649?shelf=read"
+                        },
+                        "taggings": [],
+                        "webUrl": "https://www.goodreads.com/review/show/1440806037"
+                    },
+                    "likeCount": 3,
+                    "viewerHasLiked": null,
+                    "commentCount": 0,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "Book:kca://book/amzn1.gr.book.v1.1EhqL4pIiRj2-n-mtjSO2g": {
+                    "id": "kca://book/amzn1.gr.book.v1.1EhqL4pIiRj2-n-mtjSO2g",
+                    "__typename": "Book"
+                },
+                "User:8247832": {
+                    "id": 8247832,
+                    "__typename": "User",
+                    "legacyId": 8247832,
+                    "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1467318345i/8247832._UX200_CR0,0,200,200_.jpg",
+                    "isAuthor": false,
+                    "textReviewsCount": 94,
+                    "viewableName": "Chris",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/8247832-chris",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 3
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.-leDtUO2X9bxKELBWdpEag": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.-leDtUO2X9bxKELBWdpEag",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.1EhqL4pIiRj2-n-mtjSO2g"
+                    },
+                    "creator": {
+                        "__ref": "User:8247832"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1628106173474,
+                    "createdAt": 1627582901059,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1627583595303,
+                    "text": "I gave this book 4 stars because of the entertainment and pop culture references from the 1990s. It would be a fun read aloud to 5th Grade. I forgot how funny David Letterman was, and this book has his show as Tony’s quest. How great would it be to expose kids to how hilarious Dave was?! Unfortunately, it’s not easy to find any of his Top Ten 10 clips that are appropriate for 10 year olds, but his videos with kids and pets are funnier anyway, so I’d use those. The book is not classic by any means, but was fun to read.",
+                    "rating": 4,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/8247832?shelf=read"
+                        },
+                        "taggings": [],
+                        "webUrl": "https://www.goodreads.com/review/show/4142462148"
+                    },
+                    "likeCount": 2,
+                    "viewerHasLiked": null,
+                    "commentCount": 0,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "User:35578120": {
+                    "id": 35578120,
+                    "__typename": "User",
+                    "legacyId": 35578120,
+                    "imageUrlSquare": "",
+                    "isAuthor": false,
+                    "textReviewsCount": 3,
+                    "viewableName": "Hannah",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/35578120-hannah",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 1
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.pEzkDcKgUowW1No48xTTVw": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.pEzkDcKgUowW1No48xTTVw",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.q-OPBkmhyubt_6gECh6NUw"
+                    },
+                    "creator": {
+                        "__ref": "User:35578120"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1501882154237,
+                    "createdAt": 1414125352000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1414125692000,
+                    "text": "I read this book aloud to my students and, for the most part, we had a lot of good laughs. Since we live in Vietnam, many of the U.S. references (and there were A LOT), were not contextually challenging for us. There were many times I had to show clips of The Late Show, image search football fields, and stop to explain jokes. Because of this, we actually learned a lot from the book.\u003cbr /\u003e\u003cbr /\u003eI am giving the book three stars however, because it seemed as though it would only be appropriate for students in the U.S. who grew up in the late nineties and early 2000s. References to Limp Bizkit, Hell's Angels, and Madonna might even be irrelevant to student in the U.S. today and can take some time to explain. \u003cbr /\u003e\u003cbr /\u003eIn all, my class enjoyed the story and were excited when it was time to read. I am relieved we have finally finished, as it took much longer than I had anticipated with the added explanations. If you think you or your students will be able to follow the culture behind this story, give it a read. Tony Baloney is indeed an outrageous kid!",
+                    "rating": 3,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/35578120?shelf=read"
+                        },
+                        "taggings": [
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "fifth-grade-books",
+                                    "webUrl": "https://www.goodreads.com/review/list/35578120?shelf=fifth-grade-books"
+                                }
+                            }
+                        ],
+                        "webUrl": "https://www.goodreads.com/review/show/1087875783"
+                    },
+                    "likeCount": 2,
+                    "viewerHasLiked": null,
+                    "commentCount": 1,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "Book:kca://book/amzn1.gr.book.v1.Jd1E_tBPIMTnz_MwAJ1x6w": {
+                    "id": "kca://book/amzn1.gr.book.v1.Jd1E_tBPIMTnz_MwAJ1x6w",
+                    "__typename": "Book"
+                },
+                "User:6034119": {
+                    "id": 6034119,
+                    "__typename": "User",
+                    "legacyId": 6034119,
+                    "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1384734215i/6034119._UY200_CR33,0,200,200_.jpg",
+                    "isAuthor": false,
+                    "textReviewsCount": 6,
+                    "viewableName": "Amy Oaks",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/6034119-amy-oaks",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 0
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.i1FcmafCRuoxu26QVZr2gQ": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.i1FcmafCRuoxu26QVZr2gQ",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.Jd1E_tBPIMTnz_MwAJ1x6w"
+                    },
+                    "creator": {
+                        "__ref": "User:6034119"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1471999343548,
+                    "createdAt": 1314467114000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1314468603000,
+                    "text": "I always begin the school year reading this book to my new 5th grade students. It is a hilarious and silly read that really units the entire class, both students and teachers can relate to the story in their own ways.",
+                    "rating": 5,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/6034119?shelf=read"
+                        },
+                        "taggings": [],
+                        "webUrl": "https://www.goodreads.com/review/show/202689449"
+                    },
+                    "likeCount": 2,
+                    "viewerHasLiked": null,
+                    "commentCount": 1,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "User:46974455": {
+                    "id": 46974455,
+                    "__typename": "User",
+                    "legacyId": 46974455,
+                    "imageUrlSquare": "",
+                    "isAuthor": false,
+                    "textReviewsCount": 26,
+                    "viewableName": "Alayna Fontenot",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/46974455-alayna-fontenot",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 0
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.C3SsFxRLj7qqfcRfvtEm3w": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.C3SsFxRLj7qqfcRfvtEm3w",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.Jd1E_tBPIMTnz_MwAJ1x6w"
+                    },
+                    "creator": {
+                        "__ref": "User:46974455"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1471138092006,
+                    "createdAt": 1454968356000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1457713764000,
+                    "text": "I like this book because it talks about how kids going to be in school and that if they be good then they will have fun with the teacher and that if the kids be bad then they have to stay in and do they work that they did do and why I like it because its fuuny and I can read it over and over.",
+                    "rating": 0,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/46974455?shelf=read"
+                        },
+                        "taggings": [],
+                        "webUrl": "https://www.goodreads.com/review/show/1542013544"
+                    },
+                    "likeCount": 2,
+                    "viewerHasLiked": null,
+                    "commentCount": 0,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "User:1072582": {
+                    "id": 1072582,
+                    "__typename": "User",
+                    "legacyId": 1072582,
+                    "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1636152533i/1072582._UX200_CR0,39,200,200_.jpg",
+                    "isAuthor": false,
+                    "textReviewsCount": 6098,
+                    "viewableName": "Kaethe",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/1072582-kaethe",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 415
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.62Wb6yCZui9a6eyMp9CsEA": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.62Wb6yCZui9a6eyMp9CsEA",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.Jd1E_tBPIMTnz_MwAJ1x6w"
+                    },
+                    "creator": {
+                        "__ref": "User:1072582"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1562448204009,
+                    "createdAt": 1306911600000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1405369651000,
+                    "text": "The PandaBat selected this, and then passed it on to me when she finished. No book built around stupid human tricks can be all bad, can it?\u003cbr /\u003e\u003cbr /\u003e***\u003cbr /\u003e\u003cbr /\u003eOur story involves three fifth-graders from Kansas City and their teacher: Tony Baloney, Anna Banana, Mo, and Mr. Gore. TB does every stupid thing that occurs to him the moment it does, Anna and Mo assist. Tony's great dream is to be on the Late Show with David Letterman, to which end he keeps doing stupid stuff and then writing a letter to his idol which includes a Top Ten List and in which the number one thing in the list is his latest stupid thing. Anna is all about handsome men, and she adores Tony. Mo is simply frightened of everything. After a series of implausible events, Tony gets to live his dream.\u003cbr /\u003e\u003cbr /\u003eUm, let's see, the characters are one dimensional. The plot is unbelievable. The jokes are lame. Letterman the character never seemed like the real person. Everything seems weirdly off-kilter and dated. I never bought a word of it.\u003cbr /\u003e\u003cbr /\u003eOn the other hand, the PandaBat (third grade) thought it was a hoot.",
+                    "rating": 1,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/1072582?shelf=read"
+                        },
+                        "taggings": [
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "humor",
+                                    "webUrl": "https://www.goodreads.com/review/list/1072582?shelf=humor"
+                                }
+                            },
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "fiction",
+                                    "webUrl": "https://www.goodreads.com/review/list/1072582?shelf=fiction"
+                                }
+                            },
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "kids",
+                                    "webUrl": "https://www.goodreads.com/review/list/1072582?shelf=kids"
+                                }
+                            },
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "adventure",
+                                    "webUrl": "https://www.goodreads.com/review/list/1072582?shelf=adventure"
+                                }
+                            },
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "middle-grade",
+                                    "webUrl": "https://www.goodreads.com/review/list/1072582?shelf=middle-grade"
+                                }
+                            }
+                        ],
+                        "webUrl": "https://www.goodreads.com/review/show/996220817"
+                    },
+                    "likeCount": 1,
+                    "viewerHasLiked": null,
+                    "commentCount": 0,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "Book:kca://book/amzn1.gr.book.v1.0bX7BpvpopgVyLsl5u72kg": {
+                    "id": "kca://book/amzn1.gr.book.v1.0bX7BpvpopgVyLsl5u72kg",
+                    "__typename": "Book",
+                    "title": "Top Ten Ways To Ruin The First Day Of School",
+                    "titleComplete": "Top Ten Ways To Ruin The First Day Of School",
+                    "legacyId": 935545,
+                    "webUrl": "https://www.goodreads.com/book/show/935545.Top_Ten_Ways_To_Ruin_The_First_Day_Of_School",
+                    "description": "\"The Top 10 Ways to Ruin the First Day of 5th Grade, #1: Get your foot stuck in a toilet in the boys' rest room and have to be rescued by the 911 guys.\"\u003cbr /\u003e\u003cbr /\u003eFifth-grader Anthony Madison, a.k.a. Tony Baloney, can't get enough of The Late Show with David Letterman. He loves the jokes, the silly routines, and most of all the top ten lists-and Tony will stop at nothing to get himself on the program. He's even devising his own repertoire of Stupid Human Tricks and top ten lists sure to put him next in line as Dave's replacement. But to get all the way from Kansas to the big time in New York City, he will have to pull out all the stops. Tony Baloney takes his friends, family, and teachers on an uproarious and wild ride to remember.",
+                    "description({\"stripped\":true})": "\"The Top 10 Ways to Ruin the First Day of 5th Grade, #1: Get your foot stuck in a toilet in the boys' rest room and have to be rescued by the 911 guys.\"Fifth-grader Anthony Madison, a.k.a. Tony Baloney, can't get enough of The Late Show with David Letterman. He loves the jokes, the silly routines, and most of all the top ten lists-and Tony will stop at nothing to get himself on the program. He's even devising his own repertoire of Stupid Human Tricks and top ten lists sure to put him next in line as Dave's replacement. But to get all the way from Kansas to the big time in New York City, he will have to pull out all the stops. Tony Baloney takes his friends, family, and teachers on an uproarious and wild ride to remember.",
+                    "primaryContributorEdge": {
+                        "__typename": "BookContributorEdge",
+                        "node": {
+                            "__ref": "Contributor:kca://author/amzn1.gr.author.v1.vE4s70sLwOfVbB17ID1P1g"
+                        },
+                        "role": "Author"
+                    },
+                    "secondaryContributorEdges": [],
+                    "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328867322i/935545.jpg",
+                    "bookSeries": [],
+                    "bookGenres": [
+                        {
+                            "__typename": "BookGenre",
+                            "genre": {
+                                "__typename": "Genre",
+                                "name": "Humor",
+                                "webUrl": "https://www.goodreads.com/genres/humor"
+                            }
+                        },
+                        {
+                            "__typename": "BookGenre",
+                            "genre": {
+                                "__typename": "Genre",
+                                "name": "Childrens",
+                                "webUrl": "https://www.goodreads.com/genres/childrens"
+                            }
+                        },
+                        {
+                            "__typename": "BookGenre",
+                            "genre": {
+                                "__typename": "Genre",
+                                "name": "Realistic Fiction",
+                                "webUrl": "https://www.goodreads.com/genres/realistic-fiction"
+                            }
+                        },
+                        {
+                            "__typename": "BookGenre",
+                            "genre": {
+                                "__typename": "Genre",
+                                "name": "Fiction",
+                                "webUrl": "https://www.goodreads.com/genres/fiction"
+                            }
+                        },
+                        {
+                            "__typename": "BookGenre",
+                            "genre": {
+                                "__typename": "Genre",
+                                "name": "Young Adult",
+                                "webUrl": "https://www.goodreads.com/genres/young-adult"
+                            }
+                        }
+                    ],
+                    "details": {
+                        "__typename": "BookDetails",
+                        "asin": null,
+                        "format": "Paperback",
+                        "numPages": 176,
+                        "publicationTime": 1151737200000,
+                        "publisher": "Scholastic Paperbacks",
+                        "officialUrl": null,
+                        "isbn": "0439823226",
+                        "isbn13": "9780439823227",
+                        "language": {
+                            "__typename": "Language",
+                            "name": "English"
+                        }
+                    },
+                    "work": {
+                        "__ref": "Work:kca://work/amzn1.gr.work.v1.yo28fHAbC81t55yQA1Sh-A"
+                    },
+                    "reviewEditUrl": "https://www.goodreads.com/review/edit/935545",
+                    "viewerShelving": null,
+                    "links({})": {
+                        "__typename": "BookLinks",
+                        "primaryAffiliateLink": {
+                            "__typename": "KindleLink",
+                            "name": "Amazon",
+                            "url": "https://www.amazon.com/gp/product/B00JHMX8XS/ref=x_gr_bb_kindle?caller=Goodreads\u0026tag=x_gr_bb_kindle-20",
+                            "ref": "x_gr_bb_kindle",
+                            "ebookPrice": "2.99",
+                            "kuEligible": true,
+                            "primeEligible": false
+                        },
+                        "secondaryAffiliateLinks": [
+                            {
+                                "__typename": "BookLink",
+                                "name": "Amazon",
+                                "url": "http://www.amazon.com/gp/product/0439823226/ref=x_gr_bb_amazon?ie=UTF8\u0026tag=x_gr_bb_amazon-20\u0026linkCode=as2\u0026camp=1789\u0026creative=9325\u0026creativeASIN=0439823226\u0026SubscriptionId=1MGPYB6YW3HWK55XCGG2",
+                                "ref": "x_gr_bb_amazon"
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Audible",
+                                "url": "https://www.amazon.com/s?k=Top+Ten+Ways+To+Ruin+The+First+Day+Of+School\u0026i=audible\u0026ref=x_gr_w_bb_audible-20\u0026tag=x_gr_w_bb_audible-20",
+                                "ref": "x_gr_bb_amazon"
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Barnes \u0026 Noble",
+                                "url": "https://www.barnesandnoble.com/w/?ean=9780439823227",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Walmart eBooks",
+                                "url": "https://click.linksynergy.com/fs-bin/click?id=GwEz7vxblVU\u0026subid=\u0026offerid=361251.1\u0026type=10\u0026tmpid=9309\u0026u1=x_gr_w_bb\u0026RD_PARM1=https%3A%2F%2Fwww.kobo.com%2Fus%2Fen%2Fsearch%3FQuery%3D9780439823227",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Apple Books",
+                                "url": "https://geo.itunes.apple.com/us/book/isbn9780439823227?at=11lvdC\u0026mt=11\u0026ls=1",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Google Play",
+                                "url": "https://play.google.com/store/search?q=9780439823227\u0026c=books\u0026PCamrefID=bookpage\u0026PAffiliateID=10lHMS",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Abebooks",
+                                "url": "http://affiliates.abebooks.com/c/64613/77416/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fisbn%3D0439823226",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Book Depository",
+                                "url": "http://www.bookdepository.com/search?searchTerm=0439823226\u0026search=Find+book\u0026a_aid=goodreads",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Alibris",
+                                "url": "http://click.linksynergy.com/fs-bin/click?id=GwEz7vxblVU\u0026subid=\u0026offerid=189673.1\u0026type=10\u0026tmpid=939\u0026\u0026u1=x_gr_w_bb\u0026RD_PARM1=http%3A%2F%2Fwww.alibris.com%2Fbooksearch%3Fkeyword%3D0439823226",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Indigo",
+                                "url": "https://www.chapters.indigo.ca/en-ca/home/search/?keywords=9780439823227",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Better World Books",
+                                "url": "http://www.tkqlhce.com/ob117vpyvpxCFFFKMHLCEDHLGHKECEFMIGDFFHJDDD?url=http%3A%2F%2Fwww.betterworldbooks.com%2FTop+Ten+Ways+To+Ruin+The+First+Day+Of+School-H0.aspx%3FSearchTerm%3D0439823226",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "IndieBound",
+                                "url": "https://www.indiebound.org/book/9780439823227",
+                                "ref": null
+                            },
+                            {
+                                "__typename": "BookLink",
+                                "name": "Thriftbooks",
+                                "url": "https://prf.hn/click/camref:1101ljNE7/pubref:0439823226/destination:https://www.thriftbooks.com/browse/?b.search=0439823226",
+                                "ref": null
+                            }
+                        ],
+                        "libraryLinks": [
+                            {
+                                "__typename": "BookLink",
+                                "name": "Libraries",
+                                "url": "http://www.worldcat.org/isbn/0439823226?loc=",
+                                "ref": null
+                            }
+                        ],
+                        "overflowPageUrl": "https://www.goodreads.com/book/935545.Top_Ten_Ways_To_Ruin_The_First_Day_Of_School/get_a_copy"
+                    }
+                },
+                "Contributor:kca://author/amzn1.gr.author.v1.XUAo6Z8CR7-Wt19qejq1Bw": {
+                    "id": "kca://author/amzn1.gr.author.v1.XUAo6Z8CR7-Wt19qejq1Bw",
+                    "__typename": "Contributor",
+                    "works": {
+                        "__typename": "ContributorWorksConnection",
+                        "totalCount": 9
+                    }
+                },
+                "User:1812625": {
+                    "id": 1812625,
+                    "__typename": "User",
+                    "legacyId": 1812625,
+                    "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1442518626i/1812625._UX200_CR0,20,200,200_.jpg",
+                    "isAuthor": true,
+                    "textReviewsCount": 180,
+                    "viewableName": "Wendy",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/1812625-wendy",
+                    "contributor": {
+                        "__ref": "Contributor:kca://author/amzn1.gr.author.v1.XUAo6Z8CR7-Wt19qejq1Bw"
+                    },
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 78
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.bbkuWEuj-IDbxwExVLKa5Q": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.bbkuWEuj-IDbxwExVLKa5Q",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.0bX7BpvpopgVyLsl5u72kg"
+                    },
+                    "creator": {
+                        "__ref": "User:1812625"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1562448230804,
+                    "createdAt": 1231037819000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1231038101000,
+                    "text": "I couldn't finish this book, though I tried mightily. It had come highly recommended from someone who had listed other humorous books that I had liked (Long Way from Chicago, \u003ca href=\"https://goodreads.com/book/show/160698.No_More_Dead_Dogs\" title=\"No More Dead Dogs by Gordon Korman\" rel=\"noopener\"\u003eNo More Dead Dogs\u003c/a\u003e), so anticipation was high. The action didn't make sense to me - not even remotely - to the point that I was annoyed by the book's events and character decisions. I understand that the action was slapstick funny - it would probably be hilarious in a movie - but it wasn't book funny.",
+                    "rating": 1,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/1812625?shelf=read"
+                        },
+                        "taggings": [
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "when-you-are-engulfed-in-flames",
+                                    "webUrl": "https://www.goodreads.com/review/list/1812625?shelf=when-you-are-engulfed-in-flames"
+                                }
+                            }
+                        ],
+                        "webUrl": "https://www.goodreads.com/review/show/41782115"
+                    },
+                    "likeCount": 1,
+                    "viewerHasLiked": null,
+                    "commentCount": 0,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "User:4120311": {
+                    "id": 4120311,
+                    "__typename": "User",
+                    "legacyId": 4120311,
+                    "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1389359349i/4120311._UX200_CR0,0,200,200_.jpg",
+                    "isAuthor": false,
+                    "textReviewsCount": 1098,
+                    "viewableName": "Tanja",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/4120311-tanja",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 0
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.SVPb-LEQePBuIZVw7uH-5w": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.SVPb-LEQePBuIZVw7uH-5w",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.Jd1E_tBPIMTnz_MwAJ1x6w"
+                    },
+                    "creator": {
+                        "__ref": "User:4120311"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1471036403036,
+                    "createdAt": 1360989015000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1360989133000,
+                    "text": "My edition was titled \"The Top 10 Ways to Ruin the First Day of School\" but is identical. All I can say is, am I glad that Tony Baloney isn't one of my fifth graders...! Very funny, even though exaggerated at times, and surely a winner with every kid reader. Just to give you a little taste: try imagining someone jump-roping on a toilet seat, interrupting a football match by stealing the ball, causing havoc among a gang of bikers in New York City - yes, things sort of happen to Tony Baloney, which is the biggest understatement ever ;)",
+                    "rating": 3,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/4120311?shelf=read"
+                        },
+                        "taggings": [
+                            {
+                                "__typename": "Tagging",
+                                "tag": {
+                                    "__typename": "Tag",
+                                    "name": "chn-humour",
+                                    "webUrl": "https://www.goodreads.com/review/list/4120311?shelf=chn-humour"
+                                }
+                            }
+                        ],
+                        "webUrl": "https://www.goodreads.com/review/show/537454024"
+                    },
+                    "likeCount": 1,
+                    "viewerHasLiked": null,
+                    "commentCount": 1,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "User:52084512": {
+                    "id": 52084512,
+                    "__typename": "User",
+                    "legacyId": 52084512,
+                    "imageUrlSquare": "",
+                    "isAuthor": false,
+                    "textReviewsCount": 3,
+                    "viewableName": "JohnShin8",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/52084512-johnshin8",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 0
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.qcHDK4fdJjSAiToJ-9G5uA": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.qcHDK4fdJjSAiToJ-9G5uA",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.q-OPBkmhyubt_6gECh6NUw"
+                    },
+                    "creator": {
+                        "__ref": "User:52084512"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1472324543450,
+                    "createdAt": 1454075121000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1454084930000,
+                    "text": "Overall, this book was not bad but also not good. It wasn't really enjoyable to me. The book, The Top 10 Ways to Ruin the First Day of School, was about a 5th grade student who did crazy things to get on a TV show he really liked. The book title says much about the style of the writing. The author's intentions were to write for elementary students, around 5th and 6th grade. It had easy vocabulary and a very childish humor. However, for me, I am not a great reader so even though the book was for young children, the level was about right for me and is a great way to start developing to read.",
+                    "rating": 2,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/52084512?shelf=read"
+                        },
+                        "taggings": [],
+                        "webUrl": "https://www.goodreads.com/review/show/1529736165"
+                    },
+                    "likeCount": 1,
+                    "viewerHasLiked": null,
+                    "commentCount": 1,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "Book:kca://book/amzn1.gr.book.v1.95pDt7j_3yO8QWRMOKLHQg": {
+                    "id": "kca://book/amzn1.gr.book.v1.95pDt7j_3yO8QWRMOKLHQg",
+                    "__typename": "Book"
+                },
+                "User:12560695": {
+                    "id": 12560695,
+                    "__typename": "User",
+                    "legacyId": 12560695,
+                    "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1351648283i/12560695._UX200_CR0,33,200,200_.jpg",
+                    "isAuthor": false,
+                    "textReviewsCount": 6,
+                    "viewableName": "Amber",
+                    "isBlockedByViewer": false,
+                    "webUrl": "https://www.goodreads.com/user/show/12560695-amber",
+                    "contributor": null,
+                    "isFollowing": false,
+                    "isFriend": false,
+                    "followersCount": 1
+                },
+                "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.p93WFCH7PncdWaoS23VhHA": {
+                    "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.p93WFCH7PncdWaoS23VhHA",
+                    "__typename": "Review",
+                    "book": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.95pDt7j_3yO8QWRMOKLHQg"
+                    },
+                    "creator": {
+                        "__ref": "User:12560695"
+                    },
+                    "recommendFor": null,
+                    "updatedAt": 1492017421580,
+                    "createdAt": 1350449179000,
+                    "spoilerStatus": false,
+                    "lastRevisionAt": 1351647568000,
+                    "text": "I think this book would be on my top ten list.It is very interesting and fun to listen my teacher read it to our class.Every time she starts reading it i pay so much attenchion its like im addicted to the book when i listen to it.The author did a really good job on this book.\u003cbr\u003eI love \u003ca href=\"https://goodreads.com/book/show/5112045.The_Top_Ten_Ways_to_Ruin_the_First_Day_of_School\" title=\"The Top Ten Ways to Ruin the First Day of School by Ken Derby\" rel=\"noopener\"\u003e\n  \u003cimg src=\"https://s3.amazonaws.com/photo.goodreads.com/books/1328076572s/5112045.jpg\" alt=\"The Top Ten Ways to Ruin the First Day of School by Ken Derby\" class=\"gr-hostedUserImg\"\u003e\n\u003c/a\u003e",
+                    "rating": 4,
+                    "shelving": {
+                        "__typename": "Shelving",
+                        "shelf": {
+                            "__typename": "Shelf",
+                            "name": "read",
+                            "webUrl": "https://www.goodreads.com/review/list/12560695?shelf=read"
+                        },
+                        "taggings": [],
+                        "webUrl": "https://www.goodreads.com/review/show/435791864"
+                    },
+                    "likeCount": 1,
+                    "viewerHasLiked": null,
+                    "commentCount": 1,
+                    "viewerCanComment({\"resourceType\":\"review\"})": null
+                },
+                "Work:kca://work/amzn1.gr.work.v1.yo28fHAbC81t55yQA1Sh-A": {
+                    "id": "kca://work/amzn1.gr.work.v1.yo28fHAbC81t55yQA1Sh-A",
+                    "__typename": "Work",
+                    "legacyId": 711980,
+                    "bestBook": {
+                        "__ref": "Book:kca://book/amzn1.gr.book.v1.q-OPBkmhyubt_6gECh6NUw"
+                    },
+                    "details": {
+                        "__typename": "WorkDetails",
+                        "webUrl": "https://www.goodreads.com/work/711980-the-top-10-ways-to-ruin-the-first-day-of-5th-grade",
+                        "shelvesUrl": "https://www.goodreads.com/work/shelves/711980-the-top-10-ways-to-ruin-the-first-day-of-5th-grade",
+                        "publicationTime": 1072944000000,
+                        "originalTitle": "The Top 10 Ways to Ruin the First Day of 5th Grade",
+                        "awardsWon": [
+                            {
+                                "__typename": "Award",
+                                "name": "Alabama Library Association Children's Book of the Year",
+                                "webUrl": "https://www.goodreads.com/award/show/9732-alabama-library-association-children-s-book-of-the-year",
+                                "awardedAt": 1104566400000,
+                                "category": "4-6",
+                                "hasWon": true
+                            },
+                            {
+                                "__typename": "Award",
+                                "name": "The Children's Book Council and the International Reading Association",
+                                "webUrl": "https://www.goodreads.com/award/show/15677-the-children-s-book-council-and-the-international-reading-association",
+                                "awardedAt": 1104566400000,
+                                "category": "Children's Choices Novel",
+                                "hasWon": true
+                            }
+                        ],
+                        "places": [],
+                        "characters": []
+                    },
+                    "reviews": {
+                        "__typename": "BookReviewsConnection",
+                        "totalCount": 74,
+                        "edges": [
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.lHBs-gCHN8Jb3AmtDJoCmA"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.-leDtUO2X9bxKELBWdpEag"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.pEzkDcKgUowW1No48xTTVw"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.i1FcmafCRuoxu26QVZr2gQ"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.C3SsFxRLj7qqfcRfvtEm3w"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.62Wb6yCZui9a6eyMp9CsEA"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.bbkuWEuj-IDbxwExVLKa5Q"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.SVPb-LEQePBuIZVw7uH-5w"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.qcHDK4fdJjSAiToJ-9G5uA"
+                                }
+                            },
+                            {
+                                "__typename": "BookReviewsEdge",
+                                "node": {
+                                    "__ref": "Review:kca://review:goodreads/amzn1.gr.review:goodreads.v1.p93WFCH7PncdWaoS23VhHA"
+                                }
+                            }
+                        ],
+                        "pageInfo": {
+                            "__typename": "PageInfo",
+                            "prevPageToken": "MzAzLDE0NDczNTYwNjAwMDA",
+                            "nextPageToken": "MTA0LDEzNTA0NDkxNzkwMDA"
+                        }
+                    },
+                    "stats": {
+                        "__typename": "BookOrWorkStats",
+                        "averageRating": 3.93,
+                        "ratingsCount": 430,
+                        "ratingsCountDist": [
+                            24,
+                            35,
+                            78,
+                            101,
+                            192
+                        ],
+                        "textReviewsCount": 74,
+                        "textReviewsLanguageCounts": [
+                            {
+                                "__typename": "TextReviewLanguageCount",
+                                "count": 69,
+                                "isoLanguageCode": "en"
+                            }
+                        ]
+                    },
+                    "quotes({\"pagination\":{\"limit\":1}})": {
+                        "__typename": "ResourceQuotesConnection",
+                        "webUrl": "https://www.goodreads.com/work/quotes/711980",
+                        "totalCount": 3
+                    },
+                    "questions({\"pagination\":{\"limit\":1}})": {
+                        "__typename": "ResourceQuestionsConnection",
+                        "totalCount": 1,
+                        "webUrl": "https://www.goodreads.com/book/21877937/questions"
+                    },
+                    "topics({\"pagination\":{\"limit\":1}})": {
+                        "__typename": "ResourceTopicsConnection",
+                        "webUrl": "https://www.goodreads.com/topic/list_book/21877937",
+                        "totalCount": 1
+                    },
+                    "viewerShelvings": null,
+                    "viewerShelvingsUrl": "/review/user_works/711980",
+                    "editions": {
+                        "__typename": "BooksConnection",
+                        "webUrl": "https://www.goodreads.com/work/editions/711980"
+                    }
+                }
+            },
+            "apolloClient": null,
+            "authContextParams": {
+                "signedIn": false,
+                "customerId": null,
+                "legacyCustomerId": null,
+                "role": "user"
+            },
+            "userAgentContextParams": {
+                "isWebView": false
+            },
+            "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Mobile Safari/537.36"
+        }
+    },
+    "page": "/book/show/[book_id]",
+    "query": {
+        "book_id": "935545.Top_Ten_Ways_To_Ruin_The_First_Day_Of_School"
+    },
+    "buildId": "RY9NKDQHIINwhrxuKJO8F",
+    "runtimeConfig": {
+        "env": "Production"
+    },
+    "isFallback": false,
+    "customServer": true,
+    "gip": true,
+    "locales": [
+        "en",
+        "ab",
+        "aa",
+        "af",
+        "ak",
+        "sq",
+        "am",
+        "ar",
+        "an",
+        "hy",
+        "as",
+        "av",
+        "ae",
+        "ay",
+        "az",
+        "bm",
+        "ba",
+        "eu",
+        "be",
+        "bn",
+        "bh",
+        "bi",
+        "bs",
+        "br",
+        "bg",
+        "my",
+        "ca",
+        "ch",
+        "ce",
+        "ceb",
+        "ny",
+        "zh",
+        "zh-TW",
+        "cv",
+        "kw",
+        "co",
+        "cr",
+        "hr",
+        "cs",
+        "da",
+        "dv",
+        "nl",
+        "eo",
+        "et",
+        "ee",
+        "fo",
+        "fj",
+        "fi",
+        "fr",
+        "ff",
+        "gl",
+        "ka",
+        "de",
+        "el",
+        "gn",
+        "gu",
+        "ht",
+        "ha",
+        "he",
+        "hz",
+        "hi",
+        "ho",
+        "hu",
+        "ia",
+        "id",
+        "ie",
+        "ilo",
+        "ga",
+        "ig",
+        "ik",
+        "io",
+        "is",
+        "it",
+        "iu",
+        "ja",
+        "jv",
+        "kl",
+        "kn",
+        "kr",
+        "ks",
+        "kk",
+        "km",
+        "ki",
+        "rw",
+        "ky",
+        "kv",
+        "kg",
+        "ko",
+        "ku",
+        "kj",
+        "la",
+        "lb",
+        "lg",
+        "li",
+        "ln",
+        "lo",
+        "lt",
+        "lu",
+        "lv",
+        "gv",
+        "mk",
+        "mg",
+        "ms",
+        "ml",
+        "mt",
+        "mi",
+        "mr",
+        "mh",
+        "mn",
+        "na",
+        "nv",
+        "nb",
+        "nd",
+        "ne",
+        "new",
+        "ng",
+        "nn",
+        "no",
+        "ii",
+        "nr",
+        "oc",
+        "oj",
+        "cu",
+        "om",
+        "or",
+        "os",
+        "pa",
+        "pi",
+        "fa",
+        "pl",
+        "ps",
+        "pt",
+        "qu",
+        "rm",
+        "rn",
+        "ro",
+        "ru",
+        "sa",
+        "sc",
+        "sd",
+        "se",
+        "sm",
+        "sg",
+        "sr",
+        "gd",
+        "sn",
+        "si",
+        "sk",
+        "sl",
+        "so",
+        "st",
+        "es",
+        "su",
+        "sw",
+        "ss",
+        "sv",
+        "ta",
+        "te",
+        "tg",
+        "th",
+        "ti",
+        "bo",
+        "tk",
+        "tl",
+        "tn",
+        "to",
+        "tr",
+        "ts",
+        "tt",
+        "tw",
+        "ty",
+        "ug",
+        "uk",
+        "ur",
+        "uz",
+        "ve",
+        "vi",
+        "vo",
+        "wa",
+        "cy",
+        "wo",
+        "fy",
+        "xh",
+        "yi",
+        "yo",
+        "za"
+    ]
+}

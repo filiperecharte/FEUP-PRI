@@ -26,15 +26,48 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
+def json_extract(obj, key):
+    """Recursively fetch values from nested JSON."""
+    arr = []
+
+    def extract(obj, arr, key):
+        """Recursively search for values of key in JSON tree."""
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if isinstance(v, (dict, list)):
+                    extract(v, arr, key)
+                elif k == key:
+                    arr.append(v)
+        elif isinstance(obj, list):
+            for item in obj:
+                extract(item, arr, key)
+        return arr
+
+    values = extract(obj, arr, key)
+    return values
 
 def consume():
     global f
     while True:
         if not queue.empty():
+            print("ou?")
             bookId, rows = queue.get()
             # Row comes out of queue; CSV writing goes here
             for row in rows:
                 f.write(row)
+
+def parseCharacters(bookId, data):
+    soup = BeautifulSoup(data, "html.parser")
+    info = soup.find("script", id="__NEXT_DATA__")
+    ll = re.findall('(?<=<script id="__NEXT_DATA__" type="application\/json">).+?(?=<\/script>)',str(info))
+    characters = json_extract(ll[0],'characters')
+
+    csv_characters = []
+
+    for character in characters:
+        csv_characters.append(str(bookId) + ',' + character + '\n')
+
+    return bookId, csv_characters
 
 def parseLanguages(bookId, data):
     soup = BeautifulSoup(data, "html.parser")
@@ -97,6 +130,8 @@ def fetch(session, bookId):
             queue.put(parseReviews(bookId,data))
         elif sys.argv[1] == 'language':
             queue.put(parseLanguages(bookId,data))
+        elif sys.argv[1] == 'characters':
+            queue.put(parseCharacters(bookId,data))
         else:
             return
 
@@ -145,16 +180,16 @@ consumer.start()
 def main():
     global f
     f = open(sys.argv[1] + '.csv', "w")
-    f.write('Id,' + sys.argv[1] + '\n')
+    f.write('id,' + sys.argv[1] + '\n')
 
-    if sys.argv[1] != 'genre' and sys.argv[1] != 'review' and sys.argv[1] != 'language':
+    if sys.argv[1] != 'genre' and sys.argv[1] != 'review' and sys.argv[1] != 'language' and sys.argv[1] != 'characters':
         print("invalid args")
         return
 
-    col_list = ["Id"]
+    col_list = ["id"]
 
     #input file to get ids
-    bookIds_to_fetch = pd.read_csv("books1.csv", index_col=0, usecols=col_list)
+    bookIds_to_fetch = pd.read_csv("test.csv", index_col=0, usecols=col_list)
 
     print("Press CTRL-C when scrapping is finished")
     
