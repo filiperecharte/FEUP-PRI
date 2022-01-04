@@ -2,12 +2,19 @@ import {NavBar} from "../components/Navbar";
 import {Button, Col, Container, Form, Image, Row} from "react-bootstrap";
 import { BsSearch, BsArrowDown, BsArrowUp} from 'react-icons/bs';
 import {BookCard} from "../components/BookCard";
+import {Footer} from "../components/Footer";
+import {useEffect} from "react";
 
 export function MainPage() {
+
+  useEffect(() => {
+    document.title = "Books4You"
+  }, [])
+
   return (
     <>
       <NavBar />
-      <div id="mainPage">
+      <div id="mainPage" className="layout">
         <Form action="#">
           <div className="searchContainer">
             <Image src="/img/books3.jpg"
@@ -61,6 +68,7 @@ export function MainPage() {
           </Container>
         </Form>
       </div>
+      <Footer />
     </>
   )
 }

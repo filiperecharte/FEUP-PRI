@@ -4,7 +4,7 @@ import {Nav, Navbar} from "react-bootstrap";
 export function NavBar() {
   return(
     <Navbar collapseOnSelect expand="lg" id="navbar">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src="logo_1.png"
             width="70"
