@@ -410,3 +410,18 @@ p {
 #bookPage .reviewsRow {
     margin-left: 85px;
 }
+
+@media (max-width: 768px) {
+    #bookPage img {
+        width: fit-content;
+    }
+
+    #bookPage .moreDiv {
+        padding-bottom: 15px;
+    }
+
+    #bookPage .firstRow {
+        border-bottom: 1px solid var(--brown);
+        text-align: center;
+    }
+}

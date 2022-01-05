@@ -36,7 +36,7 @@ export function BookPage() {
     <>
       <NavBar />
       <div className="layout box" id="bookPage">
-        <Row>
+        <Row className="firstRow">
           <Col md={4} className="coverHolder">
             <Image src="img/cover.png" alt="book cover"/>
           </Col>
