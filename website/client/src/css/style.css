@@ -328,6 +328,35 @@ p {
 #ratingDist .percentageCol {
     padding-left: 0;
 }
+
+/******** Details Book Card ********/
+#detailsCard {
+    background: rgba(228, 228, 228, 0.28);
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+    margin-bottom: 15px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#detailsCard .card-title {
+    text-align: center;
+}
+
+#detailsCard .list-group-item {
+    background: none;
+    border: none;
+}
+
+/******** Review Card ********/
+#reviewCard {
+    background: rgba(228, 228, 228, 0.28);
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+
 /******** Book Page ********/
 #bookPage .coverHolder {
     text-align: center;
@@ -362,4 +391,22 @@ p {
 
 #bookPage .row {
     margin-bottom: 60px;
+}
+
+#bookPage .ratingsDiv {
+    text-align: center;
+    font-size: 35px;
+}
+
+#bookPage .numbersRow {
+    font-size: 20px;
+}
+
+#bookPage h3 {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+#bookPage .reviewsRow {
+    margin-left: 85px;
 }
