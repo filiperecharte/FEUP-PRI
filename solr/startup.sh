@@ -15,7 +15,7 @@ curl -X POST -H 'Content-type:application/json' \
     http://localhost:8983/solr/books/schema
 
 # Populate collection
-bin/post -c books /data/data_subset.json
+bin/post -c books /data/data.json
 
 # Restart in foreground mode so we can access the interface
 solr restart -f
