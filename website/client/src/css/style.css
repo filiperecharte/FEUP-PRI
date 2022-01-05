@@ -532,3 +532,81 @@ p {
 #authorsPage h1 {
     margin-bottom: 50px;
 }
+
+/******** Book Cover ********/
+#bookCover img {
+    width: unset;
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+}
+
+@media (max-width: 576px) {
+    #bookCover {
+        text-align: center;
+    }
+}
+
+/******** Author Page ********/
+#authorPage .moreDiv {
+    text-align: right;
+}
+
+#authorPage span {
+    color: var(--brown);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#authorPage span:hover {
+    text-decoration: underline;
+}
+
+#authorPage .row {
+    margin-bottom: 60px;
+}
+
+#authorPage .coverHolder {
+    text-align: center;
+}
+
+#authorPage .coverHolder img {
+    width: 60%;
+}
+
+
+#authorPage h3 {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+#authorPage .catalogueRow {
+    margin-left: 85px;
+}
+
+#authorPage hr {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #authorPage .coverHolder img {
+        width: fit-content;
+    }
+
+    #authorPage .moreDiv {
+        padding-bottom: 15px;
+    }
+
+    #authorPage .firstRow {
+        text-align: center;
+    }
+
+    #authorPage .catalogueRow {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #authorPage hr {
+        display: block;
+        background-color: var(--brown);
+    }
+}
