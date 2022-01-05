@@ -6,6 +6,7 @@ import {RatingsDist} from "../components/RatingsDist";
 import {BookDetails} from "../components/BookDetails";
 import {AiFillStar, AiOutlineNumber} from "react-icons/ai";
 import {ReviewCard} from "../components/ReviewCard";
+import {RatingsDistMobile} from "../components/RatingDistMobile";
 
 export function BookPage() {
   const text = "It was the last thing he expected...to catch a beautiful intruder disguised as a man, rummaging through his bedroom. The fair lady claimed she was stealing one of his cravats for a wager, but Robert Sinclair Dovenby\u2014known throughout fashionable London as Dove\u2014suspects there is far more to \"George\" than meets the eye.Little does Dove imagine, however, that Sylvie Georgiana, Countess of Montevrain, is an agent hired to determine whether he's guilty of treason. To uncover his well-guarded secrets, Sylvie finds herself having to stay dangerously close to her mischievous adversary. But when the masquerade comes undone, will she be able to betray the one man she thinks she could love?";
@@ -55,8 +56,9 @@ export function BookPage() {
             }
           </Col>
         </Row>
+        <hr/>
         <Row>
-          <Col className="m-auto">
+          <Col className="m-auto" md={4}>
             <div className="ratingsDiv">
               <AiFillStar/> 3.56
             </div>
@@ -69,13 +71,15 @@ export function BookPage() {
               </Col>
             </Row>
           </Col>
-          <Col className="m-auto">
+          <Col className="m-auto" md={4}>
             <RatingsDist five="22" four="33" three="26" two="10" one="7"/>
+            <RatingsDistMobile five="22" four="33" three="26" two="10" one="7"/>
           </Col>
-          <Col className="m-auto">
+          <Col className="m-auto" md={4}>
             <BookDetails isbn="0425199967" pages="352" languages="Spanish; Castilian" genres={genres} />
           </Col>
         </Row>
+        <hr/>
         <Row md={8} className="reviewsRow">
           <h3 className="mb-4">Reviews</h3>
           {

@@ -2,9 +2,9 @@ import {Col, ProgressBar, Row} from "react-bootstrap";
 import {AiFillStar} from "react-icons/ai";
 
 
-export function RatingsDist(props) {
+export function RatingsDistMobile(props) {
   return(
-    <div id="ratingDist">
+    <div id="ratingDistMobile">
       <Row>
         <Col md={2} sm={2}>
         </Col>
@@ -13,18 +13,13 @@ export function RatingsDist(props) {
             Ratings Distribution
           </h5>
         </Col>
-        <Col md={1} sm={1}>
-        </Col>
       </Row>
       <Row>
         <Col md={2} sm={2} className="starsCol">
           5 <AiFillStar/>
         </Col>
         <Col md={9} sm={9} className="progressBarCol">
-          <ProgressBar now={props.five}/>
-        </Col>
-        <Col md={1} sm={1} className="percentageCol">
-          {props.five}%
+          <ProgressBar now={props.five} label={props.five + '%'}/>
         </Col>
       </Row>
       <Row>
@@ -32,10 +27,7 @@ export function RatingsDist(props) {
           4 <AiFillStar/>
         </Col>
         <Col md={9} sm={9} className="progressBarCol">
-          <ProgressBar now={props.four}/>
-        </Col>
-        <Col md={1} sm={1} className="percentageCol">
-          {props.four}%
+          <ProgressBar now={props.four} label={props.four + '%'}/>
         </Col>
       </Row>
       <Row>
@@ -43,10 +35,7 @@ export function RatingsDist(props) {
           3 <AiFillStar/>
         </Col>
         <Col md={9} sm={9} className="progressBarCol">
-          <ProgressBar now={props.three}/>
-        </Col>
-        <Col md={1} sm={1} className="percentageCol">
-          {props.three}%
+          <ProgressBar now={props.three} label={props.three + '%'}/>
         </Col>
       </Row>
       <Row>
@@ -54,10 +43,7 @@ export function RatingsDist(props) {
           2 <AiFillStar/>
         </Col>
         <Col md={9} sm={9} className="progressBarCol">
-          <ProgressBar now={props.two}/>
-        </Col>
-        <Col md={1} sm={1} className="percentageCol">
-          {props.two}%
+          <ProgressBar now={props.two} label={props.two + '%'}/>
         </Col>
       </Row>
       <Row>
@@ -65,10 +51,7 @@ export function RatingsDist(props) {
           1 <AiFillStar/>
         </Col>
         <Col md={9} sm={9} className="progressBarCol">
-          <ProgressBar now={props.one}/>
-        </Col>
-        <Col md={1} sm={1} className="percentageCol">
-          {props.one}%
+          <ProgressBar now={props.one} label={props.one + '%'}/>
         </Col>
       </Row>
     </div>
