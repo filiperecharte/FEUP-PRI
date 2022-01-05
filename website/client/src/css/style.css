@@ -13,6 +13,11 @@ h1 {
     color: var(--brown);
 }
 
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
 .layout {
     margin-right: 100px;
     margin-left: 100px;
@@ -273,8 +278,6 @@ h1 {
     color: var(--brown);
 }
 
-
-
 /******** About Us ********/
 #aboutPage h1 {
     margin-bottom: 50px;
@@ -295,4 +298,176 @@ h1 {
 #aboutPage #navbar {
     padding-bottom: 0;
     border-bottom: 1px solid var(--brown);
+}
+
+/******** Ratings Distribution ********/
+#ratingDist {
+    min-width: 230px;
+}
+
+#ratingDist .progress-bar, #ratingDistMobile .progress-bar {
+    background-color: var(--brown);
+    border-radius: 10px;
+}
+
+#ratingDist .progress, #ratingDistMobile .progress {
+    border: 1px solid var(--brown);
+    border-radius: 10px;
+}
+
+#ratingDist .row, #ratingDistMobile .row {
+    margin-bottom: 10px !important;
+}
+
+#ratingDist .progressBarCol {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#ratingDist .starsCol {
+    text-align: right;
+    padding-right: 0;
+}
+
+#ratingDist .percentageCol {
+    padding-left: 0;
+}
+
+#ratingDistMobile {
+    margin-bottom: 60px;
+}
+
+/******** Details Book Card ********/
+#detailsCard {
+    background: rgba(228, 228, 228, 0.28);
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+    margin-bottom: 15px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 200px;
+}
+
+#detailsCard .card-title {
+    text-align: center;
+}
+
+#detailsCard .list-group-item {
+    background: none;
+    border: none;
+}
+
+@media (max-width: 385px) {
+    #detailsCard {
+        width: 100%;
+    }
+}
+
+/******** Review Card ********/
+#reviewCard {
+    background: rgba(228, 228, 228, 0.28);
+    border: 1px solid rgba(184, 144, 125, 0.48);
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+
+/******** Book Page ********/
+#bookPage .coverHolder {
+    text-align: center;
+}
+
+#bookPage img {
+    width: 60%;
+}
+
+#bookPage a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#bookPage a:hover {
+    color: var(--brown);
+}
+
+#bookPage .moreDiv {
+    text-align: right;
+}
+
+#bookPage span {
+    color: var(--brown);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#bookPage span:hover {
+    text-decoration: underline;
+}
+
+#bookPage .row {
+    margin-bottom: 60px;
+}
+
+#bookPage .ratingsDiv {
+    text-align: center;
+    font-size: 35px;
+}
+
+#bookPage .numbersRow {
+    font-size: 20px;
+}
+
+#bookPage h3 {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+#bookPage .reviewsRow {
+    margin-left: 85px;
+}
+
+#bookPage hr {
+    display: none;
+}
+
+#bookPage #ratingDistMobile {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    #bookPage #ratingDist {
+        display: none;
+    }
+
+    #bookPage #ratingDistMobile {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #bookPage img {
+        width: fit-content;
+    }
+
+    #bookPage .moreDiv {
+        padding-bottom: 15px;
+    }
+
+    #bookPage .firstRow {
+        text-align: center;
+    }
+
+    #bookPage .reviewsRow {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #bookPage hr {
+        display: block;
+        background-color: var(--brown);
+    }
+
+    #bookPage #ratingDist {
+        margin-bottom: 60px;
+    }
 }
