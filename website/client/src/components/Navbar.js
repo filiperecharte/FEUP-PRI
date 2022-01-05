@@ -1,9 +1,9 @@
 import {Nav, Navbar} from "react-bootstrap";
 
 
-export function NavBar() {
+export function NavBar({needsBottom, authors, genres, top20}) {
   return(
-    <Navbar collapseOnSelect expand="lg" id="navbar">
+    <Navbar collapseOnSelect expand="lg" id="navbar" className={needsBottom ? "withBottom" : null}>
         <Navbar.Brand href="/">
           <img
             src="logo_1.png"
@@ -16,7 +16,7 @@ export function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="#">Authors</Nav.Link>
+            <Nav.Link href="/authors" className={authors ? "active" : null}>Authors</Nav.Link>
             <Nav.Link href="#">Genres</Nav.Link>
             <Nav.Link href="#">Top 20</Nav.Link>
           </Nav>

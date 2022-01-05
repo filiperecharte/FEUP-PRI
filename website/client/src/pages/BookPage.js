@@ -35,7 +35,7 @@ export function BookPage() {
 
   return (
     <>
-      <NavBar />
+      <NavBar needsBottom={true}/>
       <div className="layout box" id="bookPage">
         <Row className="firstRow">
           <Col md={4} className="coverHolder">

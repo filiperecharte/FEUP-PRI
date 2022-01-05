@@ -61,6 +61,19 @@ p {
     margin-right: 100px;
 }
 
+#navbar .active {
+    color: var(--brown);
+}
+
+.withBottom{
+    padding-bottom: 0;
+    border-bottom: 1px solid var(--brown);
+}
+
+#navbar .navbar-nav {
+    text-align: center;
+}
+
 /******** Main Page ********/
 #mainPage {
     margin-bottom: 30px;
@@ -295,11 +308,6 @@ p {
     margin-bottom: 50px;
 }
 
-#aboutPage #navbar {
-    padding-bottom: 0;
-    border-bottom: 1px solid var(--brown);
-}
-
 /******** Ratings Distribution ********/
 #ratingDist {
     min-width: 230px;
@@ -470,4 +478,57 @@ p {
     #bookPage #ratingDist {
         margin-bottom: 60px;
     }
+}
+
+/******** Author Card ********/
+#authorCard {
+    text-align: center;
+    border-radius: 9px;
+    border-color: var(--brown);
+}
+
+#authorCard img{
+    opacity: 70%;
+}
+
+#authorCard .card-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#authorCard .card-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+#authorCard .card-img-overlay {
+    top: unset;
+    bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    #authorCard {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #authorCard .card-img-overlay {
+        bottom: 35px;
+    }
+}
+
+@media (max-width: 643px) and (min-width: 577px) {
+    #authorCard .card-img-overlay {
+        bottom:15px;
+    }
+
+    #authorCard .card-title, #authorCard .card-text{
+        font-size: unset;
+    }
+}
+
+/******** Authors Page ********/
+#authorsPage h1 {
+    margin-bottom: 50px;
 }

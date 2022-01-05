@@ -12,7 +12,7 @@ export function AboutPage() {
 
   return (
     <div id="aboutPage">
-      <NavBar />
+      <NavBar needsBottom={true}/>
       <div className="layout box">
           <h1>About Us</h1>
           <div className="aboutApp">
