@@ -50,24 +50,20 @@ def consume():
     global f
     while True:
         if not queue.empty():
-            print("ou?")
             bookId, rows = queue.get()
             # Row comes out of queue; CSV writing goes here
             for row in rows:
                 f.write(row)
 
-def parseCharacters(bookId, data):
+def parseAuthor(bookId, data):
     soup = BeautifulSoup(data, "html.parser")
     info = soup.find("script", id="__NEXT_DATA__")
     ll = re.findall('(?<=<script id="__NEXT_DATA__" type="application\/json">).+?(?=<\/script>)',str(info))
-    characters = json_extract(ll[0],'characters')
+    profileImageUrl = json_extract(json.loads(ll[0]),'profileImageUrl')
+    imageUrl = json_extract(json.loads(ll[0]),'imageUrl')
+    description = json_extract(json.loads(ll[0]),'description')[0]
 
-    csv_characters = []
-
-    for character in characters:
-        csv_characters.append(str(bookId) + ',' + character + '\n')
-
-    return bookId, csv_characters
+    return bookId, [str(bookId) + ',' + imageUrl[0] + ',' + profileImageUrl[0] + ',' + description + '\n']
 
 def parseLanguages(bookId, data):
     soup = BeautifulSoup(data, "html.parser")
@@ -130,8 +126,8 @@ def fetch(session, bookId):
             queue.put(parseReviews(bookId,data))
         elif sys.argv[1] == 'language':
             queue.put(parseLanguages(bookId,data))
-        elif sys.argv[1] == 'characters':
-            queue.put(parseCharacters(bookId,data))
+        elif sys.argv[1] == 'author':
+            queue.put(parseAuthor(bookId,data))
         else:
             return
 
@@ -182,14 +178,14 @@ def main():
     f = open(sys.argv[1] + '.csv', "w")
     f.write('id,' + sys.argv[1] + '\n')
 
-    if sys.argv[1] != 'genre' and sys.argv[1] != 'review' and sys.argv[1] != 'language' and sys.argv[1] != 'characters':
+    if sys.argv[1] != 'genre' and sys.argv[1] != 'review' and sys.argv[1] != 'language' and sys.argv[1] != 'author':
         print("invalid args")
         return
 
-    col_list = ["id"]
+    col_list = ["Id"]
 
     #input file to get ids
-    bookIds_to_fetch = pd.read_csv("test.csv", index_col=0, usecols=col_list)
+    bookIds_to_fetch = pd.read_csv("../datasets/books.csv", index_col=0, usecols=col_list)
 
     print("Press CTRL-C when scrapping is finished")
     
