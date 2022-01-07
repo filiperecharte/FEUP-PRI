@@ -23,6 +23,17 @@ p {
     margin-left: 100px;
 }
 
+.btn-primary {
+    background-color: var(--brown);
+    border:none;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color:var(--brown);
+    border: 1px solid var(--brown);
+}
+
 @media (max-width: 992px) {
     .layout {
         margin-right: 15px !important;
@@ -178,6 +189,10 @@ p {
 }
 
 #mainPage .form-check-input:focus {
+    box-shadow: none;
+}
+
+#mainPage button:focus {
     box-shadow: none;
 }
 
@@ -387,6 +402,17 @@ p {
 
 #bookPage img {
     width: 60%;
+}
+
+#bookPage #notFound {
+    width: 40%;
+}
+
+#bookPage .bottom-left {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #bookPage a {

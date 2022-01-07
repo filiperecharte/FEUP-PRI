@@ -1,12 +1,22 @@
 import {NavBar} from "../components/Navbar";
 import {Button, Col, Container, Form, Image, Row} from "react-bootstrap";
-import { BsSearch, BsArrowDown, BsArrowUp} from 'react-icons/bs';
+import {BsArrowDown, BsArrowUp, BsSearch} from 'react-icons/bs';
 import {BookCard} from "../components/BookCard";
-import {Footer} from "../components/Footer";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Select from 'react-select';
+import axios from "axios";
+import {Footer} from "../components/Footer";
+
+//TODO => lidar com paginação
+//TODO => pôr cards com a mesma height
+// TODO => pôr uma imagem quando não vou resultados
+// TODO => pôr um loading enquanto o pedido não é completado
 
 export function MainPage() {
+  const [booksList, setbooksList] = useState([]);
+  const [booksFound, setBooksFound] = useState(0);
+  const [previousInput, setPreviousInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const fields = [
     {label: "name", value: "name"},
     {label: "publisher", value: "publisher"},
@@ -19,7 +29,45 @@ export function MainPage() {
 
   useEffect(() => {
     document.title = "Books4You"
+    setIsLoading(true);
+    const inputText = '*';
+    axios.get(`http://localhost:3001/books/search`, {
+      params: {
+        inputText
+      }
+    }).then((res) => {
+      setbooksList(res.data.books);
+      setBooksFound(res.data.numberFound);
+      setIsLoading(false);
+    }).catch((error) => {
+      console.error(error);
+    });
   }, [])
+
+  const handleInput = (isSearching) => {
+    let inputText;
+    setIsLoading(true);
+    if (isSearching) {
+      const ele = document.getElementById('enter');
+      inputText = ele.value.replace(/ +(?= )/g, '');
+      if (inputText === " ") inputText = "";
+      setPreviousInput(inputText);
+    } else
+      inputText = previousInput;
+    console.log(inputText);
+    axios.get(`http://localhost:3001/books/search`, {
+      params: {
+        inputText
+      }
+    }).then((res) => {
+      console.log(res);
+      setbooksList(res.data.books);
+      setBooksFound(res.data.numberFound);
+      setIsLoading(false);
+    }).catch((error) => {
+      console.error(error);
+    });
+  }
 
   return (
     <>
@@ -34,7 +82,7 @@ export function MainPage() {
             <div className="centered col-9">
                 <div className="buttonIn ">
                   <input type="text" placeholder="Search for books here..." name="search" id="enter"/>
-                    <Button id="clear" type="submit"><BsSearch/></Button>
+                    <Button id="clear" onClick={() => handleInput( true)}><BsSearch/></Button>
                 </div>
             </div>
           </div>
@@ -80,26 +128,22 @@ export function MainPage() {
               </Col>
               <Col md={9} className="resultsCol">
                 <h2 className="mb-3">Results</h2>
+                {booksFound !== 0 ? <h6>{booksFound} books found</h6> : null }
                 <Row>
-                  <Col md={6}>
-                    <BookCard/>
-                    <BookCard/>
-                    <BookCard/>
-                    <BookCard/>
-                  </Col>
-                  <Col md={6}>
-                    <BookCard/>
-                    <BookCard/>
-                    <BookCard/>
-                    <BookCard/>
-                  </Col>
+                  {
+                    booksList.map((book, index) => {
+                      return (
+                        <BookCard key={index} book={book}/>
+                      )
+                    })
+                  }
                 </Row>
               </Col>
             </Row>
           </Container>
         </Form>
       </div>
-      <Footer />
+      <Footer/>
     </>
   )
 }
