@@ -123,7 +123,7 @@ p {
     background: var(--white);
 }
 
-#mainPage button {
+#mainPage #clear {
     position: absolute;
     right: 6px;
     border: none;
@@ -207,6 +207,15 @@ p {
 #mainPage .css-1pahdxg-control {
     border-color: var(--brown);
     box-shadow: 0 0 0 1px var(--brown);
+}
+
+#mainPage .css-wjh20t-MuiPagination-ul {
+    justify-content: right;
+}
+
+#mainPage .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: var(--brown);
+    color: white;
 }
 
 /******** Book Card ********/

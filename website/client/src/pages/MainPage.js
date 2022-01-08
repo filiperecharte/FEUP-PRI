@@ -6,8 +6,9 @@ import {useEffect, useState} from "react";
 import Select from 'react-select';
 import axios from "axios";
 import {Footer} from "../components/Footer";
+import {Pagination} from "@mui/material";
 
-//TODO => lidar com paginação
+//TODO => when searching, if input is changed, pagination needs to update
 //TODO => pôr cards com a mesma height
 // TODO => pôr uma imagem quando não vou resultados
 // TODO => pôr um loading enquanto o pedido não é completado
@@ -29,22 +30,10 @@ export function MainPage() {
 
   useEffect(() => {
     document.title = "Books4You"
-    setIsLoading(true);
-    const inputText = '*';
-    axios.get(`http://localhost:3001/books/search`, {
-      params: {
-        inputText
-      }
-    }).then((res) => {
-      setbooksList(res.data.books);
-      setBooksFound(res.data.numberFound);
-      setIsLoading(false);
-    }).catch((error) => {
-      console.error(error);
-    });
+    handleInput(false, 0);
   }, [])
 
-  const handleInput = (isSearching) => {
+  const handleInput = (isSearching, pageNumber) => {
     let inputText;
     setIsLoading(true);
     if (isSearching) {
@@ -57,7 +46,8 @@ export function MainPage() {
     console.log(inputText);
     axios.get(`http://localhost:3001/books/search`, {
       params: {
-        inputText
+        inputText,
+        pageNumber
       }
     }).then((res) => {
       console.log(res);
@@ -82,7 +72,7 @@ export function MainPage() {
             <div className="centered col-9">
                 <div className="buttonIn ">
                   <input type="text" placeholder="Search for books here..." name="search" id="enter"/>
-                    <Button id="clear" onClick={() => handleInput( true)}><BsSearch/></Button>
+                    <Button id="clear" onClick={() => handleInput( true, 0)}><BsSearch/></Button>
                 </div>
             </div>
           </div>
@@ -137,6 +127,12 @@ export function MainPage() {
                       )
                     })
                   }
+                </Row>
+                <Row>
+                  <Pagination count={Math.round(booksFound / 10)}
+                              onChange={(event, value) => handleInput(false, value - 1)}
+                              showFirstButton
+                              showLastButton />
                 </Row>
               </Col>
             </Row>

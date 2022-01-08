@@ -29,6 +29,7 @@ async function getBook(req, res) {
 async function search(req, res) {
     let query = req.query.inputText;
     if (req.query.inputText === "") query = '*';
+    const startRow = 10 * req.query.pageNumber;
 
     const params = {
         'q': query,
@@ -37,9 +38,9 @@ async function search(req, res) {
         'defType': 'edismax',
         'qf' : 'name',
         'rows' : '10',
+        'start' : startRow.toString(),
     }
 
-    console.log(query);
     solr.get('/select', {params: params})
       .then((response) => {
           const num = response.data.response.numFound;
