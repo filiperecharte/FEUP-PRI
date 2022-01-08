@@ -36,7 +36,7 @@ async function search(req, res) {
         'q.op': 'AND',
         'wt' : 'json',
         'defType': 'edismax',
-        'qf' : 'name',
+        'qf' : 'name description reviews author',
         'rows' : '10',
         'start' : startRow.toString(),
     }

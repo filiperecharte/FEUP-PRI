@@ -1,5 +1,5 @@
 import {NavBar} from "../components/Navbar";
-import {Button, Col, Container, Form, Image, Row} from "react-bootstrap";
+import {Button, ButtonGroup, Col, Container, Form, Image, Row} from "react-bootstrap";
 import {BsArrowDown, BsArrowUp, BsSearch} from 'react-icons/bs';
 import {BookCard} from "../components/BookCard";
 import {useEffect, useState} from "react";
@@ -12,6 +12,8 @@ import {Pagination} from "@mui/material";
 //TODO => pôr cards com a mesma height
 // TODO => pôr uma imagem quando não vou resultados
 // TODO => pôr um loading enquanto o pedido não é completado
+//TODO => sorts have to be radio
+//TODO => add genres and languages filter select
 
 export function MainPage() {
   const [booksList, setbooksList] = useState([]);
@@ -82,22 +84,31 @@ export function MainPage() {
                 <div>
                   <h5 className="mb-3">Sort by:</h5>
                   <div className="mb-3">
-                    <Form.Check type="checkbox">
-                        <Form.Check.Input type="checkbox" />
-                        <Form.Check.Label>Publish Date <BsArrowUp/></Form.Check.Label>
-                    </Form.Check>
-                    <Form.Check type="checkbox">
-                      <Form.Check.Input type="checkbox" />
-                      <Form.Check.Label>Publish Date <BsArrowDown/></Form.Check.Label>
-                    </Form.Check>
-                    <Form.Check type="checkbox">
-                      <Form.Check.Input type="checkbox" />
-                      <Form.Check.Label>Rating <BsArrowUp/></Form.Check.Label>
-                    </Form.Check>
-                    <Form.Check type="checkbox">
-                      <Form.Check.Input type="checkbox" />
-                      <Form.Check.Label>Rating <BsArrowDown/></Form.Check.Label>
-                    </Form.Check>
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="yearUp"/>
+                      <label className="form-check-label" htmlFor="yearUp">
+                        Publish Year <BsArrowUp/>
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="yearDown"/>
+                      <label className="form-check-label" htmlFor="yearDown">
+                        Publish Year <BsArrowDown/>
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="ratingUp"/>
+                        <label className="form-check-label" htmlFor="ratingUp">
+                          Rating <BsArrowUp/>
+                        </label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="ratingDown"
+                             />
+                        <label className="form-check-label" htmlFor="ratingDown">
+                          Rating <BsArrowDown/>
+                        </label>
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -117,9 +128,15 @@ export function MainPage() {
                 </div>
               </Col>
               <Col md={9} className="resultsCol">
-                <h2 className="mb-3">Results</h2>
-                {booksFound !== 0 ? <h6>{booksFound} books found</h6> : null }
                 <Row>
+                  <Col>
+                    <h2 className="mb-3">Results</h2>
+                  </Col>
+                  <Col className="numberOfResults">
+                    {booksFound !== 0 ? <h6>{booksFound} books found</h6> : null }
+                  </Col>
+                </Row>
+                <Row className="mb-4">
                   {
                     booksList.map((book, index) => {
                       return (
@@ -129,10 +146,11 @@ export function MainPage() {
                   }
                 </Row>
                 <Row>
+                  {booksFound > 10 ?
                   <Pagination count={Math.round(booksFound / 10)}
                               onChange={(event, value) => handleInput(false, value - 1)}
                               showFirstButton
-                              showLastButton />
+                              showLastButton /> : null }
                 </Row>
               </Col>
             </Row>

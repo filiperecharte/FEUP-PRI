@@ -218,6 +218,13 @@ p {
     color: white;
 }
 
+#mainPage .numberOfResults {
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: right;
+    color: var(--brown);
+}
+
 /******** Book Card ********/
 #bookCard {
     background: rgba(228, 228, 228, 0.28);
