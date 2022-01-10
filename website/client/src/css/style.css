@@ -55,6 +55,12 @@ p {
 
 .box {
     margin-top: 50px;
+
+}
+
+/******** Circular Progress ********/
+.css-18lrjg1-MuiCircularProgress-root {
+    color: var(--brown);
 }
 
 /******** NavBar ********/

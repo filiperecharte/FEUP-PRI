@@ -6,11 +6,10 @@ import {useEffect, useState} from "react";
 import Select from 'react-select';
 import axios from "axios";
 import {Footer} from "../components/Footer";
-import {Pagination, Slider} from "@mui/material";
+import {CircularProgress, Pagination, Slider} from "@mui/material";
 
 //TODO => pôr cards com a mesma height
 //TODO => pôr uma imagem quando não vou resultados
-//TODO => pôr um loading enquanto o pedido não é completado
 //TODO => add genres and languages filter select
 
 export function MainPage() {
@@ -52,10 +51,9 @@ export function MainPage() {
 
   const handlePages = (e) => {
     const span = document.querySelector('.MuiSlider-valueLabelLabel');
-    console.log(span.innerHTML);
     setNumberPages(span.innerHTML);
   }
-  console.log(numberPages);
+
   const handleInput = (isSearching, pageNumber) => {
     let input;
     setIsLoading(true);
@@ -190,26 +188,31 @@ export function MainPage() {
                     <h2 className="mb-3">Results</h2>
                   </Col>
                   <Col className="numberOfResults">
-                    {booksFound !== 0 ? <h6>{booksFound} books found</h6> : null }
+                    {booksFound !== 0 && !isLoading ? <h6>{booksFound} books found</h6> : null }
                   </Col>
                 </Row>
-                <Row className="mb-4">
-                  {
-                    booksList.map((book, index) => {
-                      return (
-                        <BookCard key={index} book={book}/>
-                      )
-                    })
-                  }
-                </Row>
-                <Row>
-                  {booksFound > 10 ?
+                {
+                  isLoading ?
+                    <Row className="justify-content-center">
+                      <CircularProgress />
+                    </Row> :
+                    <Row className="mb-4">
+                      {
+                        booksList.map((book, index) => {
+                          return (
+                            <BookCard key={index} book={book}/>
+                          )
+                        })
+                      }
+                    </Row> }
+                  <Row>
+                {booksFound > 10 && !isLoading ?
                   <Pagination count={Math.round(booksFound / 10)}
-                              page={page}
-                              onChange={(event, value) => handleInput(false, value)}
-                              showFirstButton
-                              showLastButton /> : null }
-                </Row>
+                  page={page}
+                  onChange={(event, value) => handleInput(false, value)}
+                  showFirstButton
+                  showLastButton /> : null}
+                  </Row>
               </Col>
             </Row>
           </Container>
