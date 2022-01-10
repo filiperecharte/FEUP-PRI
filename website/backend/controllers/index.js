@@ -21,24 +21,44 @@ async function getBook(req, res) {
       else
         return res.status(404).json('Not Found!');
     })
-    .catch((error) => {
+    .catch(() => {
       return res.status(404).json('Not Found!');
     })
 }
 
 async function search(req, res) {
-    let query = req.query.inputText;
-    if (req.query.inputText === "") query = '*';
-    const startRow = 10 * req.query.pageNumber;
+    let query = req.query.input;
+    if (req.query.input === "") query = '*';
+    let startRow;
+    if (req.query.pageNumber === '0') {
+      startRow = 10 * req.query.pageNumber;
+    }
+    else {
+      startRow = 10 * (req.query.pageNumber - 1);
+    }
+    console.log(req.query.sort);
+    let params = new URLSearchParams();
+    params.append('q', query);
+    params.append('q.op', 'AND');
+    params.append('wt', 'json');
+    params.append('defType', 'edismax');
+    params.append('qf', 'name description reviews author');
+    params.append('rows', '10');
+    params.append('start', startRow.toString());
 
-    const params = {
-        'q': query,
-        'q.op': 'AND',
-        'wt' : 'json',
-        'defType': 'edismax',
-        'qf' : 'name description reviews author',
-        'rows' : '10',
-        'start' : startRow.toString(),
+    switch (req.query.sort) {
+      case 'yearUp':
+        params.append('sort', 'publishYear ASC');
+        break;
+      case 'yearDown':
+        params.append('sort', 'publishYear DESC');
+        break;
+      case 'ratingUp':
+        params.append('sort', 'rating ASC');
+        break;
+      case 'ratingDown':
+        params.append('sort', 'rating DESC');
+        break;
     }
 
     solr.get('/select', {params: params})
