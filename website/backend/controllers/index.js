@@ -36,7 +36,8 @@ async function search(req, res) {
     else {
       startRow = 10 * (req.query.pageNumber - 1);
     }
-    console.log(req.query.sort);
+    console.log(req.query.numberPages);
+
     let params = new URLSearchParams();
     params.append('q', query);
     params.append('q.op', 'AND');
@@ -59,6 +60,10 @@ async function search(req, res) {
       case 'ratingDown':
         params.append('sort', 'rating DESC');
         break;
+    }
+
+    if(req.query.numberPages !== '0') {
+      params.append('fq', `pagesNumber:[0 TO ${req.query.numberPages}]`);
     }
 
     solr.get('/select', {params: params})

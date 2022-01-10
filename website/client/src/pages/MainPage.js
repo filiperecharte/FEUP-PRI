@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import Select from 'react-select';
 import axios from "axios";
 import {Footer} from "../components/Footer";
-import {Pagination} from "@mui/material";
+import {Pagination, Slider} from "@mui/material";
 
 //TODO => pôr cards com a mesma height
 //TODO => pôr uma imagem quando não vou resultados
@@ -20,6 +20,7 @@ export function MainPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(1);
   const [sort, setSort] = useState("none");
+  const [numberPages, setNumberPages] = useState('3000');
   const fields = [
     {label: "name", value: "name"},
     {label: "publisher", value: "publisher"},
@@ -30,11 +31,15 @@ export function MainPage() {
     {label: "reviews", value: "reviews"}
   ]
 
+  function valuetext(value) {
+    return `${value}`;
+  }
+
   useEffect(() => {
     document.title = "Books4You | Search";
     setPage(1);
     handleInput(false, 1);
-  }, [sort])
+  }, [sort, numberPages])
 
   const handleSort = (e) => {
     if(e.target.checked) {
@@ -45,6 +50,12 @@ export function MainPage() {
     }
   }
 
+  const handlePages = (e) => {
+    const span = document.querySelector('.MuiSlider-valueLabelLabel');
+    console.log(span.innerHTML);
+    setNumberPages(span.innerHTML);
+  }
+  console.log(numberPages);
   const handleInput = (isSearching, pageNumber) => {
     let input;
     setIsLoading(true);
@@ -61,7 +72,8 @@ export function MainPage() {
       params: {
         input,
         pageNumber,
-        sort
+        sort,
+        numberPages
       }
     }).then((res) => {
       console.log(res);
@@ -149,7 +161,17 @@ export function MainPage() {
                 <div>
                   <h5 className="mb-3">Filter by:</h5>
                   <Form.Label>Pages Number</Form.Label>
-                  <Form.Range variant='secondary'/>
+                  <Slider
+                    aria-label="Always visible"
+                    getAriaValueText={valuetext}
+                    defaultValue={numberPages}
+                    step={1}
+                    marks={[{value: 0, label: '0'}, {value: 3000, label: '3000+'}]}
+                    min={0}
+                    max={3000}
+                    valueLabelDisplay="on"
+                    onChangeCommitted={(e) => handlePages(e)}
+                  />
                 </div>
                 <div className="select">
                   <h5 className="mb-3">Search on:</h5>

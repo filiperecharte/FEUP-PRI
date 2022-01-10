@@ -225,6 +225,27 @@ p {
     color: var(--brown);
 }
 
+#mainPage .css-1gv0vcd-MuiSlider-track {
+    border: 1px solid var(--brown);
+    background-color: var(--brown);
+}
+
+#mainPage .css-eg0mwd-MuiSlider-thumb {
+    background-color: var(--brown);
+}
+
+#mainPage .css-14pt78w-MuiSlider-rail {
+    background-color: var(--white);
+    border: 1px solid var(--brown);
+}
+
+#mainPage .css-1tfve6q-MuiSlider-mark {
+    background-color: unset;
+}
+
+#mainPage .css-1aznpnh-MuiSlider-root {
+    width: 80%;
+}
 /******** Book Card ********/
 #bookCard {
     background: rgba(228, 228, 228, 0.28);
