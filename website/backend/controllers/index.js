@@ -86,8 +86,44 @@ async function search(req, res) {
       });
 }
 
+async function getFilters(req, res) {
+  const field = req.query.field;
+
+  const params = {
+    "q": "*:*",
+    "indent": "true",
+    "q.op": "OR",
+    "facet": "true",
+    "facet.field": field,
+    "facet.limit": 1200
+  };
+
+  solr.get('/select', {params: params})
+    .then(function (resp) {
+      let solrResp;
+      if (field === "language") solrResp = resp.data.facet_counts.facet_fields.language;
+      else if(field === "genres") solrResp = resp.data.facet_counts.facet_fields.genres;
+      const filter = [];
+
+      for (let i = 0; i < solrResp.length; i += 2) {
+        filter.push({
+          label: solrResp[i] + '(' + solrResp[i+1] + ')',
+          value: solrResp[i]
+        });
+      }
+
+      return res.status(200).send(filter);
+    })
+    .catch((error) => {
+      console.log(error);
+      return res.status(400).json('Something went wrong!');
+    })
+}
+
+
 module.exports = {
     test,
     search,
     getBook,
+    getFilters,
 };

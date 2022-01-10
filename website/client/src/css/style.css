@@ -252,6 +252,10 @@ p {
 #mainPage .css-1aznpnh-MuiSlider-root {
     width: 80%;
 }
+
+#mainPage .select {
+    margin-bottom: 1rem;
+}
 /******** Book Card ********/
 #bookCard {
     background: rgba(228, 228, 228, 0.28);
