@@ -60,7 +60,7 @@ p {
 
 /******** Circular Progress ********/
 .css-18lrjg1-MuiCircularProgress-root {
-    color: var(--brown);
+    color: var(--brown) !important;
 }
 
 /******** NavBar ********/
