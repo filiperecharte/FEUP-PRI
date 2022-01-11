@@ -14,7 +14,7 @@ export function BookDetails({isbn, pages, languages, genres, day, month, year}) 
             {
               genres.map((genre, index) => {
                 return (
-                  index === genres.length-1 ? <a key={index} href="#">{genre}</a> : <a key={index} href="#">{genre}, </a>
+                  index === genres.length-1 ? <span key={index}>{genre}</span> : <span key={index}>{genre}, </span>
                 )
               })
             }
