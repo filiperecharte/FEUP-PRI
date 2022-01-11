@@ -1,7 +1,6 @@
 import {Nav, Navbar} from "react-bootstrap";
 
-
-export function NavBar({needsBottom, authors, genres, top20}) {
+export function NavBar({needsBottom, authors}) {
   return(
     <Navbar collapseOnSelect expand="lg" id="navbar" className={needsBottom ? "withBottom" : null}>
         <Navbar.Brand href="/">
@@ -17,8 +16,6 @@ export function NavBar({needsBottom, authors, genres, top20}) {
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
             <Nav.Link href="/authors" className={authors ? "active" : null}>Authors</Nav.Link>
-            <Nav.Link href="#">Genres</Nav.Link>
-            <Nav.Link href="#">Top 20</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
