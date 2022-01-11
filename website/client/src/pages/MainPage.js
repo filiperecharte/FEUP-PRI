@@ -9,8 +9,7 @@ import {Footer} from "../components/Footer";
 import {CircularProgress, Pagination, Slider} from "@mui/material";
 
 //TODO => pôr cards com a mesma height
-//TODO => genres facets is shorting the label somehow
-//TODO => aply languages and genres filters
+//TODO => aply and genres filters
 //TODO => apply search on to give more weights to those fields
 
 export function MainPage() {
@@ -24,6 +23,7 @@ export function MainPage() {
   const [notFound, setNotFound] = useState(false);
   const [languages, setLanguages] = useState({});
   const [genres, setGenres] = useState({});
+  const [selectedLanguages, setSelectedLanguages] = useState([]);
   const fields = [
     {label: "name", value: "name"},
     {label: "publisher", value: "publisher"},
@@ -52,7 +52,7 @@ export function MainPage() {
     })
     setPage(1);
     handleInput(false, 1);
-  }, [sort, numberPages])
+  }, [sort, numberPages, selectedLanguages])
 
   const handleSort = (e) => {
     if(e.target.checked) {
@@ -62,6 +62,12 @@ export function MainPage() {
       setSort("none");
     }
   }
+
+  const handleLanguageChange = (selectedOptions) => {
+    setSelectedLanguages(selectedOptions);
+  }
+
+  console.log(selectedLanguages);
 
   const handlePages = (e) => {
     const span = document.querySelector('.MuiSlider-valueLabelLabel');
@@ -85,7 +91,8 @@ export function MainPage() {
         input,
         pageNumber,
         sort,
-        numberPages
+        numberPages,
+        selectedLanguages
       }
     }).then((res) => {
       console.log(res);
@@ -198,6 +205,7 @@ export function MainPage() {
                         options={languages}
                         className="basic-multi-select"
                         classNamePrefix="select"
+                        onChange={handleLanguageChange}
                       />
                     </div>
                     <div className="select">
@@ -338,18 +346,41 @@ export function MainPage() {
                   </div>
                   <div>
                     <h5 className="mb-3">Filter by:</h5>
-                    <Form.Label>Pages Number</Form.Label>
-                    <Slider
-                      aria-label="Always visible"
-                      getAriaValueText={valuetext}
-                      defaultValue={numberPages}
-                      step={1}
-                      marks={[{value: 0, label: '0'}, {value: 3000, label: '3000+'}]}
-                      min={0}
-                      max={3000}
-                      valueLabelDisplay="on"
-                      onChangeCommitted={(e) => handlePages(e)}
-                    />
+                    <div>
+                      <Form.Label>Pages Number</Form.Label>
+                      <Slider
+                        aria-label="Always visible"
+                        getAriaValueText={valuetext}
+                        defaultValue={numberPages}
+                        step={1}
+                        marks={[{value: 0, label: '0'}, {value: 3000, label: '3000+'}]}
+                        min={0}
+                        max={3000}
+                        valueLabelDisplay="on"
+                        onChangeCommitted={(e) => handlePages(e)}
+                      />
+                    </div>
+                    <div className="select">
+                      <Form.Label>Select languages:</Form.Label>
+                      <Select
+                        isMulti
+                        name="fields"
+                        options={languages}
+                        className="basic-multi-select"
+                        classNamePrefix="select"
+                        onChange={handleLanguageChange}
+                      />
+                    </div>
+                    <div className="select">
+                      <Form.Label>Select genres:</Form.Label>
+                      <Select
+                        isMulti
+                        name="fields"
+                        options={genres}
+                        className="basic-multi-select"
+                        classNamePrefix="select"
+                      />
+                    </div>
                   </div>
                   <div className="select">
                     <h5 className="mb-3">Search on:</h5>

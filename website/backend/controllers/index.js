@@ -37,6 +37,13 @@ async function search(req, res) {
       startRow = 10 * (req.query.pageNumber - 1);
     }
     console.log(query);
+    console.log(req.query.pageNumber);
+    console.log(req.query.sort);
+    console.log(req.query.selectedLanguages);
+    //console.log(JSON.parse(req.query.selectedLanguages));
+    //console.log(req.query.selectedLanguages === [ '{}' ]);
+    //console.log((JSON.parse('{}')) === {});
+    //TODO => if not undefined, iterate to get languages objects (JSON.parse() to convert string to object)
 
     let params = new URLSearchParams();
     params.append('q', query);
@@ -63,6 +70,14 @@ async function search(req, res) {
     }
 
     params.append('fq', `pagesNumber:[0 TO ${req.query.numberPages}]`);
+
+    if(req.query.selectedLanguages !== undefined) {
+      req.query.selectedLanguages.forEach((language) => {
+        let object = JSON.parse(language);
+        console.log(object.value);
+        params.append('fq', `language:${object.value}`);
+      })
+    }
 
 
     solr.get('/select', {params: params})
@@ -94,8 +109,7 @@ async function getFilters(req, res) {
     "indent": "true",
     "q.op": "OR",
     "facet": "true",
-    "facet.field": field,
-    "facet.limit": 1200
+    "facet.field": field
   };
 
   solr.get('/select', {params: params})
