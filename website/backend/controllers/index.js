@@ -40,10 +40,7 @@ async function search(req, res) {
     console.log(req.query.pageNumber);
     console.log(req.query.sort);
     console.log(req.query.selectedLanguages);
-    //console.log(JSON.parse(req.query.selectedLanguages));
-    //console.log(req.query.selectedLanguages === [ '{}' ]);
-    //console.log((JSON.parse('{}')) === {});
-    //TODO => if not undefined, iterate to get languages objects (JSON.parse() to convert string to object)
+    console.log(req.query.numberPages);
 
     let params = new URLSearchParams();
     params.append('q', query);
@@ -69,7 +66,8 @@ async function search(req, res) {
         break;
     }
 
-    params.append('fq', `pagesNumber:[0 TO ${req.query.numberPages}]`);
+    if(req.query.numberPages !== '3000')
+      params.append('fq', `pagesNumber:[0 TO ${req.query.numberPages}]`);
 
     if(req.query.selectedLanguages !== undefined) {
       req.query.selectedLanguages.forEach((language) => {
@@ -79,6 +77,15 @@ async function search(req, res) {
       })
     }
 
+  if(req.query.selectedGenres !== undefined) {
+    req.query.selectedGenres.forEach((genre) => {
+      let object = JSON.parse(genre);
+      console.log(object.value);
+      params.append('fq', `genres:${object.value}`);
+    })
+  }
+
+    console.log(req.query.selectedGenres);
 
     solr.get('/select', {params: params})
       .then((response) => {
@@ -134,10 +141,43 @@ async function getFilters(req, res) {
     })
 }
 
+async function getAuthors(req, res) {
+
+  const params = {
+    "q": "*:*",
+    "indent": "true",
+    "q.op": "OR",
+    "facet": "true",
+    "facet.field": "author"
+  };
+
+  solr.get('/select', {params: params})
+    .then(function (resp) {
+
+      let solrResp = resp.data.facet_counts.facet_fields.author;
+
+      const authors = [];
+
+      for (let i = 0; i < solrResp.length; i += 2) {
+        authors.push({
+          name: solrResp[i],
+          numberOfBooks: solrResp[i+1]
+        });
+      }
+
+      return res.status(200).send(authors);
+    })
+    .catch((error) => {
+      console.log(error);
+      return res.status(400).json('Something went wrong!');
+    })
+}
+
 
 module.exports = {
     test,
     search,
     getBook,
     getFilters,
+    getAuthors,
 };
