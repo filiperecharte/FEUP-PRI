@@ -9,7 +9,6 @@ import {Footer} from "../components/Footer";
 import {CircularProgress, Pagination, Slider} from "@mui/material";
 
 //TODO => pôr cards com a mesma height
-//TODO => aply and genres filters
 //TODO => apply search on to give more weights to those fields
 
 export function MainPage() {
@@ -24,6 +23,7 @@ export function MainPage() {
   const [languages, setLanguages] = useState({});
   const [genres, setGenres] = useState({});
   const [selectedLanguages, setSelectedLanguages] = useState([]);
+  const [selectedGenres, setSelectedGenres] = useState([]);
   const fields = [
     {label: "name", value: "name"},
     {label: "publisher", value: "publisher"},
@@ -52,7 +52,7 @@ export function MainPage() {
     })
     setPage(1);
     handleInput(false, 1);
-  }, [sort, numberPages, selectedLanguages])
+  }, [sort, numberPages, selectedLanguages, selectedGenres])
 
   const handleSort = (e) => {
     if(e.target.checked) {
@@ -67,7 +67,9 @@ export function MainPage() {
     setSelectedLanguages(selectedOptions);
   }
 
-  console.log(selectedLanguages);
+  const handleGenresChange = (selectedOptions) => {
+    setSelectedGenres(selectedOptions);
+  }
 
   const handlePages = (e) => {
     const span = document.querySelector('.MuiSlider-valueLabelLabel');
@@ -92,7 +94,8 @@ export function MainPage() {
         pageNumber,
         sort,
         numberPages,
-        selectedLanguages
+        selectedLanguages,
+        selectedGenres
       }
     }).then((res) => {
       console.log(res);
@@ -216,6 +219,7 @@ export function MainPage() {
                         options={genres}
                         className="basic-multi-select"
                         classNamePrefix="select"
+                        onChange={handleGenresChange}
                       />
                     </div>
                   </div>
@@ -379,6 +383,7 @@ export function MainPage() {
                         options={genres}
                         className="basic-multi-select"
                         classNamePrefix="select"
+                        onChange={handleGenresChange}
                       />
                     </div>
                   </div>
