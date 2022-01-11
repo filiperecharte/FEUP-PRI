@@ -70,6 +70,16 @@ p {
     font-size: 20px;
 }
 
+#navbar #author-link:hover {
+    color:var(--brown);
+    text-decoration: underline;
+}
+
+#navbar .company {
+    color: var(--brown);
+    font-weight: bold;
+}
+
 #navbar .navbar-brand {
     margin-left: 100px;
 }
@@ -267,6 +277,10 @@ p {
 #bookCard a {
     color: var(--black);
     text-decoration: none;
+}
+
+#bookCard a:hover {
+    text-decoration: underline;
 }
 
 #bookCard .card-title {
@@ -475,7 +489,7 @@ p {
     text-align: right;
 }
 
-#bookPage span {
+#bookPage .read-or-hide {
     color: var(--brown);
     font-weight: bolder;
     cursor: pointer;
