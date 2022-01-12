@@ -43,7 +43,7 @@ export function BookPage() {
       {!error ? <div className="layout box" id="bookPage">
         <Row className="firstRow">
           <Col md={4} className="coverHolder">
-            <Image src="img/cover.png" alt="book cover"/>
+            <Image src={info.authorPic} alt="book cover"/>
           </Col>
           <Col md={8} className="mt-4">
             <h1 className="mb-4">{info.name}</h1>
@@ -81,7 +81,10 @@ export function BookPage() {
           </Col>
           <Col className="m-auto" md={4}>
             <BookDetails isbn={info.ISBN} pages={info.pagesNumber}
-                         languages={info.language} genres={info.genres} day={info.publishDay} month={info.publishMonth} year={info.publishYear} />
+                         languages={info.language} genres={info.genres}
+                         publisher={info.publisher}
+                         day={info.publishDay} month={info.publishMonth}
+                         year={info.publishYear} />
           </Col>
         </Row>
         <hr/>
