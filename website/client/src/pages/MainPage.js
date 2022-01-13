@@ -9,7 +9,6 @@ import {Footer} from "../components/Footer";
 import {CircularProgress, Pagination, Slider} from "@mui/material";
 
 //TODO => pôr cards com a mesma height
-//TODO => apply search on to give more weights to those fields
 
 export function MainPage() {
   const [booksList, setbooksList] = useState([]);
