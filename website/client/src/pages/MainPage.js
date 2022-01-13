@@ -24,13 +24,13 @@ export function MainPage() {
   const [genres, setGenres] = useState({});
   const [selectedLanguages, setSelectedLanguages] = useState([]);
   const [selectedGenres, setSelectedGenres] = useState([]);
+  const [priorities, setPriorities] = useState([]);
   const fields = [
     {label: "name", value: "name"},
     {label: "publisher", value: "publisher"},
     {label: "description", value: "description"},
     {label: "author", value: "author"},
-    {label: "genres", value: "genres"},
-    {label: "language", value: "language"},
+    {label: "author's description", value:"authorDescription"},
     {label: "reviews", value: "reviews"}
   ]
 
@@ -52,7 +52,7 @@ export function MainPage() {
     })
     setPage(1);
     handleInput(false, 1);
-  }, [sort, numberPages, selectedLanguages, selectedGenres])
+  }, [sort, numberPages, selectedLanguages, selectedGenres, priorities])
 
   const handleSort = (e) => {
     if(e.target.checked) {
@@ -69,6 +69,10 @@ export function MainPage() {
 
   const handleGenresChange = (selectedOptions) => {
     setSelectedGenres(selectedOptions);
+  }
+
+  const handlePrioritiesChange = (selectedOptions) => {
+    setPriorities(selectedOptions);
   }
 
   const handlePages = (e) => {
@@ -95,7 +99,8 @@ export function MainPage() {
         sort,
         numberPages,
         selectedLanguages,
-        selectedGenres
+        selectedGenres,
+        priorities
       }
     }).then((res) => {
       console.log(res);
@@ -224,13 +229,14 @@ export function MainPage() {
                     </div>
                   </div>
                   <div className="select">
-                    <h5 className="mb-3">Search on:</h5>
+                    <h5 className="mb-3">Prioritize:</h5>
                     <Select
                       isMulti
                       name="fields"
                       options={fields}
                       className="basic-multi-select"
                       classNamePrefix="select"
+                      onChange={handlePrioritiesChange}
                     />
                   </div>
                 </Col>
@@ -388,13 +394,14 @@ export function MainPage() {
                     </div>
                   </div>
                   <div className="select">
-                    <h5 className="mb-3">Search on:</h5>
+                    <h5 className="mb-3">Prioritize:</h5>
                     <Select
                       isMulti
                       name="fields"
                       options={fields}
                       className="basic-multi-select"
                       classNamePrefix="select"
+                      onChange={handlePrioritiesChange}
                     />
                   </div>
                 </Col>
