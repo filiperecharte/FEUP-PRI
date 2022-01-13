@@ -9,13 +9,17 @@ import {ReviewCard} from "../components/ReviewCard";
 import {RatingsDistMobile} from "../components/RatingDistMobile";
 import axios from "axios";
 import {useLocation, useNavigate} from "react-router-dom";
+import {AuthorModal} from "../components/AuthorModal";
+import {CircularProgress} from "@mui/material";
 
-//TODO => pôr imagem e rating dist quando tiver no dataset
-//TODO => adicionar estado de loading
+//TODO =>  rating dist
+//TODO => add image default when book does not have image
 export function BookPage() {
   const [isReadMore, setIsReadMore] = useState(true);
   const [info, setInfo] = useState({});
-  const [error, setError] = useState(true);
+  const [error, setError] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const toggleReadMore = () => {
     setIsReadMore(!isReadMore);
   };
@@ -28,37 +32,64 @@ export function BookPage() {
     axios.get(`http://localhost:3001/books/book${id}`).then((res) => {
       setInfo(res.data);
       setError(false);
+      setIsReadMore(res.data.description.length > 400);
+      setIsLoading(false);
     }).catch((error) => {
-      console.log(error);
-    })
+      console.error(error);
+      setError(true);
+    });
   }, []);
 
   const handleClick = () => {
     navigate('/');
   }
 
+  if(error) {
+    return (
+      <>
+        <NavBar needsBottom={true}/>
+          <div className="layout text-center" id="bookPage">
+            <Image src="/img/404.svg" alt="Library Image" id="notFound" />
+            <div className="bottom-left">
+              <h1>404</h1>
+              <h2>That book is yet to be written....</h2>
+              <Button onClick={handleClick}>Main Page</Button>
+            </div>
+          </div>
+        }
+        <Footer/>
+      </>
+    )
+  }
   return (
     <>
       <NavBar needsBottom={true}/>
-      {!error ? <div className="layout box" id="bookPage">
+      {!isLoading ? <div className="layout box" id="bookPage">
         <Row className="firstRow">
           <Col md={4} className="coverHolder">
             <Image src={info.authorPic} alt="book cover"/>
           </Col>
           <Col md={8} className="mt-4">
             <h1 className="mb-4">{info.name}</h1>
-            <h4 className="mb-4">by <a href="#">{info.author}</a></h4>
+            <h4 className="mb-4">by <span onClick={() => setModalShow(true)}>{info.author}</span></h4>
             <p className="col-md-8">
               {isReadMore ? info.description.slice(0, 400) + "..." : info.description}
             </p>
             {
               info.description.length > 400 ? <div className="col-md-8 moreDiv">
               <span onClick={toggleReadMore} className="read-or-hide">
-                {isReadMore ? "read more" : " show less"}
+                {isReadMore ? "read more" : "show less"}
               </span>
               </div> : null
             }
           </Col>
+          <AuthorModal
+            show={modalShow}
+            name={info.author}
+            description={info.authorDescription}
+            image={info.bookPic}
+            onHide={() => setModalShow(false)}
+          />
         </Row>
         <hr/>
         <Row>
@@ -91,21 +122,18 @@ export function BookPage() {
         <Row md={8} className="reviewsRow">
           <h3 className="mb-4">Reviews</h3>
           {
-            info.reviews.map((review, index) => {
+            info.reviews ? info.reviews.map((review, index) => {
               return (
                 <ReviewCard review={review} key={index} />
               )
-            })
+            }) : <p>No reviews...</p>
           }
         </Row>
       </div> :
         <div className="layout text-center" id="bookPage">
-          <Image src="/img/404.svg" alt="Library Image" id="notFound" />
-          <div className="bottom-left">
-            <h1>404</h1>
-            <h2>That book is yet to be written....</h2>
-            <Button onClick={handleClick}>Main Page</Button>
-          </div>
+          <Row className="justify-content-center">
+            <CircularProgress />
+          </Row>
         </div>
         }
       <Footer/>

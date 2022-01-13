@@ -6,6 +6,6 @@ router.get('/', controller.test);
 router.get('/search', controller.search);
 router.get('/book:id', controller.getBook);
 router.get('/filters', controller.getFilters);
-router.get('/authors', controller.getAuthors);
+router.get('/author', controller.getAuthor);
 
 module.exports = router;
