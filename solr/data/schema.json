@@ -123,10 +123,31 @@
 
         {
             "name": "genres",
-            "type": "text_en",
+            "type": "string",
             "indexed": true,
             "stored": true,
             "multiValued": true
+        },
+
+        {
+            "name": "bookPic",
+            "type": "string",
+            "indexed": false,
+            "stored": true
+        },
+
+        {
+            "name": "authorPic",
+            "type": "string",
+            "indexed": false,
+            "stored": true
+        },
+
+        {
+            "name": "authorDescription",
+            "type": "text_en",
+            "indexed": true,
+            "stored": true
         }
     ]
 }
