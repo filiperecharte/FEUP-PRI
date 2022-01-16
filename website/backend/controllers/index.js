@@ -1,10 +1,5 @@
 const solr = require('../config');
 
-async function test(req, res) {
-    console.log("hi there!")
-    return res.status(200).json({ message: 'Hello from Backend' });
-}
-
 async function getBook(req, res) {
   const id = req.params.id;
 
@@ -45,13 +40,6 @@ async function search(req, res) {
   } else {
     startRow = 10 * (req.query.pageNumber - 1);
   }
-  console.log(query);
-  console.log(req.query.pageNumber);
-  console.log(req.query.sort);
-  console.log(req.query.selectedLanguages);
-  console.log(req.query.numberPages);
-  console.log(req.query.priorities);
-  console.log(req.query.selectedGenres);
 
   let params = new URLSearchParams();
   params.append('q', query);
@@ -75,21 +63,16 @@ async function search(req, res) {
       priorities.push(object.value);
     })
   }
-  console.log(priorities);
 
   priorities.forEach((p) => {
     qf = qf + " " + p + "^" + totalWeight/priorities.length;
   })
-
-  console.log(qf);
 
   nonPriorities = getRestOFArray(searchFields, priorities);
 
   nonPriorities.forEach((n) => {
     qf = qf + " " + n + " ";
   })
-
-  console.log(nonPriorities);
 
   params.append('qf', qf);
 
@@ -209,7 +192,6 @@ async function getAuthor(req, res) {
 }
 
 module.exports = {
-  test,
   search,
   getBook,
   getFilters,

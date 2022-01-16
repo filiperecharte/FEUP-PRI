@@ -38,18 +38,20 @@ export function AuthorModal(props) {
       <Modal.Body>
         <Row className="mb-5">
           <Col md={4}>
-            <Image src={props.image} alt="Author image" />
+            <Image fluid={true} src={props.image === undefined ? "img/defaultAuthor.png" : props.image} alt="Author image" />
           </Col>
           <Col md={8}>
             <h1 className="mb-2">{props.name}</h1>
+            {
+              props.description === undefined ? <p>No description...</p> :
             <p>
               {readMore ? props.description.slice(0, 200) + "..." : props.description}
-            </p>
-            <div className="col-md-8 moreDiv">
+            </p> }
+            <div className="moreDiv">
               <span onClick={toggle} className="read-or-hide">
                 {readMore ? "read more" : "show less"}
               </span>
-              </div>
+            </div>
           </Col>
         </Row>
         {!loading ? <Row>
@@ -57,7 +59,7 @@ export function AuthorModal(props) {
           {
             books.books.map((book) => {
               return (
-                <BookCover img={book.authorPic} bookId={book.id} key={book.id} />
+                <BookCover img={book.bookImage === undefined ? "img/defaultCover.png" : book.bookImage} bookId={book.id} key={book.id} />
               )
             })
           }

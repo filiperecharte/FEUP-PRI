@@ -154,14 +154,16 @@
             "name": "positive-reviews",
             "type": "text_en",
             "indexed": true,
-            "stored": true
+            "stored": true,
+            "multiValued": true
         },
 
         {
             "name": "negative-reviews",
             "type": "text_en",
             "indexed": true,
-            "stored": true
+            "stored": true,
+            "multiValued": true
         }
     ]
 }

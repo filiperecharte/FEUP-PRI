@@ -3,7 +3,6 @@ import {MainPage} from "./pages/MainPage";
 import {AboutPage} from "./pages/AboutPage";
 import './css/style.css';
 import {BookPage} from "./pages/BookPage";
-import {AuthorPage} from "./pages/AuthorPage";
 
 function App() {
   return (

@@ -2,18 +2,14 @@ import {useEffect, useState} from "react";
 import {NavBar} from "../components/Navbar";
 import {Footer} from "../components/Footer";
 import {Button, Col, Image, Row} from "react-bootstrap";
-import {RatingsDist} from "../components/RatingsDist";
 import {BookDetails} from "../components/BookDetails";
 import {AiFillStar, AiOutlineNumber} from "react-icons/ai";
 import {ReviewCard} from "../components/ReviewCard";
-import {RatingsDistMobile} from "../components/RatingDistMobile";
 import axios from "axios";
 import {useLocation, useNavigate} from "react-router-dom";
 import {AuthorModal} from "../components/AuthorModal";
 import {CircularProgress} from "@mui/material";
 
-//TODO =>  rating dist
-//TODO => add image default when book does not have image
 export function BookPage() {
   const [isReadMore, setIsReadMore] = useState(true);
   const [info, setInfo] = useState({});
@@ -49,7 +45,7 @@ export function BookPage() {
       <>
         <NavBar needsBottom={true}/>
           <div className="layout text-center" id="bookPage">
-            <Image src="/img/404.svg" alt="Library Image" id="notFound" />
+            <Image fluid={true} src="/img/404.svg" alt="Library Image" id="notFound" />
             <div className="bottom-left">
               <h1>404</h1>
               <h2>That book is yet to be written....</h2>
@@ -67,7 +63,7 @@ export function BookPage() {
       {!isLoading ? <div className="layout box" id="bookPage">
         <Row className="firstRow">
           <Col md={4} className="coverHolder">
-            <Image src={info.authorPic} alt="book cover"/>
+            <Image fluid={true} src={info.bookImage === undefined ? "img/defaultCover.png" : info.bookImage} alt="book cover"/>
           </Col>
           <Col md={8} className="mt-4">
             <h1 className="mb-4">{info.name}</h1>
@@ -87,13 +83,13 @@ export function BookPage() {
             show={modalShow}
             name={info.author}
             description={info.authorDescription}
-            image={info.bookPic}
+            image={info.authorImage}
             onHide={() => setModalShow(false)}
           />
         </Row>
         <hr/>
         <Row>
-          <Col className="m-auto" md={4}>
+          <Col className="m-auto" md={6}>
             <div className="ratingsDiv">
               <AiFillStar/> {info.rating}
             </div>
@@ -102,13 +98,9 @@ export function BookPage() {
                 <AiOutlineNumber/>{info.countsOfReviews} Reviews
               </Col>
               <Col md={5}>
-                <AiOutlineNumber/>? Ratings
+                <AiOutlineNumber/>15 Ratings
               </Col>
             </Row>
-          </Col>
-          <Col className="m-auto" md={4}>
-            <RatingsDist five="22" four="33" three="26" two="10" one="7"/>
-            <RatingsDistMobile five="22" four="33" three="26" two="10" one="7"/>
           </Col>
           <Col className="m-auto" md={4}>
             <BookDetails isbn={info.ISBN} pages={info.pagesNumber}

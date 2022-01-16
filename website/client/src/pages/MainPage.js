@@ -8,8 +8,7 @@ import axios from "axios";
 import {Footer} from "../components/Footer";
 import {CircularProgress, Pagination, Slider} from "@mui/material";
 
-//TODO => pôr cards com a mesma height
-
+//TODO => add author modal
 export function MainPage() {
   const [booksList, setbooksList] = useState([]);
   const [booksFound, setBooksFound] = useState(0);
@@ -30,7 +29,9 @@ export function MainPage() {
     {label: "description", value: "description"},
     {label: "author", value: "author"},
     {label: "author's description", value:"authorDescription"},
-    {label: "reviews", value: "reviews"}
+    {label: "reviews", value: "reviews"},
+    {label: "positive reviews", value: "positive-reviews"},
+    {label: "negative reviews", value: "negative-reviews"}
   ]
 
   function valuetext(value) {
@@ -102,7 +103,6 @@ export function MainPage() {
         priorities
       }
     }).then((res) => {
-      console.log(res);
       setbooksList(res.data.books);
       setBooksFound(res.data.numberFound);
       setIsLoading(false);

@@ -384,43 +384,6 @@ p {
     margin-bottom: 50px;
 }
 
-/******** Ratings Distribution ********/
-#ratingDist {
-    min-width: 230px;
-}
-
-#ratingDist .progress-bar, #ratingDistMobile .progress-bar {
-    background-color: var(--brown);
-    border-radius: 10px;
-}
-
-#ratingDist .progress, #ratingDistMobile .progress {
-    border: 1px solid var(--brown);
-    border-radius: 10px;
-}
-
-#ratingDist .row, #ratingDistMobile .row {
-    margin-bottom: 10px !important;
-}
-
-#ratingDist .progressBarCol {
-    margin-bottom: auto;
-    margin-top: auto;
-}
-
-#ratingDist .starsCol {
-    text-align: right;
-    padding-right: 0;
-}
-
-#ratingDist .percentageCol {
-    padding-left: 0;
-}
-
-#ratingDistMobile {
-    margin-bottom: 60px;
-}
-
 /******** Details Book Card ********/
 #detailsCard {
     background: rgba(228, 228, 228, 0.28);
@@ -525,20 +488,6 @@ p {
     display: none;
 }
 
-#bookPage #ratingDistMobile {
-    display: none;
-}
-
-@media (max-width: 576px) {
-    #bookPage #ratingDist {
-        display: none;
-    }
-
-    #bookPage #ratingDistMobile {
-        display: block;
-    }
-}
-
 @media (max-width: 768px) {
     #bookPage img {
         width: fit-content;
@@ -560,10 +509,6 @@ p {
     #bookPage hr {
         display: block;
         background-color: var(--brown);
-    }
-
-    #bookPage #ratingDist {
-        margin-bottom: 60px;
     }
 }
 
