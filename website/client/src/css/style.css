@@ -23,6 +23,17 @@ p {
     margin-left: 100px;
 }
 
+.btn-primary {
+    background-color: var(--brown);
+    border:none;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color:var(--brown);
+    border: 1px solid var(--brown);
+}
+
 @media (max-width: 992px) {
     .layout {
         margin-right: 15px !important;
@@ -44,6 +55,12 @@ p {
 
 .box {
     margin-top: 50px;
+
+}
+
+/******** Circular Progress ********/
+.css-18lrjg1-MuiCircularProgress-root {
+    color: var(--brown) !important;
 }
 
 /******** NavBar ********/
@@ -51,6 +68,16 @@ p {
     color: var(--black);
     font-weight: bold;
     font-size: 20px;
+}
+
+#navbar #author-link:hover {
+    color:var(--brown);
+    text-decoration: underline;
+}
+
+#navbar .company {
+    color: var(--brown);
+    font-weight: bold;
 }
 
 #navbar .navbar-brand {
@@ -112,7 +139,7 @@ p {
     background: var(--white);
 }
 
-#mainPage button {
+#mainPage #clear {
     position: absolute;
     right: 6px;
     border: none;
@@ -181,6 +208,10 @@ p {
     box-shadow: none;
 }
 
+#mainPage button:focus {
+    box-shadow: none;
+}
+
 #mainPage .css-1s2u09g-control {
     border-color: var(--brown);
 }
@@ -194,6 +225,47 @@ p {
     box-shadow: 0 0 0 1px var(--brown);
 }
 
+#mainPage .css-wjh20t-MuiPagination-ul {
+    justify-content: right;
+}
+
+#mainPage .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: var(--brown);
+    color: white;
+}
+
+#mainPage .numberOfResults {
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: right;
+    color: var(--brown);
+}
+
+#mainPage .css-1gv0vcd-MuiSlider-track {
+    border: 1px solid var(--brown);
+    background-color: var(--brown);
+}
+
+#mainPage .css-eg0mwd-MuiSlider-thumb {
+    background-color: var(--brown);
+}
+
+#mainPage .css-14pt78w-MuiSlider-rail {
+    background-color: var(--white);
+    border: 1px solid var(--brown);
+}
+
+#mainPage .css-1tfve6q-MuiSlider-mark {
+    background-color: unset;
+}
+
+#mainPage .css-1aznpnh-MuiSlider-root {
+    width: 80%;
+}
+
+#mainPage .select {
+    margin-bottom: 1rem;
+}
 /******** Book Card ********/
 #bookCard {
     background: rgba(228, 228, 228, 0.28);
@@ -205,6 +277,10 @@ p {
 #bookCard a {
     color: var(--black);
     text-decoration: none;
+}
+
+#bookCard a:hover {
+    text-decoration: underline;
 }
 
 #bookCard .card-title {
@@ -308,43 +384,6 @@ p {
     margin-bottom: 50px;
 }
 
-/******** Ratings Distribution ********/
-#ratingDist {
-    min-width: 230px;
-}
-
-#ratingDist .progress-bar, #ratingDistMobile .progress-bar {
-    background-color: var(--brown);
-    border-radius: 10px;
-}
-
-#ratingDist .progress, #ratingDistMobile .progress {
-    border: 1px solid var(--brown);
-    border-radius: 10px;
-}
-
-#ratingDist .row, #ratingDistMobile .row {
-    margin-bottom: 10px !important;
-}
-
-#ratingDist .progressBarCol {
-    margin-bottom: auto;
-    margin-top: auto;
-}
-
-#ratingDist .starsCol {
-    text-align: right;
-    padding-right: 0;
-}
-
-#ratingDist .percentageCol {
-    padding-left: 0;
-}
-
-#ratingDistMobile {
-    margin-bottom: 60px;
-}
-
 /******** Details Book Card ********/
 #detailsCard {
     background: rgba(228, 228, 228, 0.28);
@@ -389,6 +428,17 @@ p {
     width: 60%;
 }
 
+#bookPage #notFound {
+    width: 40%;
+}
+
+#bookPage .bottom-left {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #bookPage a {
     text-decoration: none;
     color: var(--black);
@@ -402,7 +452,7 @@ p {
     text-align: right;
 }
 
-#bookPage span {
+#bookPage .read-or-hide {
     color: var(--brown);
     font-weight: bolder;
     cursor: pointer;
@@ -438,20 +488,6 @@ p {
     display: none;
 }
 
-#bookPage #ratingDistMobile {
-    display: none;
-}
-
-@media (max-width: 576px) {
-    #bookPage #ratingDist {
-        display: none;
-    }
-
-    #bookPage #ratingDistMobile {
-        display: block;
-    }
-}
-
 @media (max-width: 768px) {
     #bookPage img {
         width: fit-content;
@@ -473,10 +509,6 @@ p {
     #bookPage hr {
         display: block;
         background-color: var(--brown);
-    }
-
-    #bookPage #ratingDist {
-        margin-bottom: 60px;
     }
 }
 
@@ -528,11 +560,6 @@ p {
     }
 }
 
-/******** Authors Page ********/
-#authorsPage h1 {
-    margin-bottom: 50px;
-}
-
 /******** Book Cover ********/
 #bookCover img {
     width: unset;
@@ -546,67 +573,25 @@ p {
     }
 }
 
-/******** Author Page ********/
-#authorPage .moreDiv {
+/******** Author Modal ********/
+#authorModal .modal-header {
+    border-bottom: none;
+}
+
+#authorModal h3 {
+    color:var(--brown);
+}
+
+#authorModal .moreDiv {
     text-align: right;
 }
 
-#authorPage span {
+#authorModal span {
     color: var(--brown);
     font-weight: bolder;
     cursor: pointer;
 }
 
-#authorPage span:hover {
+#authorModal span:hover {
     text-decoration: underline;
-}
-
-#authorPage .row {
-    margin-bottom: 60px;
-}
-
-#authorPage .coverHolder {
-    text-align: center;
-}
-
-#authorPage .coverHolder img {
-    width: 60%;
-}
-
-
-#authorPage h3 {
-    color: var(--brown);
-    font-weight: bold;
-}
-
-#authorPage .catalogueRow {
-    margin-left: 85px;
-}
-
-#authorPage hr {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    #authorPage .coverHolder img {
-        width: fit-content;
-    }
-
-    #authorPage .moreDiv {
-        padding-bottom: 15px;
-    }
-
-    #authorPage .firstRow {
-        text-align: center;
-    }
-
-    #authorPage .catalogueRow {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #authorPage hr {
-        display: block;
-        background-color: var(--brown);
-    }
 }

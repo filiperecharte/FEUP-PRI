@@ -12,7 +12,7 @@ export function AboutPage() {
 
   return (
     <div id="aboutPage">
-      <NavBar needsBottom={true}/>
+      <NavBar needsBottom={true} about={true}/>
       <div className="layout box">
           <h1>About Us</h1>
           <div className="aboutApp">
@@ -42,7 +42,7 @@ export function AboutPage() {
           </Row>
         </div>
       </div>
-      <Footer current={true}/>
+      <Footer/>
     </div>
   )
 }

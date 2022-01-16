@@ -11,11 +11,11 @@ cp /data/synonyms.txt /var/solr/data/books/conf
 
 # Schema definition via API
 curl -X POST -H 'Content-type:application/json' \
-    --data-binary @/data/schema.json \
+    --data-binary @/data/schemaM3.json \
     http://localhost:8983/solr/books/schema
 
 # Populate collection
-bin/post -c books /data/data.json
+bin/post -c books /data/data_final.json
 
 # Restart in foreground mode so we can access the interface
 solr restart -f

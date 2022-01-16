@@ -127,6 +127,43 @@
             "indexed": true,
             "stored": true,
             "multiValued": true
+        },
+
+        {
+            "name": "bookImage",
+            "type": "string",
+            "indexed": false,
+            "stored": true
+        },
+
+        {
+            "name": "authorImage",
+            "type": "string",
+            "indexed": false,
+            "stored": true
+        },
+
+        {
+            "name": "authorDescription",
+            "type": "text_en",
+            "indexed": true,
+            "stored": true
+        },
+
+        {
+            "name": "positive-reviews",
+            "type": "text_en",
+            "indexed": true,
+            "stored": true,
+            "multiValued": true
+        },
+
+        {
+            "name": "negative-reviews",
+            "type": "text_en",
+            "indexed": true,
+            "stored": true,
+            "multiValued": true
         }
     ]
 }
