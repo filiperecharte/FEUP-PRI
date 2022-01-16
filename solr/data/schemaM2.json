@@ -1,0 +1,132 @@
+{
+  "add-field-type": [
+    {
+      "name":"text",
+      "class":"solr.TextField",
+      "analyzer":{
+        "tokenizer":{
+          "class":"solr.StandardTokenizerFactory"
+        },
+        "filters":[
+          {"class":"solr.StopFilterFactory", "words":"stopwords.txt", "ignoreCase":"true"},
+          {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+          {"class":"solr.LowerCaseFilterFactory"},
+          {"class":"solr.EnglishMinimalStemFilterFactory"}
+        ]
+      }
+    }
+  ],
+
+  "add-field": [
+    {
+      "name": "name",
+      "type": "text",
+      "indexed": true,
+      "stored": true
+    },
+
+    {
+      "name": "ISBN",
+      "type": "string",
+      "indexed": false,
+      "stored": true
+    },
+
+    {
+      "name": "rating",
+      "type": "pfloat",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "publishYear",
+      "type": "pint",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "publishMonth",
+      "type": "pint",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "publishDay",
+      "type": "pint",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "publisher",
+      "type": "text",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "countsOfReviews",
+      "type": "pint",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "pagesNumber",
+      "type": "pint",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "description",
+      "type": "text",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "author",
+      "type": "text",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "language",
+      "type": "text",
+      "indexed": true,
+      "stored": true
+
+    },
+
+    {
+      "name": "reviews",
+      "type": "text_en",
+      "indexed": true,
+      "stored": true,
+      "multiValued": true
+
+    },
+
+    {
+      "name": "genres",
+      "type": "text_en",
+      "indexed": true,
+      "stored": true,
+      "multiValued": true
+    }
+  ]
+}
