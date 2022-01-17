@@ -53,28 +53,27 @@ async function search(req, res) {
   const totalWeight = 30;
   let qf = '';
   let nonPriorities = [];
-  const searchFields = ["name", "description", "reviews", "author", "authorDescription", "publisher"];
+  const searchFields = ["name", "description", "positive-reviews", "negative-reviews", "author", "authorDescription"];
   if (req.query.priorities === undefined) {
-    params.append('qf', 'name description reviews author authorDescription publisher');
+    params.append('qf', 'name description positive-reviews negative-reviews author authorDescription');
   }
   else {
     req.query.priorities.forEach((p) => {
       let object = JSON.parse(p);
       priorities.push(object.value);
     })
+    priorities.forEach((p) => {
+      qf = qf + " " + p + "^" + totalWeight/priorities.length;
+    })
+
+    nonPriorities = getRestOFArray(searchFields, priorities);
+
+    nonPriorities.forEach((n) => {
+      qf = qf + " " + n + " ";
+    })
+
+    params.append('qf', qf);
   }
-
-  priorities.forEach((p) => {
-    qf = qf + " " + p + "^" + totalWeight/priorities.length;
-  })
-
-  nonPriorities = getRestOFArray(searchFields, priorities);
-
-  nonPriorities.forEach((n) => {
-    qf = qf + " " + n + " ";
-  })
-
-  params.append('qf', qf);
 
   switch (req.query.sort) {
     case 'yearUp':
@@ -97,7 +96,6 @@ async function search(req, res) {
   if (req.query.selectedLanguages !== undefined) {
     req.query.selectedLanguages.forEach((language) => {
       let object = JSON.parse(language);
-      console.log(object.value);
       params.append('fq', `language:${object.value}`);
     })
   }
@@ -105,7 +103,6 @@ async function search(req, res) {
   if (req.query.selectedGenres !== undefined) {
     req.query.selectedGenres.forEach((genre) => {
       let object = JSON.parse(genre);
-      console.log(object.value);
       params.append('fq', `genres:${object.value}`);
     })
   }
@@ -148,7 +145,7 @@ async function getFilters(req, res) {
     .then(function (resp) {
       let solrResp;
       if (field === "language") solrResp = resp.data.facet_counts.facet_fields.language;
-      else if (field === "genres") solrResp = resp.data.facet_counts.facet_fields.genres;
+      else if (field === "genresCopy") solrResp = resp.data.facet_counts.facet_fields.genresCopy;
       const filter = [];
 
       for (let i = 0; i < solrResp.length; i += 2) {

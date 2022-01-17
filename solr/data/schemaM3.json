@@ -164,6 +164,14 @@
             "indexed": true,
             "stored": true,
             "multiValued": true
+        },
+
+        {
+            "name": "genresCopy",
+            "type": "string",
+            "indexed": false,
+            "stored": true,
+            "multiValued": true
         }
     ]
 }

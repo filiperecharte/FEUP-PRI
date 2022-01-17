@@ -8,7 +8,6 @@ import axios from "axios";
 import {Footer} from "../components/Footer";
 import {CircularProgress, Pagination, Slider} from "@mui/material";
 
-//TODO => add author modal
 export function MainPage() {
   const [booksList, setbooksList] = useState([]);
   const [booksFound, setBooksFound] = useState(0);
@@ -45,7 +44,7 @@ export function MainPage() {
     }).catch((error) => {
       console.log(error);
     })
-    axios.get("http://localhost:3001/books/filters", {params: {field: "genres"}}).then((res) => {
+    axios.get("http://localhost:3001/books/filters", {params: {field: "genresCopy"}}).then((res) => {
       setGenres(res.data);
     }).catch((error) => {
       console.log(error);
