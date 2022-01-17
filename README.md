@@ -11,7 +11,7 @@ Docker
 
 ```bash
 cd solr
-docker build . -t goodreads_books
+docker build . -t goodreads_solr
 docker run --name goodreads_books -p 8983:8983 -v ${PWD}/data:/data --rm goodreads_solr
 ```
 
