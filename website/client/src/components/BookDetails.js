@@ -10,7 +10,7 @@ export function BookDetails({isbn, pages, languages, genres, day, month, year, p
           <ListGroup.Item><strong>Publish Date: </strong>{day}-{month}-{year}</ListGroup.Item>
           <ListGroup.Item><strong>Publisher: </strong>{publisher}</ListGroup.Item>
           <ListGroup.Item><strong>Pages Number: </strong>{pages}</ListGroup.Item>
-          <ListGroup.Item><strong>Languages: </strong>{languages.replace(";", ",")}</ListGroup.Item>
+          <ListGroup.Item><strong>Languages: </strong>{languages}</ListGroup.Item>
           <ListGroup.Item><strong>Genres: </strong>
             {
               genres.map((genre, index) => {

@@ -1,5 +1,5 @@
 *.csv
 .idea/
-*/data/data.json
+*.json
 */scripts/data.json
 */scripts/data_subset.json

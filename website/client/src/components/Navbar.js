@@ -17,7 +17,7 @@ export function NavBar({needsBottom, about}) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="/authors" className={about ? "active" : null} id="author-link">About Us</Nav.Link>
+            <Nav.Link href="/about" className={about ? "active" : null} id="author-link">About Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
